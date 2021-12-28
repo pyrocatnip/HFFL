@@ -1,0 +1,165 @@
+<!--Coded area-->
+<html>
+    <h1>
+        John Ambrose II
+    </h1>
+    <hr>
+    <p style="font-weight: italic; margin-left: 1.5em">
+        This article is about John Ambrose II, for his father, see: Google      
+        <a href="https://hffl.fandom.com/John_Ambrose"> 
+            John Ambrose Sr.
+        </a>
+    </p>
+<!--Infobox-->
+    </header>
+        <table align="right"; class="infobox" style="width: 20em; margin: right; border-radius: 20px; margin: right; background: #0c0c0c; padding: 4px">
+            <style>
+                label {
+                    style="font-weight: bold"
+                }
+            </style>
+            <caption class="infobox-title fn" style="line-height: initial;">
+              <big><b>John Ambrose II</b></big></center>
+            </caption>
+             <tbody style="background: #0c0c0c; color: white">
+                <tr>
+                    <th colspan="2" class="infobox-header" style="line-height: 1.5em; background: #24135F; border: 2px solid #9A7611; color: #FFF; box-shadow:  0 #9A7611; border-radius: 20px">
+                    No. 1 - <span class="org">
+                    <a href="https://hffl.fandom.com/wiki/Baltimore_Ravens">Baltimore Ravens
+                    </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row" class="infobox-label" style="width: 40%">
+                    Position
+                    </th>
+                    <td class="infobox-data">
+                    Quarterback
+                    </td>
+                </tr>
+                <tr>
+                     <th colspan="2" class="infobox-header" style="line-height: 1.5em; background: #24135F; border: 2px solid #9A7611; color: white; box-shadow: 0 #9A7611; border-radius: 20px;">
+                        Personal Information
+                     </th>
+                </tr>
+                <tr>
+                     <th scope="row" class="infobox-label" style="width: 40%">
+                        Born
+                     </th>
+                      <td class="infobox-data">
+                         November 11, 2003<br>
+                         <a href="https://hffl.fandom.com/Union_City">
+                            Union City,
+                         </a>
+                         <a href="https://en.wikipedia.com/wiki/Maryland">
+                            Maryland
+                        </a>
+                     </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="infobox-label" style="width: 40%">
+                        Height
+                    </th>
+                     <td class="infobox-data">
+                         5&nbsp;ft 9&nbsp;in (1.75&nbsp;m)
+                     </td>
+                </tr>
+                <tr>
+                     <th scope="row" class="infobox-label" style="width: 40%">
+                        Weight
+                     </th>
+                     <td class="infobox-data">
+                        160&nbsp;lb (73&nbsp;kg)
+                     </td>
+                </tr>
+                <tr>
+                    <th colspan="2" class="infobox-header" style="line-height: 1.5em; background: #24135F; color: white; border: 2px solid #9A7611; border-radius: 20px; box-shadow: inset: 2.5px 2.5px 0 #9A7611">
+                        Career Information
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row" class="infobox-label" style="width:  40%;">
+                     College
+                    </th>
+                    <td class="infobox-data">
+                        <a href="https://hffl.fandom.com/Rosewood_State_University">
+                        Rosewood State
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                     <th scope = "row" class="infobox-label" style="width: 40%">
+                        High School
+                     </th>
+                     <td class="infobox-data">
+                         Sidwell Friends School
+                     </td>
+                <tr>
+                     <th scope="row" class="infobox-label" style="width: 40%"">
+                        NFL Draft
+                     </th>
+                     <td>
+                           2024&nbsp;Round:&nbsp;7&nbsp;/&nbsp;Pick:&nbsp 32
+                     </td>
+                </tr>
+                <tr>
+                     <th colspan="2" class="infobox-header" style="line-height: 1.5em; background: #24125F; border: 2px solid #9A7611; border-radius: 20px   ">
+                        Career History
+                     </th>
+                </tr>
+                <tr>
+                     <td colspan="2" class="infobox-full-data"
+                     style="text-align: left; line-height: 1.5em">
+                     <ul>
+                         <li>
+                             <a href="https://hffl.fandom.com/Baltimore Ravens">
+                                 Baltimore Ravens
+                             </a>
+                         </li>
+                     </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Style section-->
+        <style>
+             table {
+                 padding: 4px
+                }
+             body {
+                 font-family: 'Calibri'; border: 2px solid #9A7611; border-radius: 20px; padding-left: 14px"
+                 }
+             th {
+                 font-weight: bold
+             }
+             label {
+                 font-weight: bold
+             }
+             a:link {
+                 color: #FFF 
+             }
+             a:visited {
+                color: #9D9D9D
+             }
+             a:active {
+                color: #262626
+             }
+        </style>
+<!--Biography starts here-->
+        John Ambrose is an American football quarterback for the Baltimore Ravens
+<!--Table of Contents-->
+     <div id="toc_container" style="border: 1px solid; background: white; color: black; width: 35%; border-radius: 20px; padding: 6px; padding-left: 1.25em; padding-top: 1.25em">
+        <p class="toc_title style=">Contents</p>
+        <ul class="toc_list">
+        <li><a href=#Early_Life>
+            Early Life
+            <ul>
+                <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
+                <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
+            </ul>
+        </li>
+        <li><a href="#Second_Point_Header">2 Second Point Header</a></li>
+         <li><a href="#Third_Point_Header">3 Third Point Header</a></li>
+        </ul>
+    </div>
+</html>
