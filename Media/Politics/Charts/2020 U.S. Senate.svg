@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="360" height="185">
+    <!-- Created with the Wikimedia parliament diagram creator (http://parliamentdiagram.toolforge.org/parliamentinputform.html) -->
+    <g>
+        <text x="175" y="175" 
+              style="font-size:36px;font-weight:bold;text-align:center;text-anchor:middle;font-family:sans-serif">
+            104
+        </text>
+        <g style="fill:#3333FF; stroke-width:0.00; stroke:#000000" 
+           id="0_Democratic"> 
+            <title>Democratic</title>            <circle cx="13.47" cy="173.34" r="6.67"/> 
+            <circle cx="30.15" cy="173.34" r="6.67"/> 
+            <circle cx="46.83" cy="173.34" r="6.67"/> 
+            <circle cx="63.52" cy="173.34" r="6.67"/> 
+            <circle cx="80.22" cy="173.34" r="6.67"/> 
+            <circle cx="96.93" cy="173.35" r="6.67"/> 
+            <circle cx="15.82" cy="151.29" r="6.67"/> 
+            <circle cx="32.90" cy="150.63" r="6.67"/> 
+            <circle cx="50.14" cy="149.75" r="6.67"/> 
+            <circle cx="67.22" cy="150.13" r="6.67"/> 
+            <circle cx="84.41" cy="150.64" r="6.67"/> 
+            <circle cx="21.09" cy="129.76" r="6.67"/> 
+            <circle cx="39.08" cy="128.61" r="6.67"/> 
+            <circle cx="102.55" cy="149.24" r="6.67"/> 
+            <circle cx="57.60" cy="127.12" r="6.67"/> 
+            <circle cx="29.16" cy="109.11" r="6.67"/> 
+            <circle cx="75.50" cy="128.13" r="6.67"/> 
+            <circle cx="48.53" cy="107.78" r="6.67"/> 
+            <circle cx="93.69" cy="129.49" r="6.67"/> 
+            <circle cx="39.90" cy="89.72" r="6.67"/> 
+            <circle cx="68.97" cy="106.18" r="6.67"/> 
+            <circle cx="61.04" cy="88.63" r="6.67"/> 
+            <circle cx="88.02" cy="108.23" r="6.67"/> 
+            <circle cx="115.01" cy="127.84" r="6.67"/> 
+            <circle cx="53.12" cy="71.92" r="6.67"/> 
+            <circle cx="107.58" cy="111.05" r="6.67"/> 
+            <circle cx="83.88" cy="87.60" r="6.67"/> 
+            <circle cx="76.32" cy="71.60" r="6.67"/> 
+            <circle cx="68.59" cy="56.04" r="6.67"/> 
+            <circle cx="104.27" cy="91.25" r="6.67"/> 
+            <circle cx="101.86" cy="71.97" r="6.67"/> 
+            <circle cx="94.00" cy="57.10" r="6.67"/> 
+            <circle cx="86.03" cy="42.35" r="6.67"/> 
+            <circle cx="133.20" cy="111.05" r="6.67"/> 
+            <circle cx="125.32" cy="96.27" r="6.67"/> 
+            <circle cx="123.60" cy="77.87" r="6.67"/> 
+            <circle cx="105.13" cy="31.10" r="6.67"/> 
+            <circle cx="113.69" cy="45.45" r="6.67"/> 
+            <circle cx="122.33" cy="59.78" r="6.67"/> 
+            <circle cx="145.98" cy="85.96" r="6.67"/> 
+            <circle cx="125.55" cy="22.48" r="6.67"/> 
+            <circle cx="134.92" cy="36.94" r="6.67"/> 
+            <circle cx="145.22" cy="68.64" r="6.67"/> 
+            <circle cx="155.52" cy="100.34" r="6.67"/> 
+            <circle cx="144.64" cy="51.44" r="6.67"/> 
+            <circle cx="146.94" cy="16.64" r="6.67"/> 
+            <circle cx="157.19" cy="31.74" r="6.67"/> 
+            <circle cx="168.46" cy="80.67" r="6.67"/> 
+            <circle cx="168.25" cy="63.93" r="6.67"/> 
+            <circle cx="168.09" cy="47.20" r="6.67"/> 
+        </g>
+        <g style="fill:#E81B23; stroke-width:0.00; stroke:#B0CEFF" 
+           id="1_Republican"> 
+            <title>Republican</title>            <circle cx="168.92" cy="13.70" r="6.67"/> 
+            <circle cx="180.00" cy="30.00" r="6.67"/> 
+            <circle cx="180.00" cy="96.67" r="6.67"/> 
+            <circle cx="191.08" cy="13.70" r="6.67"/> 
+            <circle cx="191.91" cy="47.20" r="6.67"/> 
+            <circle cx="191.75" cy="63.93" r="6.67"/> 
+            <circle cx="191.54" cy="80.67" r="6.67"/> 
+            <circle cx="202.81" cy="31.74" r="6.67"/> 
+            <circle cx="213.06" cy="16.64" r="6.67"/> 
+            <circle cx="215.36" cy="51.44" r="6.67"/> 
+            <circle cx="204.48" cy="100.34" r="6.67"/> 
+            <circle cx="214.78" cy="68.64" r="6.67"/> 
+            <circle cx="225.08" cy="36.94" r="6.67"/> 
+            <circle cx="234.45" cy="22.48" r="6.67"/> 
+            <circle cx="214.02" cy="85.96" r="6.67"/> 
+            <circle cx="237.67" cy="59.78" r="6.67"/> 
+            <circle cx="246.31" cy="45.45" r="6.67"/> 
+            <circle cx="254.87" cy="31.10" r="6.67"/> 
+            <circle cx="236.40" cy="77.87" r="6.67"/> 
+            <circle cx="234.68" cy="96.27" r="6.67"/> 
+            <circle cx="226.80" cy="111.05" r="6.67"/> 
+            <circle cx="273.97" cy="42.35" r="6.67"/> 
+            <circle cx="266.00" cy="57.10" r="6.67"/> 
+            <circle cx="258.14" cy="71.97" r="6.67"/> 
+            <circle cx="255.73" cy="91.25" r="6.67"/> 
+            <circle cx="291.41" cy="56.04" r="6.67"/> 
+            <circle cx="283.68" cy="71.60" r="6.67"/> 
+            <circle cx="276.12" cy="87.60" r="6.67"/> 
+            <circle cx="252.42" cy="111.05" r="6.67"/> 
+            <circle cx="306.88" cy="71.92" r="6.67"/> 
+            <circle cx="244.99" cy="127.84" r="6.67"/> 
+            <circle cx="271.98" cy="108.23" r="6.67"/> 
+            <circle cx="298.96" cy="88.63" r="6.67"/> 
+            <circle cx="291.03" cy="106.18" r="6.67"/> 
+            <circle cx="320.10" cy="89.72" r="6.67"/> 
+            <circle cx="266.31" cy="129.49" r="6.67"/> 
+            <circle cx="311.47" cy="107.78" r="6.67"/> 
+            <circle cx="284.50" cy="128.13" r="6.67"/> 
+            <circle cx="330.84" cy="109.11" r="6.67"/> 
+            <circle cx="302.40" cy="127.12" r="6.67"/> 
+            <circle cx="257.45" cy="149.24" r="6.67"/> 
+            <circle cx="320.92" cy="128.61" r="6.67"/> 
+            <circle cx="338.91" cy="129.76" r="6.67"/> 
+            <circle cx="275.59" cy="150.64" r="6.67"/> 
+            <circle cx="292.78" cy="150.13" r="6.67"/> 
+            <circle cx="309.86" cy="149.75" r="6.67"/> 
+            <circle cx="327.10" cy="150.63" r="6.67"/> 
+            <circle cx="344.18" cy="151.29" r="6.67"/> 
+            <circle cx="263.07" cy="173.35" r="6.67"/> 
+            <circle cx="279.78" cy="173.34" r="6.67"/> 
+            <circle cx="296.48" cy="173.34" r="6.67"/> 
+            <circle cx="313.17" cy="173.34" r="6.67"/> 
+            <circle cx="329.85" cy="173.34" r="6.67"/> 
+            <circle cx="346.53" cy="173.34" r="6.67"/> 
+        </g>
+    </g>
+</svg>

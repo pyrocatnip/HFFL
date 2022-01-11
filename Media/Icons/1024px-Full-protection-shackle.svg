@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" viewBox="0 0 20 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round">
+        <!--Shackle-->
+        <rect x = "5" y="1.25" width = "10" height = "15" rx = "5" ry = "5" fill = "none" stroke = "#808080" stroke-width = "2.5"/>
+        <!--Body-->
+        <rect x = "2.5" y = "7.5" width ="15" height = "12.5" rx = "1.25" ry = "1.25" style="fill:#988000"/>
+        <!--'F'-->
+        <path d="M 0,0 h 7.5 v 2 h -5 v 1.75 h 4 v 1.75 h -4 v 2.5 h -2.5" fill = "#fff" transform = "translate(6.25 10)"/>
+</svg>
