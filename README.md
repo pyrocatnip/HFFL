@@ -17,6 +17,10 @@ All content used from MediaWiki or Wikipedia are attributed as necessary.
 Included is a dev plan as well as a log for what changes have been/need to be made in this project.
 
 # Version History
-1.0.0-alpha `Current Version`
+1.0.0-Alpha `Current Version`
 
   * First version uploaded of the repository. For full list of changes see <a href="https://github.com/pyrocatnip/HFFL/releases/tag/1.0.0-alpha">here</a>.
+
+1.0,1-Alpha
+
+   *
