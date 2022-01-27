@@ -22,4 +22,3 @@ Included is a dev plan as well as a log for what changes have been/need to be ma
   * First version uploaded of the repository. For full list of changes see <a href="https://github.com/pyrocatnip/HFFL/releases/tag/1.0.0-alpha">here</a>.
 
 1.0,1-Alpha
-*
