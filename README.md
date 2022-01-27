@@ -1,6 +1,8 @@
 # Hyojin's Fantasy Football League Wiki Project
 This is the official Github for Hyojin's Fantasy Football Legaue.
 
+<h1>CURRENTLY FIXING MAJOR ERRORS IN FORMATTING</h1>
+
 This project is based on the <a href="https://hffl.fandom.com">HFFL fandom</a> wiki. I have chosen to build my own wiki from scratch because I was unhappy with a handful of serious limitation in place on Fandom wiki, and because I wanted to customize the UI more to my liking and to be more fitting with the subject matter.
 
 This repository will be the home for the wiki until completion has reached a level of implementation onto a website. Additional notes will be made regarding progress with SQL and the implementation of the MediaWiki and VisualEditor software, which once added should make development much easier.
