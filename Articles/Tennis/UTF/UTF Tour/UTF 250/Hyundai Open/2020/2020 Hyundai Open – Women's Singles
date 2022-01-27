@@ -6,7 +6,7 @@
     <meta name="robots" contnet="index, nofollow">
     <meta name="author" content="Hyojin Choi">
     <meta name="description" content="Navigation page">
-    <meta name="keywords" content="Tennis,Tennis tournament, UTF, United Tennis Federation, UTF Tour">
+    <meta name="keywords" content="Tennis,Tennis tournament, UTF, United Tennis Federation, UTF Tour, Hyundai Open">
     <link rel="stylesheet" type="text/css" href="/Users/zchod/Documents/HFFL/styles.css">
     <title>2020 Hyundai Open – Women's Singles</title>
     <link rel="icon"
@@ -75,13 +75,14 @@
                                         <b>S. Yoon</b>
                                     </th>
                                 </tr>
-                            </tbody>
-                    </td>
-                    <td style="padding: 0.25em; border: 1px solid #aaa">
-                        <b>6</b>
-                    </td>
-                    <td style="padding: 0.25em; border: 1px solid #aaa">
-                        <b>6</b>
+                                <tr>
+                                    <td style="padding: 0.25em; border: 1px solid #aaa">
+                                        <b>6</b>
+                                    </td>
+                                    <td style="padding: 0.25em; border: 1px solid #aaa">
+                                        <b>6</b>
+                                    </td>
+                                </tr>
                     </td>
                 </tr>
                 <tr>
@@ -251,27 +252,32 @@
                 <li class="toclevel-1">
                     <span class="tocnumber">1.</span>
                     <a class="toclink" href="#Venue">
-                        <span class="toctext">Venue</span>
+                        <span class="toctext">
+                            Venue
+                        </span>
                     </a>
                 </li>
                 <li class="toclevel-1" style="padding: none; margin-bottom: none">
                     <span class="tocnumber">2.</span>
                     <a class="toclink" href="#Entrants">
-                        <span class="toctext">Entrants</span>
+                        <span class="toctext">
+                            Entrants
+                        </span>
                     </a>
                 </li>
                 <li>
                     <ul>
-                        <li class="toclevel-2" style="font-size: 110%; padding: none">
-                            <span class="tocnumber">2.1.</span>&nbsp;
+                        <li class="toclevel-2">
+                            <span class="tocnumber">
+                                2.1.
+                            </span>
                             <a class="toclink" href="#Other Entrants">
-                            <span class="toctext">Other Entrants</span>
+                                <span class="toctext">
+                                    Other Entrants
+                                </span>
                             </a>
                         </li>
-                    </ul>
-                <li>
-                    <ul>
-                        <li class="toclevel-3" style="font-size: 115%; padding: none">
+                        <li class="toclevel-2">
                             <span class="tocnumber">
                                 2.2.
                             </span>
@@ -293,51 +299,54 @@
                         </li>
                     </ul>
                 </li>
-                <ul>
-                    <li>
-                        <span class="tocnumber">
-                            3.
-                        </span>
-                        <a class="toclink" href="#Draw">
+                <span class="tocnumber">
+                    3.
+                </span>
+                <a class="toclink" href="#Draw">
                             <span class="toctext">
                                 Draw
                             </span>
-                        </a>
-                    <li>
+                </a>
                     <li class="toclevel-2">
                         <span class="tocnumber">
-                                3.2.
+                            3.1.
                         </span>
-                        <a class="toclink">
-                            <a class="toclink" href="#Wild Card Draw">
-                                <span class="toctext">
-                                    Wild Card Draw
-                                </span>
-                            </a>
+                        <a class="toclink" href="#Wild Card Draw">
+                            <span class="toctext">
+                                Wild Card Draw
+                            </span>
                         </a>
                     </li>
+                    <li class="toclevel-2">
+                        <span class="tocnumber">
+                            3.2.
+                        </span>
+                        <a class="toclink" href="#Section A">
+                            <span class="toctext">
+                                Section A
+                            </span>
+                        </a>
                     </li>
-                        <li class="toclevel-2">
-                            <span class="tocnumber">
-                                3.3.
+                    <li class="toclevel-2">
+                        <span class="tocnumber">
+                            3.3.
+                        </span>
+                        <a class="toclink" href="#Section B">
+                            <span class="toctext">
+                                Section B
                             </span>
-                            <a class="toclink" href="#Section A">
-                                <span class="toctext">
-                                    Section A
-                                </span>
-                            </a>
-                        </li>
-                        <li class="toclevel-2">
-                            <span class="tocnumber">
-                                3.4.
+                        </a>
+                    </li>
+                    <li class="toclevel-2">
+                        <span class="tocnumber">
+                            3.4.
+                        </span>
+                        <a class="toclink" href="#Section C">
+                            <span class="toctext">
+                                Section C
                             </span>
-                            <a class="toclink" href="#Section B">
-                                <span class="toctext">
-                                    Section B
-                                </span>
-                            </a>
-                        </li>
-                </ul>
+                        </a>
+                    </li>
                 <li class="toclevel-1">
                     <span class="tocnumber">
                         4.
@@ -390,6 +399,7 @@
                 </li>
             </ul>
         </div>
+        <!--Article-->
             <h1 id="Venue">Venue</h1>
         <p>
             The Hyundai Open is currently held at <a href="Frederick Douglass Stadium">Frederick Douglass Stadium</a>,
@@ -774,6 +784,7 @@
             <h4 id="Withdraws">Withdraws</h4>
         <h1 id="Draw">Draw</h1>
         <h2 id="Draw Key">Key</h2>
+            <!--Draw Key table-->
             <table border="1px"
                 style="border-collapse:collapse; background: white; font-weight: bold; border-color:#aaa; margin: auto; border-radius: 0px; margin-bottom:0.5em;"
                 cellpadding="5" cellspacing="0">
