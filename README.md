@@ -18,7 +18,7 @@ All content used from MediaWiki or Wikipedia are attributed as necessary.
 Included is a dev plan as well as a log for what changes have been/need to be made in this project.
 
 # Version History
-1.0.0-Alpha `Current Version`
+1.0.0
 
   * First version uploaded of the repository. For full list of changes see <a href="https://github.com/pyrocatnip/HFFL/releases/tag/1.0.0-alpha">here</a>.
 
@@ -27,6 +27,10 @@ Included is a dev plan as well as a log for what changes have been/need to be ma
   * Added new files and updated existing files
   * Formatting fixes
 
-1.0.2
+1.0.2 `CURRENT VERSION`
 
-  * MAJOR ERRORS
+  * MAJOR ERRORS corrected
+  * Made multiple formatting/structrual changes and improvements
+  * Fixed an error with the subbox in the infobox of the 2020 Hyundai Open Women's Singles event file to be on the same row
+
+1.0.3
