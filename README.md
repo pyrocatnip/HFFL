@@ -37,4 +37,4 @@ Included is a dev plan as well as a log for what changes have been/need to be ma
 
 <h1>Project Wiki</h1>
 
-For more information on the development see the <a href="Wiki">wiki</a>.
+For more information on the development visit the <a href="https://github.com/pyrocatnip/HFFL/wiki"> project wiki</a>.
