@@ -29,4 +29,8 @@ Included is a dev plan as well as a log for what changes have been/need to be ma
 
 1.0.2
 
-  * MAJOR ERRORS
+  * MAJOR ERRORS corrected
+  * Made multiple formatting/structrual changes and improvements
+  * Fixed an error with the subbox in the infobox of the 2020 Hyundai Open Women's Singles event file to be on the same row
+
+1.0.3
