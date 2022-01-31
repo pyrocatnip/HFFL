@@ -34,3 +34,7 @@ Included is a dev plan as well as a log for what changes have been/need to be ma
   * Fixed an error with the subbox in the infobox of the 2020 Hyundai Open Women's Singles event file to be on the same row
 
 1.0.3
+
+<h1>Project Wiki</h1>
+
+For more information on the development visit the <a href="https://github.com/pyrocatnip/HFFL/wiki"> project wiki</a>.
