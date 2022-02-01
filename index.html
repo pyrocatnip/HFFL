@@ -1,129 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Hyojin's Fantasy Football League
-        </title>
-        <meta name="content-language" content="en-us">
-        <meta name="content-type" content="text/html;charset=UTC-8">
-        <meta name="robots" contnet="index, nofollow">
-        <link rel="stylesheet" type="text/css" href="Styles.css">
-    </head>
-    <body class="ext_bg">
-        <h1 class="firstHeading">
-            Hyojin's Fantasy Football League Wiki
-        </h1>
-        <h2 style="text-align: center; font-size: 115%">
-            Welcome to the official wiki for Hyojin's Fantasy Football League
-        </h2>
-    <!--Navbox-->
-    <table class="navbox" style="width: 100%; padding: 10px; border: 2px solid #9A7611">
-        <thead>
-            <tr>
-                <th colspan="99">
-                   Navigation
-                </th>
-            </tr>
-        </thead>
-        <!--Navigation  -->
-        <tbody>
-            <tr>
-                <th class="navbox" colspan="2" style="background #B">
-                    NFL
-                </th>
-            </tr>
-            <tr class="navbox">
-                <th class="navbox-label">
-                    Conferences
-                </th>
-                <td class="navbox-data">
-                    <a href="American Football Conference.html">American Football Conference</a>
-                    •
-                    <a href="National Football Conference.html">National Football Conference</a>
-                </td>
-            </tr>
-        </tbody>
+<!--<!DOCTYPE html>-->
+<html lang="en-us">
+  <meta name="content-language" content="en-us">
+  <meta name="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" contnet="index, nofollow">
+  <meta name="author" content="Hyojin Choi">
+  <meta name="description" content="Article">
+  <meta name="keywords"
+    content="NFL, HFFL, Football, American Football, Tampa Bay Buccaneers, Quarterbacks, Korean-Americans">
+  <link rel="stylesheet" href="C:/Users/zchod/Documents/HFFL/Styles.css">
+  <title>HFFL</title>
+  <link rel="icon" type="image/x-icon"
+    href="/Users/zchod/Documents/HFFL/Media/Sports/NFL/Tampa_Bay_Buccaneers_logo.svg">
+  <body>
+    <h1 class="firstHeading">Hyojn's Fantasy Football League</h1>
+    <p style="font-size: 125%; font-weight: bold; text-align: center">Welcome to the official wiki for Hyojin's Fanatasy Football League</p>
+    <table class="footer">
+      <tbody>
+        <tr>
+          <td>
+            <a href="https://www.github.com/pyrocatnip/HFFL" title="GitHub repository">
+              <img src="/Users/zchod/Documents/GitHub/HFFL Wiki/Media/Icons/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" height="20px">
+            </a>
+            GitHub
+          </td>
+          <td>
+            <img src="Media"
+          </td>
+        </tr>
+      </tbody>
     </table>
-</html>
-
-<div class="tab">
-    <button class="tablinks" onclick="openNav(event, 'NFL')">NFL</button>
-    <button class="tablinks" onclick="openNav(event, 'NCAA')">NCAA</button>
-    <button class="tablinks" onclick="openNav(event, 'Countries')">Countries</button>
-  </div>
-  <div id="NFL" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-    <span onclick="this.parentElement.style.display='none'">x</span>
-  </div>
-  <div id="NCAA" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
-    <span onclick="this.parentElement.style.display='none'">x</span>
-  </div>
-  <div id="Countries" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-    <span onclick="this.parentElement.style.display='none'">x</span>
-  </div>
-</div>
-
-<script>
-    function openNav(evt, _category) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-  </div>
-  
-  <div id="London" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-  </div>
-  
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p> 
-  </div>
-  
-  <div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  
-  <script>
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  </script>  
+  </body>

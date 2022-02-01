@@ -578,9 +578,9 @@ embed {
     bottom:0;
     font-size: smaller;   
     width: 100%;
-    margin-top: 25px;
-    color: #FFF
-    }
+    margin-top: -25px;
+    color: #FFF;
+}
 
 /* Mbox */
 .mbox {
