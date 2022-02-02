@@ -27,6 +27,7 @@ html {
     font-family: rubik, helvetica, arial, sans-serif;
     padding-left: inherit;
     padding-right: 0.25em;
+    line-height: 1.15em;
 }
 h1.firstHeading {
     font-size: 150%;
@@ -40,7 +41,7 @@ body {
     padding: 10px;
     border-radius: 20px;
     font-size: 100%;
-    line-height: 1.5em;
+    line-height: 1.15em;
     min-height: 100%;
 }
 p.summary {
@@ -155,7 +156,7 @@ ul.ul-toc {
     border-radius: 20px;
     color: #FFF;
     text-align: left;
-    font-size: 85%;
+    font-size: 95%;
     align: right;
     padding: 0.5em;
 }
