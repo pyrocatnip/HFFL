@@ -90,6 +90,9 @@ th {
     color: black;
     font-weight: bold;
 }
+td {
+    padding: 0px;
+}
 thead {
     text-align: center;
     font-weight: bold;
@@ -357,9 +360,10 @@ sortable		{}
     color: inherit;
     border: none;
     background: ccccff;
+    border: 0px
 }
-th.navbox {
-    border-radius: 9px; 
+.navbox-header {
+    border-radius: 20px; 
     margin-right: 2px; 
     margin-left: 2px; 
     border-bottom-left-radius: 0px;
@@ -375,14 +379,6 @@ th.navbox {
 .navbox-data:nth-child(odd) {
     background: #F7F7F7;
 }
-.navbox-header {
-    border-radius: 20px;
-    margin-right: 2px;
-    margin-left: 2px;
-    width: 18%;
-    font-weight: bold;
-    color: inherit;
-}
 .navbox-header-top {
     border-radius: 9px;
     margin-right: 2px;
@@ -394,10 +390,10 @@ th.navbox {
     border-bottom-right-radius: 0px;
 }
 .navbox-label {
-    border-radius: 9px; 
+    border-radius: 20px; 
     margin-right: 2px;
     margin-left: 2px;
-    width: 18%; 
+    width: 28%; 
     font-weight: bold;
     color: inheirt;
     border-top-right-radius: 0px;
@@ -413,13 +409,21 @@ th.navbox {
     border-radius: 9px; 
     margin-right: 2px;
     margin-left: 2px;
-    width: 40%; 
+    width: 82%; 
     font-weight: bold;
     padding-left: 0.5em;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px
 }
+.navbox-data-first {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
 
+.navbox-buccaneers {
+    background: #A71930;
+    border: 1px solid;
+}
 /*Tabs */
 .tab {
     overflow: hidden;
