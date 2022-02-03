@@ -134,18 +134,24 @@ h3#mw-toc-heading {
 }
 ul {
     margin-top: 0px;
+    line-height: 1em;
 }
 li,
 li.toc {
     padding: 0px;
     margin-top: 0.25em;
     margin-bottom: 0px;
-    line-height: 1.5em
+    line-height: 1.15em;
 }
 ul.ul-toc {
     font-size: 85%;
     border-radius: 20px;
     padding: 0.25em;
+    line-height: 1.5em;
+}
+.ul-toclevel-2 {
+    margin-left: 0.5em;
+    line-height: 1.5em;
 }
 
 /* Infobox templates */
@@ -156,9 +162,11 @@ ul.ul-toc {
     border-radius: 20px;
     color: #FFF;
     text-align: left;
-    font-size: 85%;
+    font-size: 90   %;
     align: right;
     padding: 0.5em;
+    min-width: 22em;
+    max-width: 22em;
 }
 .caption .infobox-title,
 .infobox-caption,
@@ -170,6 +178,12 @@ ul.ul-toc {
     border-radius: 20px;
     background: none;
     padding: 0.25em;    
+}
+.infobox-subtitle {
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    background: none;
 }
 th.infobox-header,
 .infobox-header {
@@ -183,11 +197,6 @@ th.infobox-header,
     font-size: 95%;
     vertical-align: middle;
     min-width: 100%;
-}
-.infobox-subheader {
-    text-align: center;
-    color: #FFF;
-    border: none;
 }
 .infobox-label,
 .infobox-subbox.label {
@@ -234,9 +243,13 @@ th.infobox-header,
     border-radius: 20px;
     width: fit-content;
     padding-left: 2em;
-    font-size: 94%;
+    font-size: 90%;
+    line-height: 1.15em;
+    padding-bottom: 0.05em;
 }
-
+.infobox-list {
+    font-size: smaller
+}
 .infobox-img-caption,
 img.caption {
     font-size: smaller;
@@ -762,6 +775,24 @@ ul#footer {
         border-image-width: initial;
         border-image-outset: initial;
         border-image-repeat: initial;
+}
+
+.sidebar {
+    width: 22em;
+    float: right;
+    clear: right;
+    margin: 0.5em 0 1em 1em;
+    background: #0c0c0c;
+    border: 1px solid #aaa;
+    padding: 0.2em;
+    text-align: center;
+    line-height: 1.15em;
+    font-size: 88%;
+    border-collapse: collapse;
+    display: table;
+    border-radius: 20px;
+    max-width: 22em;
+    min-width: 22em;
 }
 
 /*
