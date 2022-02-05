@@ -157,6 +157,27 @@ ul.ul-toc {
     line-height: 1.5em;
 }
 
+/* Description List */
+dl {
+    line-height: 1.15em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0.1em;
+    padding-bottom: 0.15em;
+}
+dt {
+    line-height: 1.15em;
+    font-weight: bold;
+}
+.hlist.dd {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
 /* Infobox templates */
 .infobox {
     background: #0c0c0c;
