@@ -41,11 +41,12 @@ body {
     padding: 10px;
     border-radius: 20px;
     font-size: 100%;
-    line-height: 1.15em;
+    line-height: 1.5em;
     min-height: 100%;
 }
 p.summary {
     margin-left: 0.5em;
+    font-size: smaller;
 }
 title {
     font-weight: bold;
@@ -86,6 +87,7 @@ table {
     border: 2px solid white;
     color: black;
     text-align: center; 
+    line-height: 1.15em;
 }
 th {
     color: black;
@@ -104,6 +106,7 @@ p {
     padding: 0px;
     margin-top: 0.5em;
     margin-bottom: 0.5px;
+    line-height: 1.5em;
 }
 img {
     vertical-align: middle;: 
@@ -147,10 +150,10 @@ ul.ul-toc {
     font-size: 85%;
     border-radius: 20px;
     padding: 0.25em;
-    line-height: 1.5em;
 }
-.ul-toclevel-2 {
-    margin-left: 0.5em;
+.toclevel-2 {
+    margin-left: 0.75em;
+    padding-left: 0.5em;
     line-height: 1.5em;
 }
 
