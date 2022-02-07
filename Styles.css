@@ -18,6 +18,7 @@ main.page_main {
     padding: 0.5em;
     padding-top: 0.25px;
     font-family: default;
+    font-size: 100%;
 }
 html {
     background: #24135F;
@@ -28,12 +29,14 @@ html {
     padding-left: inherit;
     padding-right: 0.25em;
     line-height: 1.15em;
+    font-size: 100%;
 }
 h1.firstHeading {
     font-size: 150%;
     border-bottom: 2px solid #FFF;
     padding: 0.25em;
     text-align: center;
+    margin-bottom: 0.5em;
 }
 body {
     background: #000;
@@ -45,8 +48,7 @@ body {
     min-height: 100%;
 }
 p.summary {
-    margin-left: 0.5em;
-    font-size: smaller;
+        font-size: normal;  
 }
 title {
     font-weight: bold;
@@ -58,7 +60,8 @@ h3,
 h4 {
     padding-bottom: 0.25em;
     margin-bottom: 0.25em;
-    padding: 0px
+    padding: 0px;
+    font-family: 'Samsung Sharp Sans';
 }
 h1 {
     color: #FFF;    
@@ -66,6 +69,7 @@ h1 {
     border-bottom: 2px solid;
     padding-bottom: 0.25em;
     font-size: 21px;
+    font-family: 'Samsung Sharp Sans';
 }
 h2 {
     color: #FFF;
@@ -191,6 +195,7 @@ dt {
     padding: 0.5em;
     min-width: 22em;
     max-width: 22em;
+    margin-left: 0.25em;
 }
 .caption .infobox-title,
 .infobox-caption,
@@ -218,7 +223,7 @@ th.infobox-header,
     width: 100%;
     font-weight: bold;
     text-align: center;
-    font-size: 95%;
+    font-size: 13px;
     vertical-align: middle;
     min-width: 100%;
 }
@@ -231,7 +236,7 @@ th.infobox-header,
     text-align: left;
     background: none;
     vertical-align: top;
-    font-size: 95%;
+    font-size: 13px;
     padding-left: 0.25em;
 }
     .infobox-subbox-label {
@@ -266,8 +271,8 @@ th.infobox-header,
     text-align: left;
     border-radius: 20px;
     width: fit-content;
-    padding-left: 2em;
-    font-size: 90%;
+    padding-left: 0.5em;
+    font-size: 13px;
     line-height: 1.15em;
     padding-bottom: 0.05em;
 }
@@ -298,7 +303,7 @@ img.caption {
         border-bottom: 1px solid #FFF;
         background: #0c0c0c;
         border: none;
-        width: 100%
+        width: 100%;
         border-radius: 20px;
         color: #FFF;
         text-align: center;
@@ -306,9 +311,10 @@ img.caption {
         border-spacing: 0px;
         margin: 0px;
         clear: none;
-        float: none; 
+        float: none;
+        padding-left: 0.25em;
+        padding-right: 0.25em; 
     }
-
     .infobox-subbox.caption {
         font-size: 100%;
         background: #ccf;
@@ -316,11 +322,14 @@ img.caption {
         color: black;
         font-weight: bold;    
     }
-
+    .infobox-subbox-header {
+        background: none;
+        color: white;
+        font-size: 13px;
+    }
     .infobox-subbox-data {
         font-size: 95%;
     }
-
     /* Infobox list */
     ul.infobox-ul,
     li.infobox-li {
