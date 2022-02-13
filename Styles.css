@@ -11,6 +11,10 @@ hsx = sorting ends here
 hsi = ignore this line when sorting
 */
 /* Body style */
+html,
+body {
+    height: 100%;
+}
 div.page,
 main.page_main {
     background: inherit;
@@ -18,7 +22,6 @@ main.page_main {
     padding: 0.5em;
     padding-top: 0.25px;
     font-family: default;
-    font-size: 100%;
 }
 html {
     background: #24135F;
@@ -27,28 +30,29 @@ html {
     height: 100%;
     font-family: rubik, helvetica, arial, sans-serif;
     padding-left: inherit;
-    padding-right: 0.25em;
     line-height: 1.15em;
-    font-size: 100%;
+    min-height: 100%;
+    padding-right: 0.25em;   
 }
 h1.firstHeading {
     font-size: 150%;
     border-bottom: 2px solid #FFF;
     padding: 0.25em;
     text-align: center;
-    margin-bottom: 0.5em;
 }
 body {
     background: #000;
     border: 2px solid #9A7611;
-    padding: 10px;
+    padding: 1.5em;
     border-radius: 20px;
     font-size: 100%;
     line-height: 1.5em;
-    min-height: 100%;
+    min-height: 150%;
+    padding-right: 1em;
 }
 p.summary {
-        font-size: normal;  
+    margin-left: 0.5em;
+    font-size: normal;
 }
 title {
     font-weight: bold;
@@ -99,6 +103,7 @@ th {
 }
 td {
     padding: 0px;
+    padding-bottom: 0.25em;
 }
 thead {
     text-align: center;
@@ -111,6 +116,11 @@ p {
     margin-top: 0.5em;
     margin-bottom: 0.5px;
     line-height: 1.5em;
+}
+p.portal {
+    color: #FFF;
+    font-size: 95%;
+    line-height: 1.15em;
 }
 img {
     vertical-align: middle;: 
@@ -155,11 +165,6 @@ ul.ul-toc {
     border-radius: 20px;
     padding: 0.25em;
 }
-.toclevel-2 {
-    margin-left: 0.75em;
-    padding-left: 0.5em;
-    line-height: 1.5em;
-}
 
 /* Description List */
 dl {
@@ -190,12 +195,13 @@ dt {
     border-radius: 20px;
     color: #FFF;
     text-align: left;
-    font-size: 90   %;
+    font-size: 95%;
     align: right;
-    padding: 0.5em;
+    padding: 0.75em;
     min-width: 22em;
     max-width: 22em;
-    margin-left: 0.25em;
+    line-height: 1.5em;
+    margin-left: 1em;
 }
 .caption .infobox-title,
 .infobox-caption,
@@ -213,6 +219,7 @@ dt {
     text-align: center;
     color: #FFF;
     background: none;
+    font-size: 125%;
 }
 th.infobox-header,
 .infobox-header {
@@ -223,7 +230,7 @@ th.infobox-header,
     width: 100%;
     font-weight: bold;
     text-align: center;
-    font-size: 13px;
+    font-size: 95%;
     vertical-align: middle;
     min-width: 100%;
 }
@@ -236,8 +243,9 @@ th.infobox-header,
     text-align: left;
     background: none;
     vertical-align: top;
-    font-size: 13px;
+    font-size: 95%;
     padding-left: 0.25em;
+    white-space: nowrap;
 }
     .infobox-subbox-label {
     text-align: center;
@@ -271,8 +279,7 @@ th.infobox-header,
     text-align: left;
     border-radius: 20px;
     width: fit-content;
-    padding-left: 0.5em;
-    font-size: 13px;
+    padding-left: 2em;
     line-height: 1.15em;
     padding-bottom: 0.05em;
 }
@@ -303,7 +310,7 @@ img.caption {
         border-bottom: 1px solid #FFF;
         background: #0c0c0c;
         border: none;
-        width: 100%;
+        width: 100%
         border-radius: 20px;
         color: #FFF;
         text-align: center;
@@ -311,10 +318,9 @@ img.caption {
         border-spacing: 0px;
         margin: 0px;
         clear: none;
-        float: none;
-        padding-left: 0.25em;
-        padding-right: 0.25em; 
+        float: none; 
     }
+
     .infobox-subbox.caption {
         font-size: 100%;
         background: #ccf;
@@ -322,14 +328,11 @@ img.caption {
         color: black;
         font-weight: bold;    
     }
-    .infobox-subbox-header {
-        background: none;
-        color: white;
-        font-size: 13px;
-    }
+
     .infobox-subbox-data {
         font-size: 95%;
     }
+
     /* Infobox list */
     ul.infobox-ul,
     li.infobox-li {
@@ -460,7 +463,7 @@ sortable		{}
     font-weight: bold;
     padding-left: 0.5em;
     border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px
+    border-bottom-left-radius: 0px;
 }
 .navbox-data-first {
     border-top-left-radius: 0px;
@@ -809,13 +812,12 @@ ul#footer {
         border-image-outset: initial;
         border-image-repeat: initial;
 }
-
 .sidebar {
     width: 22em;
     float: right;
     clear: right;
     margin: 0.5em 0 1em 1em;
-    background: #0c0c0c;
+    background: #FFF;
     border: 1px solid #aaa;
     padding: 0.2em;
     text-align: center;
@@ -826,8 +828,44 @@ ul#footer {
     border-radius: 20px;
     max-width: 22em;
     min-width: 22em;
+    border: none;
+    vertical-align: center;
+    font-size: smaller;
 }
-
+.sidebar-pretitle {
+    padding: 0.4em 0.4em 0;
+    line-height: 1.2em;
+}
+.sidebar-title-with-pretitle {
+    padding: 0.1em 0.4em;
+    padding-top: 0.2em;
+    background: #ccf;
+    font-size: 125%;
+    padding-bottom: 0.25em;
+}
+.sidebar-above {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+    margin-top: 1em;
+    padding: 0.05em;
+}
+.sidebar-list-title {
+    padding: 0 0.4em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6em;
+    font-size: 105%;
+    background: #CCF;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.sidebar-content {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 /*
 Common CSS for all skins
 See https://phabricator.wikimedia.org/M82 for standard colors 
@@ -1044,11 +1082,13 @@ div.RTL * ol {
  * @revision 6 (2014-05-09)
  * @author [[User:Edokter]]
  */
+.hlist,
 .hlist dl,
 .hlist ol,
 .hlist ul {
-    margin: 0;
-    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0em;
 }
 /* Display list items inline */
 .hlist dd,
@@ -1076,12 +1116,14 @@ div.RTL * ol {
     content: ": ";
 }
 .hlist dd:after,
-li::after,
-.hlist li::after {
-    content:  ' • ',
-    font-weight: bold,
+.hlist li:after {
+    content: " • ";
+    font-weight: bold;
 }
-
+.hlist dd:last-child, 
+.hlist li:last-child {
+    content: none;
+}
 .hlist dd:last-child:after,
 .hlist dt:last-child:after,
 .hlist li:last-child:after {
@@ -1655,94 +1697,72 @@ table.mw-babel-wrapper {
     width:250px;
     border-spacing:2px;
 }
-
 .mw-babel-notabox {
     margin-left: auto;
     margin-right: auto;
     width: 238px;
 }
-
 .mw-babel-box-level-N  {
         display: none;
 }
-
 div.mw-babel-box table th  {
         font-family: sans-serif;
         text-align:center;
 }
-
 div.mw-babel-box table td a {
         font-weight: bold;
 }
-
 div.mw-babel-box-N  {
         border:solid #6EF7A7 1px;
 }
-
 div.mw-babel-box-4  {
         border:solid #77E0E8 1px;
 }
-
 div.mw-babel-box-3  {
         border:solid #99B3FF 1px;
 }
-
 div.mw-babel-box-2  {
         border:solid #BCB9EF 1px;
 }
-
 div.mw-babel-box-1  {
         border:solid #E0C0E0 1px;
 }
-
 div.mw-babel-box-0  {
         border:solid #FFBBBB 1px;
 }
-
 div.mw-babel-box-N table  {
         background-color: #C5FCDC;
 }
-
 div.mw-babel-box-4 table {
         background-color: #D0F8FF;
 }
-
 div.mw-babel-box-3 table  {
         background-color: #E0E8FF;
 }
-
 div.mw-babel-box-2 table {
         background-color: #E9E5F9;
 }
-
 div.mw-babel-box-1 table {
         background-color: #F3E0F3;
 }
-
 div.mw-babel-box-0 table {
         background-color: #FFEEEE;
 }
-
 div.mw-babel-box-N table th  {
         background-color: #6EF7A7;
 }
-
 div.mw-babel-box-4 table th {
         background-color: #77E0E8;
 }
-
 div.mw-babel-box-3 table th  {
         background-color: #99B3FF;
 }
-
 div.mw-babel-box-2 table th {
         background-color: #BCB9EF;
 }
-
 div.mw-babel-box-1 table th {
         background-color: #E0C0E0;
 }
-
 div.mw-babel-box-0 table th {
         background-color: #FFBBBB;
 }
@@ -1852,6 +1872,13 @@ th.wikitable-header {
     font-weight: bold;  
     padding: 0.25em;
 }
+.wikitable-header-Ravens {
+    background: #24125F;
+    border: 2px solid #9A7611;
+    font-weight: bold;
+    color: #FFF;
+    padding: 0.25em;
+}
 .wikitable-data,
 td.wikitable-data {
     background: #f8f9fa;
@@ -1860,11 +1887,19 @@ td.wikitable-data {
     width: fit-content;
     font-size: normal;
     padding: 0.25em;
+    text-align: left;
+    padding-left: 0.5em;
 }
 .wikitable-footer {
     background: #f2f2f2;
     font-size: smaller;
 }
+.wikitable-label {
+    background: #000;
+    font-weight: bold;
+    color: #FFF;
+}   
+
 /* NFL team color wikitable */
 .wikitable-data-bengals {
     color: #000;
@@ -1881,6 +1916,10 @@ td.wikitable-data {
     color: #000;
     font-weight: bold;
 }
+.wikitable-Ravens {
+    border: 1px solid #9A7611;
+    border-collapse: collapse;
+}
 
 /* Table of Contents */
 .toc, 
@@ -1889,7 +1928,6 @@ td.wikitable-data {
     background-color: #0c0c0c;
     padding: 0.25em;
     font-size: 100%;
-    width: fit-content;
     min-width: 10em;
     max-width: 18em;
     white-space: normal;
@@ -1898,6 +1936,8 @@ td.wikitable-data {
     display: table;
     padding-bottom: 0px;
     margin: 0.25em;
+    line-height: 1.5em;
+    white-space: nowrap;
 }
 h3#mw-toc-heading,
 .mw-toc-heading,
@@ -1912,21 +1952,38 @@ h3#mw-toc-heading,
     padding-top: 0.25px;
     vertical-align: middle;
 }
+.toclevel-1,
+.toclevel-2,
+.toclevel-3,
+.toclevel-4,
+.toclevel-5,
+.toclevel-6,
+.toclevel-7 {
+    line-height: 1.5em;
+    padding: 0.1em;
+    padding-right: 0.25em;
+}
+
+.toclevel-1 {
+    font-size: 13px;
+}
+.toclevel-2 {
+    font-size: 12.5px;
+}
 li.toclevel-1,
 li.toclevel-2,
 li.toclevel-3 {
     margin-bottom: 0px;
 }
 li.toclevel-3 {
-    font-size: 11px;
+    font-size: 12px;
 }
 li.toclevel-4 {
-    font-size: 10.5px;
+    font-size: 11.5px;
 }
 .toc ul {
     list-style: none;
     text-align: left;
-    font-size: 85%;
     padding-left: 0.5em;
 }
 .toctogglecheckbox {
