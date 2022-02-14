@@ -1,0 +1,1421 @@
+/* CSS placed here will be applied to all skins */
+/* Note that Common.css does not load in Mobile View. Copy any CSS that you want to also work on mobile into Mobile.css.  */
+/* Note that all CSS variables are falsely flagged as syntax errors, as CodeEditor has yet to be updated to recognize them */
+
+/* 	CONTENTS
+	1.  Variables
+	2.  Global
+	3.  Brand
+	4.  Main Page
+	5.  Links
+	6.  Fonts
+	7.  Images
+	8.  Tables
+	9.  Backgrounds
+	10. Borders
+	11. Boxes
+	12. Grids
+	13. Tabs
+	14. Colors	
+	15. Letter template */
+
+/*==================================================
+  VARIABLES
+==================================================*/
+
+/* Do NOT edit these unless you know exactly what you're doing. These properties are used by many different classes */
+:root {
+	/* Global values for border radius */
+	--default-border-radius: 20px;
+	--template-outer-radius: 15px;	
+	--template-inner-radius: 10px;
+
+	/* NIWA link formatting */
+	--niwa-icon: no-repeat scroll right center transparent;
+	--niwa-padding: 18px;
+
+	/* Primary/Secondary/Tertiary colors */
+	--th-color-primary: var(--th-spring-primary);
+	--th-color-secondary: var(--th-spring-secondary);
+	--th-color-tertiary: var(--th-spring-tertiary);
+	
+	/* Test colors */
+	/* Used for debugging. Please do not remove */
+	--test-red-hs: 0 100%;
+	--test-red-hsl: hsl(0 100% 50%);
+	--test-red-hsla: hsla(0, 100%, 50%, 50);
+	--test-green-hs: 100 100%;
+	--test-green-hsl: hsl(100 100% 50%);
+	--test-green-hsla: hsla(100, 100%, 50%, 50);
+	--test-blue-hs: 250 100%;
+	--test-blue-hsl: hsl(250 100% 50%);
+	--test-blue-hsla: hsla(250, 100%, 50%, 50);
+
+	/* N/A color HSL */
+	--not-applicable: hsl(0 0% 90%); 
+
+	/* Table cell color HSL */
+	--cell-background: hsl(0 0% 100%);
+	
+	/* Template Alpha values */  
+	--opacity-full: 100%;
+	--opacity-high: 80%;
+	--opacity-mid: 60%;
+	--opacity-low: 40%;
+	
+	/* Template Lightness values */
+	--lightness-full: 100%;
+	--lightness-primary: 70%;
+	--lightness-secondary: 85%;
+	--lightness-tertiary: 90%;
+	--lightness-shadow: 40%;
+	--lightness-text: 20%;
+	
+	--lightness-primary-flora: 84%;
+	--lightness-secondary-flora: 93%;
+	--lightness-tertiary-flora: 96%;
+	--lightness-shadow-flora: 50%;
+	--lightness-text-flora: 30%;
+
+	/* Default template Hue & Saturation values */
+	/* DO NOT CHANGE OR REMOVE THIS */
+	--template-color: 0 0%; 
+
+	/* Gender Hue & Saturation values */
+	--male-hs: 214 92%;
+	--female-hs: 306 70%;
+
+	/* Item color Hue & Saturation values */
+	--red-hs: 12 87%;
+	--orange-hs: 32 92%;
+	--yellow-hs: 42 96%;
+	--green-hs: 135 47%;
+	--aqua-hs: 196 50%;
+	--blue-hs: 197 39%;
+	--purple-hs:331 33%;
+	--pink-hs: 11 85%;
+	--beige-hs: 50 54%;
+	--brown-hs: 31 47%;
+	--gray-hs: 0 0%;
+	--black-hs: 0 0%;
+	--white-hs: 0 0%;
+	
+	/* Pocket Camp theme Hue & Saturation values */
+	--civic-hs: 234 50%;
+	--cool-hs: 208 96%;
+	--cute-hs: 345 70%;
+	--elegant-hs: 282 63%;
+	--harmonious-hs: 12 74%;
+	--hip-hs: 30 90%;
+	--historical-hs: 341 45%;
+	--modern-hs: 177 58%;
+	--natural-hs: 44 96%;
+	--rustic-hs: 71 98%;
+	--sporty-hs: 161 93%;
+	--generic-hs: 0 0%;
+	--special-hs: 53 100%;
+	
+	/* Template Hue & Saturation values */
+	--art-hs: 23 61%;
+	--bug-hs: 78 76%;
+	--design-hs: 353 72%;
+	--event-hs: 215 100%;
+	--fashion-hs: 322 49%;
+	--fashion-hs-sub: 320 45%;
+	--film-hs: 318 69%;
+	--fish-hs: 200 100%;
+	--flora-hs: 350 100%;
+	--fossil-hs: 43 74%;
+	--furniture-hs: 106 50%;
+	--gameplay-hs: 163 58%;
+	--gameplay-hs-sub: 160 61%;
+	--geography-hs: 120 50%;
+	--image-hs: 269 74%;
+	--islander-hs: 45 75%;
+	--item-hs: 50 95%;
+	--location-hs: 146 42%;
+	--manga-hs: 318 34%;
+	--merchandise-hs: 193 53%;
+	--minigame-hs: 782 75%;
+	--museum-hs: 60 31%;
+	--music-hs: 0 59%;
+	--nookipedia-hs: 99 45%;
+	--publication-hs: 248 53%;
+	--reaction-hs: 277 57%;
+	--realworld-hs: 60 20%;
+	--seacreature-hs: 215 100%;
+	--special-hs: 81 87%;
+	--species-hs: 276 56%;
+	--ssb-hs: 34 57%;
+	--ssb-hs-sub: 39 77%;
+	--system-hs: 0 0%;
+	--series-hs: 39 100%;
+	--series-hs-sub: 42 73%;
+	--tool-hs: 34 93%;
+	--town-hs: 101 28%;
+	--update-hs: 144 39%;
+	--user-hs: 50 70%;
+	--villager-hs: 195 52%;
+	--season-hs: 96 70%;
+	--spring-hs: 333 83%;
+	--summer-hs: 191 84%;
+	--autumn-hs: 29 87%;
+	--winter-hs: 241 59%;
+
+	/* Item colors HSL */
+	--color-red: hsl(var--(red-hs) 79%);
+	--color-orange: hsl(var--(orange-hs) 80%);
+	--color-yellow: hsl(var--(yellow-hs) 81%);
+	--color-green: hsl(var--(green-hs) 71%);
+	--color-aqua: hsl(var--(aqua-hs) 80%);
+	--color-blue: hsl(var--(blue-hs) 66%);
+	--color-purple: hsl(var--(purple-hs) 73%);
+	--color-pink: hsl(var--(pink-hs) 87%);
+	--color-beige: hsl(var--(beige-hs) 80%);
+	--color-brown: hsl(var--(brown-hs) 80%);
+	--color-gray: hsl(var--(gray-hs) 80%);
+	--color-black: hsl(var--(black-hs) 70%);
+	--color-white: hsl(var--(white-hs) 100%);
+
+	/* Pocket Camp theme colors HSL */
+	--theme-civic: hsl(var--(civic-hs) 80%);
+	--theme-cool: hsl(var--(cool-hs) 80%);
+	--theme-cute: hsl(var--(cute-hs) 80%);
+	--theme-elegant: hsl(var--(elegant-hs) 80%);
+	--theme-harmonious: hsl(var--(harmonious-hs) 80%);
+	--theme-hip: hsl(var--(hip-hs) 80%);
+	--theme-historical: hsl(var--(historical-hs) 80%);
+	--theme-modern: hsl(var--(modern-hs) 80%);
+	--theme-natural: hsl(var--(natural-hs) 80%);
+	--theme-rustic: hsl(var--(rustic-hs) 80%);
+	--theme-sporty: hsl(var--(sporty-hs) 80%);
+	--theme-generic: hsl(var--(generic-hs) 80%);
+	--theme-special: hsl(var--(special-hs) 80%);
+	
+	/* Skin theme colors */
+	/* PLEASE LEAVE HIDDEN MOST OF THESE AREN'T READY TO USE YET */
+	--th-spring-primary: hsl(85 95% 35%);
+	--th-spring-secondary: hsl(95 36% 84%);
+	--th-spring-tertiary: hsl(168 100% 99%);
+	/*--th-summer-primary: hsl();
+	--th-summer-secondary: hsl();
+	--th-autumn-primary: hsl();
+	--th-autumn-secondary: hsl();
+	--th-winter-primary: hsl();
+	--th-winter-secondary: hsl(); 
+	--th-dark-primary: hsl(); 
+	--th-dark-secondary: hsl(); */
+	
+	/* Special theme colors */
+	/* PLEASE LEAVE HIDDEN NONE OF THESE ARE READY TO USE YET */
+	/*--th-halloween-primary: hsl(); 
+	--th-halloween-secondary: hsl(); 
+	--th-pc-primary: hsl(); 
+	--th-pc-secondary: hsl(); 
+	--th-nh-primary: hsl(); 
+	--th-nh-secondary: hsl(); */
+}
+
+/*==================================================
+  GLOBAL
+==================================================*/
+
+/* Causes [[MediaWiki:Tagline]] to display */
+	#siteSub { display:block; font-weight:normal; font-size:small;}
+
+/* Prevent list items in columns from breaking into the next column */
+.list-columns li {
+	page-break-inside: avoid;
+}
+
+/* Allow limiting of which header levels are shown in a TOC.
+   <div class="toclimit-3">, for instance, will limit to showing ==headings== and ===headings=== but no further. */
+.toclimit-2 .toclevel-1 ul,
+.toclimit-3 .toclevel-2 ul,
+.toclimit-4 .toclevel-3 ul,
+.toclimit-5 .toclevel-4 ul {
+	display: none;
+}
+
+/* Toggle mobile and non-mobile content based on resolution */
+@media (min-width: 851px) {
+	.onlymobile {
+		display: none;
+	}
+	.nomobile {
+		display: block;
+	}
+}
+@media (max-width: 850px) {
+	.onlymobile {
+		display: block;
+	}
+	.nomobile {
+		display: none;
+	}
+}
+
+/* No margin */
+.no-margin {
+	margin: 0;
+}
+.no-margin p {
+	margin: 0;
+}
+
+/* Indent hatnotes */
+.hatnote {
+	margin-left: 20px;
+}
+
+/* Remove margin from sitenotice */
+.sitedir-ltr .mw-dismissable-notice-body {
+	margin: 0;
+}
+
+/*==================================================
+  BRAND
+==================================================*/
+
+/* Display Nookipedia text logo */
+.nookipedia-logo {
+	background-image: url(https://dodo.ac/np/images/1/1e/Nookipedia_Logo_Outlined.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* Social media icons */
+.social-icon-facebook {
+	background-image: url(https://dodo.ac/np/images/5/59/Facebook_Icon_Stylized.png);
+	background-size: cover;
+}
+.social-icon-twitter {
+	background-image: url(https://dodo.ac/np/images/4/4a/Twitter_Icon_Stylized.png);
+	background-size: cover;
+}
+.social-icon-instagram {
+	background-image: url(https://dodo.ac/np/images/2/25/Instagram_Icon_Stylized.png);
+	background-size: cover;
+}
+.social-icon-discord {
+	background-image: url(https://dodo.ac/np/images/e/eb/Discord_Icon_Stylized.png);
+	background-size: cover;
+}
+
+/*==================================================
+  MAIN PAGE
+==================================================*/
+
+/* Prevents some things from displaying on the main page */
+body.page-Main_Page #ca-delete, body.page-Main_Page #ca-move, body.page-Main_Page #deleteconfirm, body.page-Main_Page #siteSub, body.page-Main_Page #contentSub, body.page-Main_Page .firstHeading {
+	display: none !important;
+}
+
+/* Main page header images */
+.main-page-header {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/*==================================================
+  LINKS
+==================================================*/
+
+/* Increase space between links on category pages on mobile */
+@media (max-width: 850px) {
+	.mw-category-group li {
+	    line-height: 1.8;
+	}
+}
+
+/* Styling Template:Button */
+.np-button:hover {
+	background-color: #5EA23B !important;
+}
+
+/* Styling links to ARMS Institute */
+#bodyContent a[href^="https://armswiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/8/83/ARMS_Institute_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Bulbapedia */
+#bodyContent a[href^="https://bulbapedia.bulbagarden.net/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/4/4c/Bulbapedia_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Dragalia Lost Wiki */
+#bodyContent a[href^="https://dragalialost.wiki/w"].extiw {
+	background: url("https://dodo.ac/np/images/f/f9/Dragalia_Lost_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Dragon Quest Wiki*/
+#bodyContent a[href^="https://dragon-quest.org/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/5/53/Dragon_Quest_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Fire Emblem Wiki */
+#bodyContent a[href^="https://fireemblemwiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/d/db/Fire_Emblem_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to F-Zero Wiki */
+#bodyContent a[href^="https://mutecity.org/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/8/85/F-Zero_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Golden Sun Universe */
+#bodyContent a[href^="https://goldensunwiki.net/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/4/4f/Golden_Sun_Universe_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Hard Drop Wiki */
+#bodyContent a[href^="https://harddrop.com/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/9/93/Hard_Drop_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Icaruspedia */
+#bodyContent a[href^="https://www.kidicaruswiki.org/"].extiw {
+	background: url("https://dodo.ac/np/images/c/c5/Icaruspedia_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Inkipedia */
+#bodyContent a[href^="https://splatoonwiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/b/ba/Inkipedia_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Lylat Wiki */
+#bodyContent a[href^="https://starfoxwiki.info/"].extiw {
+	background: url("https://dodo.ac/np/images/2/2e/Lylat_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Metroid Wiki */
+#bodyContent a[href^="https://www.metroidwiki.org/wiki/"].extiw {
+	background: url("https://dodo.ac/np/images/3/3f/Metroid_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to NintendoWiki */
+#bodyContent a[href^="https://niwanetwork.org/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/9/91/NintendoWiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Pikipedia */
+#bodyContent a[href^="https://www.pikminwiki.com"].extiw {
+	background: url("https://dodo.ac/np/images/d/da/Pikipedia_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Pikmin Fanon */
+#bodyContent a[href^="https://www.pikminfanon.com/"].extiw {
+	background: url("https://dodo.ac/np/images/a/a1/Pikmin_Fanon_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to SmashWiki */
+#bodyContent a[href^="https://www.ssbwiki.com"].extiw {
+	background: url("https://dodo.ac/np/images/f/f3/SmashWiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Starfy Wiki */
+#bodyContent a[href^="https://www.starfywiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/c/c0/Starfy_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to StrategyWiki */
+#bodyContent a[href^="https://strategywiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/e/ed/StrategyWiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Super Mario Wiki */
+#bodyContent a[href^="https://www.mariowiki.com"].extiw {
+	background: url("https://dodo.ac/np/images/4/46/Super_Mario_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Ukikipedia */
+#bodyContent a[href^="https://ukikipedia.net"].extiw {
+	background: url("https://dodo.ac/np/images/8/8f/Ukikipedia_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Wars Wiki */
+#bodyContent a[href^="https://warswiki.org/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/9/97/Wars_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to WikiBound */
+#bodyContent a[href^="https://wikibound.info/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/0/06/WikiBound_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to WiKirby */
+#bodyContent a[href^="https://wikirby.com/wiki"].extiw {
+	background: url("https://dodo.ac/np/images/7/71/WiKirby_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Xeno Series Wiki */
+#bodyContent a[href^="https://www.xenoserieswiki.org"].extiw {
+	background: url("https://dodo.ac/np/images/c/ca/Xeno_Series_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/* Styling links to Zelda Wiki */
+#bodyContent a[href^="https://zelda.fandom.com"].extiw {
+	background: url("https://dodo.ac/np/images/d/d1/Zelda_Wiki_Favicon.png") var(--niwa-icon, no-repeat scroll right center transparent);
+	padding-right: var(--niwa-padding, 18px);
+}
+
+/*==================================================
+  FONTS
+==================================================*/
+
+/* Coustard font */
+@font-face {
+	font-display: swap;
+	font-family: 'Coustard';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Coustard Regular'), local('Coustard-Regular'), url(https://fonts.gstatic.com/s/coustard/v11/3XFpErgg3YsZ5fqUU-UIt2TMR_Tc.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*==================================================
+  IMAGES
+==================================================*/
+
+/* Galleries */
+.gallery.mw-gallery-traditional {
+	text-align: center;
+}
+.gallery.mw-gallery-traditional .thumb {
+	height: 150px;
+}
+
+/* Thumbnails */
+.thumbinner {
+	min-width: 120px;
+	text-align: center;
+}
+
+/* Try to use nearest neighbor scaling for pixelated images */
+.sprite {
+	image-rendering: optimizeSpeed;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Rounded images */
+.roundyimage {
+	border-radius: 5px;
+}
+
+/* Gallery thumbnails */
+.mw-body .gallerybox .thumb {
+	border-radius: 10px;
+	border: 1px solid #f1f2f4;
+}
+li.gallerybox div.thumb {
+	background-color: #f4f5f6;
+	display: table;
+}
+li.gallerybox div.thumb img {
+	border-radius: 5px;
+}
+.mw-body li.gallerybox div.thumb {
+	background: #f1f2f4;
+	border: none;
+	box-shadow: none;
+	padding-top: 1px;
+}
+
+/*==================================================
+  TABLES
+==================================================*/
+
+/* TableTop styling */
+.tabletop {
+	background: hsl(var(--template-color, 47 96%) var(--lightness-primary-override, var(--lightness-primary, 70%)));
+	clear: both;
+}
+.tabletop tr {
+	border-bottom: 4px solid hsl(var(--template-color, 47 96%) var(--lightness-primary-override, var(--lightness-primary, 70%)));;
+}
+.tabletop td {
+	padding: 8px 0;
+}
+.tabletop th {
+	padding: 8px 0;
+}
+
+/* DEPRECATED - TableTop styling */
+.table-items {
+	background: #FFDD66;
+}
+.table-items tr {
+	border-bottom: 4px solid #FFDD66;
+}
+.table-items td {
+	padding: 8px 0;
+}
+.table-items th {
+	padding: 8px 0;
+}
+.table-fish {
+	background: #4F9FC6;
+}
+.table-fish tr {
+	border-bottom: 4px solid #4F9FC6;
+}
+.table-fish td {
+	padding: 8px 0;
+}
+.table-fish th {
+	padding: 8px 0;
+}
+.table-bugs {
+	background: #77AC3F;
+}
+.table-bugs tr {
+	border-bottom: 4px solid #77AC3F;
+}
+.table-bugs td {
+	padding: 8px 0;
+}
+.table-bugs th {
+	padding: 8px 0;
+}
+.table-villagers {
+	background: #8CBCD1;
+}
+.table-villagers tr {
+	border-bottom: 4px solid #8CBCD1;
+}
+.table-villagers td {
+	padding: 8px 0;
+}
+.table-villagers th {
+	padding: 8px 0;
+}
+.table-music {
+	background: #E08585;
+}
+.table-music tr {
+	border-bottom: 4px solid #E08585;
+}
+.table-music td {
+	padding: 8px 0;
+}
+.table-music th {
+	padding: 8px 0;
+}
+
+/* Styled tables */
+/* Use class="styled" to make a table use this appearance. You can combine this with one of the color classes below to theme the styled table */
+table.styled {
+	margin: 10px;
+	background: hsl(var(--template-color, 0 0%) var(--lightness-primary-override, var(--lightness-primary, 70%)));
+	border: 4px solid hsl(var(--template-color) var(--lightness-primary-override, var(--lightness-primary, 70%)));
+	border-radius: 14px;
+}
+table.styled td {
+	background: var(--cell-background, hsl(0 100% 100%));
+}
+/* This class will try to fallback to regular color if subcolor is undefined */
+table.styled th {
+	background: hsl(var(--template-subcolor, var(--template-color, 0 0%)) var(--lightness-tertiary-override, var(--lightness-tertiary, 90%))); 
+}
+/* This class will try to fallback to regular color if subcolor is undefined */
+table.styled tr:first-child th {
+	font-weight: normal;
+	font-family: Coustard;
+	font-size: 1.0em;
+	height: 40px;
+	padding: 0 5px;
+	text-align: center;
+	background-color: hsl(var(--template-subcolor, var(--template-color, 0 0%)) var(--lightness-secondary-override, var(--lightness-secondary, 85%))); 
+	color: hsl(var(--template-color, 0 0%) var(--lightness-text-override, var(--lightness-text, 30%)));
+}
+table.styled tr:first-child th:first-child {
+	border-top-left-radius: 9px;
+	border-bottom-left-radius: 0;
+}
+table.styled tr:first-child th:last-child {
+	border-top-right-radius: 9px;
+	border-bottom-left-radius: 0;
+}
+table.styled tr:last-child > :first-child {
+	border-bottom-left-radius: 9px;
+}
+table.styled tr:last-child > :last-child {
+	border-bottom-right-radius: 9px;
+}
+
+/* Palette table cells */
+.palette td {
+	height: 22px;
+	width: 22px; 
+	border-radius: 30px !important;
+}
+
+/* Table column coloring for Guide: Coffee Preferences */
+.coffee td:nth-child(1), .coffee td:nth-child(5) { 
+	background-color: #dcf6d3; 
+}
+
+/* Column text alignment for villager ideal gift tables */
+.idealgifts td { 
+	text-align: center; 
+}
+.idealgifts td:nth-child(1) { 
+	text-align: left; 
+}
+
+/*==================================================
+  BACKGROUNDS
+==================================================*/
+
+/* Grass backgrounds */
+.grassSpring {
+	background: url(https://dodo.ac/np/images/c/ce/MainPageGrass-Spring.png) repeat;
+}
+
+.grassSummer {
+	background: url(https://dodo.ac/np/skins/nookipedia/summer/water-summer.png) repeat;
+}
+
+.grassFall {
+	background: url(https://dodo.ac/np/images/4/4a/MainPageGrass-Fall.png) repeat;
+}
+
+.grassWinter {
+	background: url(https://dodo.ac/np/images/5/5e/MainPageGrass-Winter.png) repeat;
+}
+
+.grassBirthday {
+	background: url(https://dodo.ac/np/images/b/b0/MainPageGrass-Birthday.png) repeat;
+}
+
+/*==================================================
+  BORDERS
+==================================================*/
+
+/* Rounded corners */
+.noroundy {
+	border-radius: 0 !important;
+}
+.roundy { 
+	border-radius: var(--default-border-radius, 20px);
+}
+.roundytl { 
+	border-top-left-radius: var(--default-border-radius, 20px);
+}
+.roundytr { 
+	border-top-right-radius: var(--default-border-radius, 20px);
+}
+.roundybl { 
+	border-bottom-left-radius: var(--default-border-radius, 20px);
+}
+.roundybr { 
+	border-bottom-right-radius: var(--default-border-radius, 20px);
+}
+.roundybottom { 
+	border-bottom-left-radius: var(--default-border-radius, 20px);
+	border-bottom-right-radius: var(--default-border-radius, 20px);
+}
+.roundytop { 
+	border-top-left-radius: var(--default-border-radius, 20px);
+	border-top-right-radius: var(--default-border-radius, 20px);
+}
+.roundyleft { 
+	border-top-left-radius: var(--default-border-radius, 20px);
+	border-bottom-left-radius: var(--default-border-radius, 20px);
+}
+.roundyright { 
+	border-bottom-right-radius: var(--default-border-radius, 20px);
+	border-top-right-radius: var(--default-border-radius, 20px);
+}
+
+/* Rounded tables */
+table.roundlast tr:last-child td:last-child { 
+	border-bottom-right-radius: 16px;
+}
+table.roundCorners tr:first-child td:first-child { 
+	border-top-left-radius: 10px;
+}
+table.roundCorners tr:first-child td:last-child { 
+	border-top-right-radius: 10px; 
+}
+table.roundCorners tr:last-child td:first-child { 
+	border-bottom-left-radius: 10px; 
+}
+table.roundCorners tr:last-child td:last-child { 
+	border-bottom-right-radius: 10px;
+}
+
+/*==================================================
+  BOXES
+==================================================*/
+
+/* Themed divs */
+.theme-background {
+	background-color: var(--th-color-secondary, #D1E6C6);
+}
+.theme-border {
+	border: 3px solid var(--th-color-primary, #67AD42);
+}
+.theme-text {
+	color: var(--th-color-primary, #67AD42);
+}
+.theme-hr {
+	background-color: var(--th-color-primary, #67AD42);
+}
+
+/* Navboxes */
+/* On narrow widths, convert multi-column navboxes to single vertical row */
+@media (max-width: 1000px) {
+	.nav-inner > tbody > tr > td, .nav-inner > tbody > tr > th {
+		display: block;
+		text-align: center;
+		width: auto;
+		border-radius: 0px !important;
+	}
+	.nav-inner > tbody > tr:first-child td:first-child, .nav-inner > tbody > tr:first-child th:first-child {
+		border-radius: 9px 9px 0px 0px !important;
+	}
+	.nav-inner > tbody > tr:last-child td:last-child {
+		border-radius: 0px 0px 9px 9px !important;
+	}
+	.nav-image {
+		display: none !important;
+	}
+}
+
+/* Infoboxes */
+.infobox {
+	table-layout: fixed; 
+	border-radius: var(--template-outer-radius, 15px);
+	border-spacing: 2px;
+	margin-left: 10px; 
+	margin-bottom: 10px;
+	width: 320px; 
+	padding: 5px; 
+	float:right;
+	background-color: hsl(var(--template-color, 0 0%) var(--lightness-primary, 70%));
+}
+
+/* Make infoboxes take up 100% width at small resolutions */
+@media (max-width: 600px) {
+  .infobox {
+    width: 100%;
+  }
+}
+
+/* Set infoboxes to fixed width at larger resolutions */
+@media (min-width: 601px) {
+  .infobox {
+    width: 320px;
+  }
+}
+
+/* Flags */
+.infobox-flag {
+	display: inline-block;
+	width: 14px;
+	height: 9px;
+}
+.infobox-flag-de {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAIBAMAAAA7P9P/AAAAD1BMVEX/0ADdAAAAAADzhQBOAAClMurlAAAAGElEQVQI12NUYgADJgjFwALlMwpiF0cHABa5AIbRJ43bAAAAAElFTkSuQmCC);
+}
+.infobox-flag-es {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAMAAAA1k+1bAAAASFBMVEXGCx7HDx3vjwn/xwD/xADoigvCk12WVj3AgC/GkCSiYiLDfx3nsxncfRW6eBTqsRPehRPegBLYnxHlihD3vwr4vgfnrQT7xAD/yEe0AAAAPUlEQVQIHV3Bxw3AMAwDQJqU03vz/ps6gJCHcoefFICvzA8kPctR5GB2j22zmoN09UM3yYHM27yfdEgBogpv/QG11OL+igAAAABJRU5ErkJggg==);
+}
+.infobox-flag-esl {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAMAAAD+zz7+AAAAP1BMVEUAZ0bOESb////gZnPNDSJanohbnojg4tf6+vf5+vf49PPz8uri5trg3tLn2sza0MjKtqems6Gbnoq+p4WGYkcMARw6AAAAMElEQVQI12MAAVYmIGBmYWRkxMZlY+IT4EKS5RYW4UeS5REU4kXicrKzc4C5+E0GAFNxAWKo5lvrAAAAAElFTkSuQmCC);
+}
+.infobox-flag-fr {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAD1BMVEX///8AIpXtKDhbcbvzdX+f1z9mAAAAEklEQVQI12MQFDRgYFFSopQGAMG/BWsWYvxBAAAAAElFTkSuQmCC);
+}
+.infobox-flag-frq {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAALVBMVEWtut0APKX///9Lbrr29/sAOKPAyuWHms5xiscnVbAcT6wFQahQcLtAZbc6YrVCgrqAAAAAMklEQVQI12MQnBXsYrpSkEG6Aki3b2QQPAuk7wgyMDCwKSUASSUIgPMF7YDyj+HqYfoBStIQNaAkbTgAAAAASUVORK5CYII=);
+}
+.infobox-flag-it {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAGFBMVEUBk0fPLDj////9/f1WtoTecXkAizrLHipNo3VKAAAAEklEQVQI12NgYHMyVi0UpJQGAGcTCjPuRPlEAAAAAElFTkSuQmCC);
+}
+.infobox-flag-ja {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAHlBMVEX///++ACP88/X33+TyzNPbcYbTUWvCEDP9+PnPQ1/xkyjpAAAAJElEQVQI12NAACYXBTBtVp4MpgMFRUEUx0RByQYoHyYPVw8HALfGBR4piPJVAAAAAElFTkSuQmCC);
+}
+.infobox-flag-ko {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAMAAAA1k+1bAAAAdVBMVEX////FxcX8/Pzt7e3m5ubg4ODa2trLzMzzwMa9vLy8vLxag7KdnZ2ZmZkFOYJzc3PgZXI3M21kZGTQ2+jZ2uS7zeC7zN/s1dr01Ne/vM/ctcEhV5UsVJCBgYF8fHx7e3tXV1fIMUfTL0KUH0KbHD7ADyfPCyBe6SucAAAAVElEQVQIHQXBBQKCQAAAsF3QIGF3+/8nukECElCOLbS3AuLwCPU01dXSR8hh//p9n4eQAcf3Z55PgBzWl9XqvAkZ4rCEbdftqrGPUN4baK4FkICEP/iRA6f+HpdZAAAAAElFTkSuQmCC);
+}
+.infobox-flag-nl {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAFVBMVEUgRYuuGyf////k6fH15OU8XJm4N0L4+NvdAAAAIElEQVQI12MQhAA4nQYBDC4QwKAEAQzGEMAQCgEMaAAAla8KO890RpoAAAAASUVORK5CYII=);
+}
+.infobox-flag-ru {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAFVBMVEX////WKx3g5/QfUbEAOKYaN5a7LS4JTQ9MAAAAGElEQVQI12NgQAWMShCaRRA/zQilmaD6ABR5AIyUqeGHAAAAAElFTkSuQmCC);
+}
+.infobox-flag-zh {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJBAMAAADwYwBaAAAAG1BMVEXeKRDfLRDhNw/iPw7jRA7kTA3qaQrsdQn2rgSd/VviAAAAIElEQVQI12NgYDBkAAHWIhUBEM3WwgymmQzBfIg8YQAAcP4CEq6nIikAAAAASUVORK5CYII=);
+}
+.infobox-flag-zht {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAMAAAA1k+1bAAAARVBMVEXeKRDeKxLdIQf0tq3eJQv639v2xb7uj4HujoDre2zmV0TeJw7cHQPbFgDaEAD3ycPzsqnvl4vshXfpcF/obFrkTTjgNh+OY5U7AAAARElEQVQIHQXBhwHEMBADIHR2evua/UcNALYOgHALgH626SxA6vseX+OvAlLrsEzt3wE5PsPVjgBs87LOBcC+VwEgScADaJABgba3rIgAAAAASUVORK5CYII=);
+}
+
+/* SiteNotice */
+.sitenotice {
+	background: var(--th-color-secondary);
+}
+
+.sitenotice td {
+	background: white;
+}
+
+@media (min-width: 700px) {
+	.mobilenotice {
+		display: none;
+	}
+	.desktopnotice {
+		display: block;
+	}
+}
+@media (max-width: 699px) {
+	.mobilenotice {
+		display: block;
+	}
+	.desktopnotice {
+		display: none;
+	}
+}
+
+/*==================================================
+  GRIDS
+==================================================*/
+
+/* Gridding */
+.grid-container-2-col {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.grid-item {
+	border: 0 solid;
+	padding: 1px 0;
+}
+
+/* Flex boxes */
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item {
+	flex: 1;
+}
+@media (max-width: 1000px) {
+	.flex-container {
+		display: block;
+	}
+}
+
+/* Villager card flex boxes */
+.card-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card-left {
+	flex: 1;
+}
+.card-right {
+	flex: 4;
+}
+@media (max-width: 800px) {
+	.card-flex-container {
+		display: block;
+	}
+}
+
+/* Villager house flex boxes */
+.house-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.house-flex-item {
+	flex: 1;
+	margin: 0 auto;
+}
+.house-img {
+	width: 360px;
+	max-height: 275px;
+}
+.house-img img {
+	width: 360px;
+	max-height: 275px;
+	height: auto;
+	object-fit: contain;
+}
+@media (max-width: 1500px) {
+	.house-flex-container {
+    	display: block;
+	}
+	.house-img {
+		width: auto;
+		max-width: 360px;
+		max-height: none;
+	}
+	.house-img img {
+		width: auto;
+		height: auto;
+		max-width: 360px;
+		max-height: none;
+	}
+}
+
+/* NH items */
+.nh_item-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.nh_item-flex-item {
+	flex-grow: 1;
+}
+.nh_item-var {
+	flex-grow: 0;
+	width: 36px;
+}
+.nh_item-var-img {
+	display: inline-block;
+	vertical-align: top;
+	padding:12px 0 0 0;
+}
+.nh_item-var-title {
+	line-height: 1.4em;
+	max-height: 2.8em;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.nh_item-var-data {
+	display: inline-block;
+	font-size: .9em;
+	vertical-align: top;
+	padding: 12px 0 0 0;
+	width: 90px;
+}
+.nh_item-lang {
+	overflow: hidden;
+	word-wrap: anywhere;
+	margin: 0 3px;
+	width: 30%;
+}
+.nh_item-divider {
+	background-color: transparent;
+	border-bottom: 1px solid #efba00;
+}
+
+/*==================================================
+  TABS
+==================================================*/
+/* Tabs */
+.tab-article {
+	-moz-border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	-khtml-border-radius: 7px 7px 0 0;
+	-icab-border-radius: 7px 7px 0 0;
+	-o-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+	text-align:center;
+	padding: 3px 5px;
+	margin: 0;
+	border: 2px solid #78AB46;
+	background-color: #A5D97B;
+	white-space: nowrap;
+	cursor:pointer;
+}
+span.tab-article:hover, div.tab:hover, td.tab:hover {
+	background-color:#B1E48C;
+}
+.tabselected {
+	background-color:#9ACE74 !important;
+	border-bottom: 2px solid #9ACE74;
+}
+.tabcontainer p {
+	margin:0;
+}
+
+/* CSS fallback for tabber when JS is unavailable */
+.nookipedia-tabber {
+	border: 1px solid #a2a9b1;
+	padding: 1em;
+}
+.nookipedia-tab-header {
+	font-size: larger;
+	font-weight: bold;
+	border-bottom: 2px solid #666;
+	margin-bottom: 1em;
+}
+.client-js .nookipedia-tabber {
+	display: none
+}
+
+/*==================================================
+  COLORS
+==================================================*/
+
+/* Test color */
+.color-test {
+	--template-color: var(--test-red-hs);
+	--template-subcolor: var(--test-green-hs);
+}
+
+/* Gender colors */
+.color-male {
+	--template-color: var(--male-hs);
+}
+.color-female {
+	--template-color: var(--female-hs);
+}
+
+/* Item colors */
+.color-red {
+	--template-color: var(--red-hs);
+}
+.color-orange {
+	--template-color: var(--orange-hs);
+}
+.color-yellow {
+	--template-color: var(--yellow-hs);
+}
+.color-green {
+	--template-color: var(--green-hs);
+}
+.color-aqua {
+	--template-color: var(--aqua-hs);
+}
+.color-blue {
+	--template-color: var(--blue-hs);
+}
+.color-purple {
+	--template-color: var(--purple-hs);
+}
+.color-pink {
+	--template-color: var(--pink-hs);
+}
+.color-beige {
+	--template-color: var(--beige-hs);
+}
+.color-brown {
+	--template-color: var(--brown-hs);
+}
+.color-gray {
+	--template-color: var(--gray-hs);
+}
+.color-black {
+	--template-color: var(--black-hs);
+}
+.color-white {
+	--template-color: var(--white-hs);
+}
+
+/* Pocket Camp theme colors */
+.color-civic {
+	--template-color: var(--civic-hs);
+}
+.color-cool {
+	--template-color: var(--cool-hs);
+}
+.color-cute {
+	--template-color: var(--cute-hs);
+}
+.color-elegant {
+	--template-color: var(--elegant-hs);
+}
+.color-harmonious {
+	--template-color: var(--harmonious-hs);
+}
+.color-hip {
+	--template-color: var(--hip-hs);
+}
+.color-historical {
+	--template-color: var(--historical-hs);
+}
+.color-modern {
+	--template-color: var(--modern-hs);
+}
+.color-natural {
+	--template-color: var(--natural-hs);
+}
+.color-rustic {
+	--template-color: var(--rustic-hs);
+}
+.color-sporty {
+	--template-color: var(--sporty-hs);
+}
+.color-generic {
+	--template-color: var(--color-generic);
+}
+.color-special {
+	--template-color: var(--color-special);
+}
+
+/* Template colors */
+/* Classes without subcolors fallback to regular Hue and Saturation values when "template-subcolor" is declared */
+.color-art {
+	--template-color: var(--art-hs);
+}
+.color-bug {
+	--template-color: var(--bug-hs);
+}
+.color-design {
+	--template-color: var(--design-hs);
+}
+.color-event {
+	--template-color: var(--event-hs);
+}
+.color-fashion {
+	--template-color: var(--fashion-hs);
+	--template-subcolor: var(--fashion-hs-sub);
+}
+.color-film {
+	--template-color: var(--film-hs);
+}
+.color-fish {
+	--template-color: var(--fish-hs);
+}
+.color-flora {
+	--template-color: var(--flora-hs);
+	--lightness-primary-override: var(--lightness-primary-flora);
+	--lightness-secondary-override: var(--lightness-secondary-flora);
+	--lightness-tertiary-override: var(--lightness-tertiary-flora);
+}
+.color-fossil {
+	--template-color: var(--fossil-hs);
+}
+.color-furniture {
+	--template-color: var(--furniture-hs);
+}
+.color-gameplay {
+	--template-color: var(--gameplay-hs);
+	--template-subcolor: var(--gameplay-hs-sub);
+}
+.color-geography {
+	--template-color: var(--geography-hs);
+}
+.color-image {
+	--template-color: var(--gallery-hs);
+}
+.color-islander {
+	--template-color: var(--islander-hs);
+}
+.color-item {
+	--template-color: var(--item-hs);
+}
+.color-location {
+	--template-color: var(--location-hs);
+}
+.color-manga {
+	--template-color: var(--manga-hs);
+}
+.color-merchandise {
+	--template-color: var(--merchandise-hs);
+}
+.color-minigame {
+	--template-color: var(--minigame-hs);
+}
+.color-museum {
+	--template-color: var(--museum-hs);
+}
+.color-music {
+	--template-color: var(--music-hs);
+}
+.color-nookipedia {
+	--template-color: var(--nookipedia-hs);
+}
+.color-publication {
+	--template-color: var(--publication-hs);
+}
+.color-reaction {
+	--template-color: var(--reaction-hs);
+}
+.color-realworld {
+	--template-color: var(--realworld-hs);
+}
+.color-seacreature {
+	--template-color: var(--seacreature-hs);
+}
+.color-special {
+	--template-color: var(--special-hs);
+}
+.color-species {
+	--template-color: var(--species-hs);
+}
+.color-ssb {
+	--template-color: var(--ssb-hs);
+	--template-subcolor: var(--ssb-hs-sub);
+}
+.color-system {
+	--template-color: var(--system-hs);
+}
+.color-series {
+	--template-color: var(--series-hs);
+	--template-subcolor: var(--series-hs-sub);
+}
+.color-tool {
+	--template-color: var(--tool-hs);
+}
+.color-town {
+	--template-color: var(--town-hs);
+}
+.color-update {
+	--template-color: var(--update-hs);
+}
+.color-user {
+	--template-color: var(--user-hs);
+}
+.color-villager {
+	--template-color: var(--villager-hs);
+}
+.color-season {
+	--template-color: var(--season-hs);
+}
+.color-spring {
+	--template-color: var(--spring-hs);
+}
+.color-summer {
+	--template-color: var(--summer-hs);
+}
+.color-autumn {
+	--template-color: var(--autumn-hs);
+}
+.color-winter {
+	--template-color: var(--winter-hs);
+}
+
+/* Theme primary/secondary colors */
+/* PLEASE LEAVE HIDDEN MOST OF THESE AREN'T READY TO USE YET */
+ .theme-spring {
+	--th-color-primary: var(--th-spring-primary);
+	--th-color-secondary: var(--th-spring-secondary);
+}
+/*.theme-summer {
+	--th-color-primary: var(--th-summer-primary);
+	--th-color-secondary: var(--th-summer-secondary);
+}
+.theme-autumn {
+	--th-color-primary: var(--th-autumn-primary);
+	--th-color-secondary: var(--th-autumn-secondary);
+}
+.theme-winter {
+	--th-color-primary: var(--th-winter-primary);
+	--th-color-secondary: var(--th-winter-secondary);
+}
+.theme-dark {
+	--th-color-primary: var(--th-dark-primary);
+	--th-color-secondary: var(--th-dark-secondary);
+}
+.theme-halloween {
+	--th-color-primary: var(--th-halloween-primary);
+	--th-color-secondary: var(--th-halloween-secondary);
+}
+.theme-pc {
+	--th-color-primary: var(--th-pc-primary);
+	--th-color-secondary: var(--th-pc-secondary);
+}
+.theme-nh {
+	--th-color-primary: var(--th-nh-primary);
+	--th-color-secondary: var(--th-nh-secondary);
+} */
+
+/*==================================================
+  LETTER TEMPLATE
+==================================================*/
+.quotebox {
+	background-color: #F9F9F9;
+	border: 1px solid #aaa;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 88%;
+	max-width: 100%;
+}
+.quotebox.floatleft {
+	margin: 0.5em 1.4em 0.8em 0;
+}
+.quotebox.floatright {
+	margin: 0.5em 0 0.8em 1.4em;
+}
+.quotebox.centered {
+	margin: 0.5em auto 0.8em auto;
+}
+.quotebox.floatleft p,
+.quotebox.floatright p {
+	font-style: inherit;	
+}
+.quotebox-title {
+	background-color: #F9F9F9;
+    font-size: larger;
+}
+.quotebox-quote.quoted:before {
+    font-family:'Times New Roman',serif;
+    font-weight:bold;
+    font-size: large;
+    color: gray;
+    content: ' “ ';
+    vertical-align: -45%;
+	line-height: 0;
+}
+.quotebox-quote.quoted:after {
+    font-family:'Times New Roman',serif;
+    font-weight:bold;
+    font-size: large;
+    color: gray;
+	content: ' ” ';
+	line-height: 0;
+}
+.quotebox .left-aligned {
+	text-align: left;
+}
+.quotebox .right-aligned {
+	text-align: right;
+}
+.quotebox .center-aligned {
+	text-align: center;
+}
+.quotebox cite {
+	display:block;
+	font-style:normal;
+}
+
+@media screen and (max-width:640px) {
+	.quotebox {
+		/*override inline styles */
+		width: 100% !important;
+		margin: 0 0 0.8em !important;
+		float: none !important;
+	}
+}
