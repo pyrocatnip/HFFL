@@ -104,6 +104,7 @@ th {
 td {
     padding: 0px;
     padding-bottom: 0.25em;
+    text-align: center;
 }
 thead {
     text-align: center;
@@ -1898,6 +1899,15 @@ td.wikitable-data {
     font-weight: bold;
     color: #FFF;
 }   
+.wikitable-data-2 {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: normal;
+    padding: 0.25em;
+    text-align: center;
+}
 
 /* NFL team color wikitable */
 .wikitable-data-bengals {
@@ -1918,6 +1928,11 @@ td.wikitable-data {
 .wikitable-Ravens {
     border: 1px solid #9A7611;
     border-collapse: collapse;
+}
+.wikitable-header-Ravens-2 {
+    background: #000;
+    border: 2px solid #9A7611;
+    color: #FFF;
 }
 
 /* Table of Contents */
