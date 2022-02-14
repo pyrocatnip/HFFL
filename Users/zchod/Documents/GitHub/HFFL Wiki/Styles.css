@@ -156,6 +156,7 @@ li.toc {
     margin-bottom: 0px;
     line-height: 1.15em;
 }
+ul.toc,
 ul.ul-toc {
     font-size: 85%;
     border-radius: 20px;
