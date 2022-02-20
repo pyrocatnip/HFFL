@@ -11,10 +11,6 @@ hsx = sorting ends here
 hsi = ignore this line when sorting
 */
 /* Body style */
-html,
-body {
-    height: 100%;
-}
 div.page,
 main.page_main {
     background: inherit;
@@ -30,15 +26,17 @@ html {
     height: 100%;
     font-family: rubik, helvetica, arial, sans-serif;
     padding-left: inherit;
-    line-height: 1.15em;
-    min-height: 100%;
-    padding-right: 0.25em;   
+    line-height: 1.5em;
+    padding-right: 0.25em;
+    max-width: 100%;
 }
 h1.firstHeading {
     font-size: 150%;
     border-bottom: 2px solid #FFF;
     padding: 0.25em;
     text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;  
 }
 body {
     background: #000;
@@ -47,12 +45,14 @@ body {
     border-radius: 20px;
     font-size: 100%;
     line-height: 1.5em;
-    min-height: 150%;
+    min-height: fit-content;
     padding-right: 1em;
+    white-space: nowrap;
 }
 p.summary {
     margin-left: 0.5em;
-    font-size: normal;
+    font-size: 12.5px;
+    line-height: 1.5em;
 }
 title {
     font-weight: bold;
@@ -71,9 +71,10 @@ h1 {
     color: #FFF;    
     font-weight: bold;
     border-bottom: 2px solid;
-    padding-bottom: 0.25em;
     font-size: 21px;
     font-family: 'Samsung Sharp Sans';
+    display: block;
+    margin-bottom: 0.   5em;
 }
 h2 {
     color: #FFF;
@@ -83,12 +84,12 @@ h2 {
 h3 {
     color: #FFF;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
 }
 h4 {
     font-weight: bold;
     color: #FFF;
-    font-size: normal;
+    font-size: 14.5px;
 }
 table {
     background: #0C0C0C;
@@ -96,27 +97,47 @@ table {
     color: black;
     text-align: center; 
     line-height: 1.15em;
+    display: table;
+}
+tr {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    background: inherit;
 }
 th {
     color: black;
     font-weight: bold;
+    background: #eaecf0;
 }
 td {
     padding: 0px;
     padding-bottom: 0.25em;
     text-align: center;
+    vertical-align: middle;
 }
 thead {
     text-align: center;
     font-weight: bold;
 }
-p {
+p,
+p.body {
     color: #FFF;
-    font-size: 95%;
+    font-size: 13px;
     padding: 0px;
     margin-top: 0.5em;
     margin-bottom: 0.5px;
     line-height: 1.5em;
+    white-space: normal;
+    margin-bottom: 0.25em;
+}
+.p-body {
+    line-height: 1.5em
+}
+.subHeading {
+    font-size: 13.13px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 0.25em;
 }
 p.portal {
     color: #FFF;
@@ -124,7 +145,7 @@ p.portal {
     line-height: 1.15em;
 }
 img {
-    vertical-align: middle;: 
+    vertical-align: middle;
 }
 caption {
     color: #FFF;
@@ -147,19 +168,32 @@ h3#mw-toc-heading {
 }
 ul {
     margin-top: 0px;
-    line-height: 1em;
+    line-height: 1.15em;
+    color: #FFF;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+}
+ul.ultoc-2 {
+    padding-left: 1em;
 }
 li,
 li.toc {
     padding: 0px;
     margin-top: 0.25em;
-    margin-bottom: 0px;
+    margin-bottom: 0.25px;
     line-height: 1.15em;
+    margin-left: 0.5em;
+    text-align: left;
+    font-size: 12.5px;
 }
 ul.ul-toc {
     font-size: 85%;
     border-radius: 20px;
     padding: 0.25em;
+    color: #000;
+    line-height: 1.5em;
+    padding-right: 0.25em;
 }
 
 /* Description List */
@@ -172,10 +206,12 @@ dl {
     margin-inline-end: 0px;
     margin-bottom: 0.1em;
     padding-bottom: 0.15em;
+    color: #000;
 }
 dt {
     line-height: 1.15em;
     font-weight: bold;
+    background: none;
 }
 .hlist.dd {
     margin: 0;
@@ -191,19 +227,20 @@ dt {
     border-radius: 20px;
     color: #FFF;
     text-align: left;
-    font-size: 95%;
-    align: right;
-    padding: 0.75em;
+    font-size: 90%;
+    padding: 0.25em;
     min-width: 22em;
     max-width: 22em;
     line-height: 1.5em;
     margin-left: 1em;
+    float: right;
+    margin-bottom: 0.5em;
 }
 .caption .infobox-title,
 .infobox-caption,
 .infobox-title {
     font-weight: bold;
-    font-size: 125%;
+    font-size: 15.4px;
     text-align: center;
     border: none;
     border-radius: 20px;
@@ -217,6 +254,7 @@ dt {
     background: none;
     font-size: 125%;
 }
+.infobox-subheader,
 th.infobox-header,
 .infobox-header {
     background: #ccf;
@@ -226,9 +264,15 @@ th.infobox-header,
     width: 100%;
     font-weight: bold;
     text-align: center;
-    font-size: 95%;
+    font-size: 12px;
     vertical-align: middle;
     min-width: 100%;
+    padding-top: 0px;
+    margin-top: 0.5em;
+}
+.infobox-subheader {
+    background: none;
+    padding-top: 0.25em;
 }
 .infobox-label,
 .infobox-subbox.label {
@@ -239,17 +283,16 @@ th.infobox-header,
     text-align: left;
     background: none;
     vertical-align: top;
-    font-size: 95%;
-    padding-left: 0.25em;
+    font-size: 12.5px;
     white-space: nowrap;
+    padding-left: 0.5em;
+    padding-right: 2em;
 }
     .infobox-subbox-label {
     text-align: center;
     font-size: 95%
 }
 .infobox-image {
-    align: center;
-    margin: middle;
     border: none;
     background: none;
     text-align: center;
@@ -275,30 +318,97 @@ th.infobox-header,
     text-align: left;
     border-radius: 20px;
     width: fit-content;
-    padding-left: 2em;
     line-height: 1.15em;
-    padding-bottom: 0.05em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 12.5px;
+    white-space: normal;
+}
+tr.infobox-full-data-row {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+}
+.infobox-full-data,
+.infobox-full-data-2 {
+    background: #222;
+    border-radius: 10px;
+    color: #FFF;
+    padding-top: 0.25em;
+    margin-bottom: 1.5em;
+    font-size: 12.5px;
 }
 .infobox-list {
-    font-size: smaller
+    font-size: smaller;
 }
 .infobox-img-caption,
-img.caption {
+img.caption,
+.infobox-image,
+.infobox-img {
     font-size: smaller;
     color: #FFF;
     text-align: center;
-    font-weight: italic;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
-
 .infobox-title-fn {
     text-align: center;
-    font-size: 125%;
     color: white;
-    line-height: 1.5em;
+    line-height: 1.15em;
     border-radius: 20px;
     background: none;
     padding: 0.25em; 
     width: 22em;
+    font-size: 125%;
+}
+.infobox-title-fn-UCRD {
+    font-weight: bold;
+    font-size: 14.5px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    padding: 0.25em;
+    background: #9D2235;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 0px;
+    border-radius: 20px  
+}
+.infobox-header-UCRD {
+    background: #9d2235;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0px;
+    border-radius: 20px;
+    margin-top: 0.5em;
+    font-size: 13.13px;
+}
+.infobox-header-UCRD-alt {
+    background: #FFF;
+    border: 2px solid #9D2235;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0px;
+    border-radius: 20px;
+    margin-top: 0.5em;
+    font-size: 13.13px;
+    color: #9D2235;
+}
+.infobox-full-data-2 {
+    padding-left: 1em;
+    background: none;
+    font-size: 12.5px;
+    text-align: left;
+    margin-bottom: 0.25em;
+    padding-bottom: 0px;
+    white-space: normal;
+    line-height: 1em;
 }
 
 /* Infobox subbox style */
@@ -306,7 +416,7 @@ img.caption {
         border-bottom: 1px solid #FFF;
         background: #0c0c0c;
         border: none;
-        width: 100%
+        width: 100%;
         border-radius: 20px;
         color: #FFF;
         text-align: center;
@@ -338,6 +448,29 @@ img.caption {
     text-align: center;
     font-size: smaller;     
 }
+.infobox-sidebar {
+    border: none;
+    font-size: smaller;
+}
+.infobox-label-sidebar {
+    padding-bottom: 0px;
+    padding-right: 0px;
+    background: none;
+    color: #000;
+    vertical-align: top;
+    border: 0px;
+    padding-top: 0.25em;
+    text-align: left;
+}
+.infobox-data-sidebar {
+    color: #000;
+    padding-left: 2em;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 0px;
+    padding-top: 0px;
+    background: none;
+}
 
 /* Other element styles */
 summary {
@@ -353,6 +486,21 @@ link {
 span.legend-color {
     height: 1.25em;
     width: 1.25em;
+    border: 1px solid;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #FFF;
+}
+.legend-color-2,
+span.legend-color-2 {
+    height: 1em;
+    width: 1em;
+    border: 1px solid;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    color: #FFF;
 }
 nav {
     padding: 0.25em;
@@ -364,15 +512,6 @@ vl {
     padding: 0.5em;
     margin-left: 0.5em;
 }
-th.hsn			{}
-th.hsc			{}
-th.hsd			{}
-th.hsu			{}
-th.hsf			{}
-th.hsp			{}
-th.hsx			{}
-th.hsi			{}
-sortable		{}
 
 /* Portalbox */
 .portalbox {
@@ -405,7 +544,7 @@ sortable		{}
     font-weight: bold;
     color: inherit;
     border: none;
-    background: ccccff;
+    background: #ccccff;
     border: 0px
 }
 .navbox-header {
@@ -415,7 +554,7 @@ sortable		{}
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; 
     margin-bottom: 0px; font-weight: bold;
-    color: inherit;
+    color: #000;
     background: #FFF; 
     width: 100%  
 }
@@ -441,7 +580,7 @@ sortable		{}
     margin-left: 2px;
     width: 28%; 
     font-weight: bold;
-    color: inheirt;
+    color: inherit;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background: #ddddff;
@@ -480,7 +619,7 @@ sortable		{}
     width: 100%;
 }
 .tab button {
-    background-color: inherit;
+    background: none;
     float: left;
     border: none;
     outline: none;
@@ -532,7 +671,15 @@ a:visited {
 }
 li,
 ul {
-    padding: none;
+    padding: 0px;
+    line-height: 1.15em;
+    text-align: left;
+    font-size: 12.5px;
+    vertical-align: middle;
+}
+ul {
+    margin-left: 1em;
+    text-align: left;
 }
 
 /* Topnav */
@@ -657,15 +804,16 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: fit-content%;
+  width: fit-content;
 }
+
 /* Forms */
 .login-form {
     background: #0c0c0c;
     border: 2px solid #f1f1f1;
     border-radius: 20px;
     padding: 0.5em;
-    width: fit-content;
+    width: auto;
 }
 .login-btn {
   background-color: #04AA6D;
@@ -813,31 +961,83 @@ ul#footer {
     float: right;
     clear: right;
     margin: 0.5em 0 1em 1em;
-    background: #FFF;
+    background: #f8f9fa;
     border: 1px solid #aaa;
-    padding: 0.2em;
+    padding: 0.25em;
+    padding-top: 0.25em;
     text-align: center;
     line-height: 1.15em;
     font-size: 88%;
     border-collapse: collapse;
-    display: table;
     border-radius: 20px;
     max-width: 22em;
     min-width: 22em;
     border: none;
     vertical-align: center;
-    font-size: smaller;
+}
+.sidebar-title-Ravens {
+    background: #24125F;
+    border: 2px solid #9A7611;
+    padding: 0.2em;
+    text-align: center;
+    line-height: 1.15em;
+    vertical-align: center;
+    font-size: 105%;
+    color: #FFF;
+    border-collapse: collapse;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.sidebar-list-title-Ravens {
+    background: #24125F;
+    border: 2px solid #9A7611;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 0px;
+    font-size: 13px;
+    vertical-align: middle;
 }
 .sidebar-pretitle {
-    padding: 0.4em 0.4em 0;
     line-height: 1.2em;
+    vertical-align: middle;
+}
+.sidebar-text,
+.sidebar-caption-text {
+    text-align: center;
+    color: #000;
+    font-size: smaller;
+    background: #f8f9fa;
+    margin-bottom: 0.25em;
+    vertical-align: middle;
+    padding-top: 0px;
+    margin-bottom: 0.25em;
+    white-space: normal;
+}
+.sidebar-text {
+    text-align: left;
+    color: #000;
+    margin-left: 0.75em;    
+}
+.sidebar-title {
+    font-size: 125%;
+    font-weight: bold;
+    color: #000;
+    padding: 0.25em;
+    vertical-align: middle;
+    background: inherit;
+    padding-left: 0px;
+    margin-left: 0em;
+    text-align: center;
+    align-self: auto;
+    float: initial;
 }
 .sidebar-title-with-pretitle {
-    padding: 0.1em 0.4em;
-    padding-top: 0.2em;
+    padding: 0.2em;
     background: #ccf;
     font-size: 125%;
-    padding-bottom: 0.25em;
+    font-weight: bold;
+    color: #000;
+    vertical-align: middle;
 }
 .sidebar-above {
     border-top: 1px solid #aaa;
@@ -847,6 +1047,8 @@ ul#footer {
     margin-bottom: 1.25em;
     margin-top: 1em;
     padding: 0.05em;
+    background: #ccf;
+    color: #000;
 }
 .sidebar-list-title {
     padding: 0 0.4em;
@@ -859,9 +1061,21 @@ ul#footer {
     margin-right: 0.5em;
 }
 .sidebar-content {
+    color: #000;
+    border-radius: 20px;
+    margin-bottom: 0.25em;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    margin-top: 0.25em;
 }
+.sidebar-image {
+    background: none;
+}
+.infobox-data-sidebar {
+    color: #000;
+    vertical-align: middle;
+}
+
 /*
 Common CSS for all skins
 See https://phabricator.wikimedia.org/M82 for standard colors 
@@ -1047,25 +1261,30 @@ div.RTL * ol {
  display: none;
  border-radius: 20px;
 }
-
 #mainpage-potd a img {
  width: 100%!important;
  -ms-interpolation-mode: bicubic;
  height: auto!important;
  max-width: 600px!important;
 }
-
 .utoc .tocnumber {
  display: none;
+ color: #FFF;
 }
+.toc-UCRD .tocinner ul#ultoc.ul-toc,
 .utoc #toc ul,
 .utoc .toc ul {
  line-height: 1.5em;
  list-style-type: square;
- margin: .3em 0 0 1.5em;
- padding: 0;
+ padding: 0px;
+ margin-left: 0px;
+ white-space: normal;
 }
-
+span.tocnumber {
+    color: #FFF;
+    text-align: left;
+    margin-left: 0px
+}
 /* Necessary for displaying text in the upper right edge. (Used in [[Template:Shortcut]].) */
 #content span.coordinates a.external.text:after, #content span.coordinates a.external.autonumber:after { content: ""; }
 #content div.coordinates a.external.text:after, #content div.coordinates a.external.autonumber:after { content: ""; }
@@ -1085,6 +1304,8 @@ div.RTL * ol {
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0em;
+    font-size: 12px;
+    text-align: center;
 }
 /* Display list items inline */
 .hlist dd,
@@ -1092,6 +1313,8 @@ div.RTL * ol {
 .hlist li {
     margin: 0;
     display: inline;
+    font-size: 12px;
+    text-align: center;
 }
 /* Display nested lists inline */
 .hlist.inline,
@@ -1840,6 +2063,8 @@ textarea#wpUploadDescription {
 /* Hatnote */
 .hatnote {
     text-indent: 1em;
+    font-size: 12.5px;
+    padding-bottom: 0.25em;
 }
 
 /* Wikitable */
@@ -1850,7 +2075,7 @@ textarea#wpUploadDescription {
     border-radius: 0px;
     text-align: center;
     border-collapse: collapse;
-    font-size: 85%;
+    font-size: 13.13px;
     vertical-align: middle;
 }
 .wikitable-title {
@@ -1867,6 +2092,28 @@ th.wikitable-header {
     width: fit-content;
     font-weight: bold;  
     padding: 0.25em;
+    text-align: center;
+}
+.wikitable-header-2 {
+    border: 1px solid #a2a9b1;
+    background: #eaecf0;
+    border-radius: 0px;
+    color: #000;
+    width: fit-content;
+    font-weight: bold;  
+    padding: 0.5em;
+    text-align: center;
+}
+.wikitable-header-3 {
+    border: 1px solid #a2a9b1;
+    background: #eaecf0;
+    border-radius: 0px;
+    color: #000;
+    width: fit-content;
+    font-weight: bold;  
+    padding: 0.25em;
+    text-align: left;
+    padding-left: 0.5em;
 }
 .wikitable-header-Ravens {
     background: #24125F;
@@ -1881,9 +2128,10 @@ td.wikitable-data {
     border: 1px solid #a2a9b1;
     border-radius: 0px;
     width: fit-content;
-    font-size: normal;
     padding: 0.25em;
     text-align: left;
+    font-size: 12.5px;
+    padding-left: 0.5em;
 }
 .wikitable-footer {
     background: #f2f2f2;
@@ -1899,9 +2147,19 @@ td.wikitable-data {
     border: 1px solid #a2a9b1;
     border-radius: 0px;
     width: fit-content;
-    font-size: normal;
+    font-size: 12.5px;
     padding: 0.25em;
     text-align: center;
+    font-size: 12.5px;
+}
+.wikitable-data-3 {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 12.5px;
 }
 
 /* NFL team color wikitable */
@@ -1930,36 +2188,47 @@ td.wikitable-data {
     color: #FFF;
 }
 
+.toccolours {
+    border: 1px double #a2a9b1;
+    background-color: #0c0c0c;
+    font-size: 12.5px;
+    padding: 0.5em;
+    color: #FFF;
+}
+
 /* Table of Contents */
 .toc,
 div.toc, 
-.toccolours {
-    border: 1px solid #a2a9b1;
+.toc-UCRD {
     background-color: #0c0c0c;
-    padding: 0.25em;
-    font-size: 100%;
-    min-width: 10em;
-    max-width: 18em;
-    white-space: normal;
     color: #FFF;
-    border-radius: 20px;
-    display: table;
-    padding-bottom: 0px;
+    padding: 0.25em;
+    padding-right: 0.25em;
+    font-size: 13.13px;
+    min-width: fit-content;
+    max-width: 19em;
+    white-space: normal;
+    border-radius: 25px;
     margin: 0.25em;
     line-height: 1.5em;
-    white-space: nowrap;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border: 1px solid #aaa;
+    padding-bottom: 0.25em;
+    padding-right: 1em;
+    padding-left: 0.25em;
 }
 h3#mw-toc-heading,
 .mw-toc-heading,
 .toctitle {
     text-align: center;
     direction: ltr;
-    font-size: 95%;
-    background: inhreit;
+    font-size: 13.13px;
+    background: #0c0c0c;
     color: #FFF;
-    padding: none;
+    padding: 0px;
     margin-top: 0.25em;
-    padding-top: 0.25px;
+    padding-top: 0.25em;
     vertical-align: middle;
 }
 .toclevel-1,
@@ -1970,31 +2239,23 @@ h3#mw-toc-heading,
 .toclevel-6,
 .toclevel-7 {
     line-height: 1.5em;
-    padding: 0.1em;
-    padding-right: 0.25em;
-}
-
-.toclevel-1 {
-    font-size: 13px;
-}
-.toclevel-2 {
-    font-size: 12.5px;
-}
-li.toclevel-1,
-li.toclevel-2,
-li.toclevel-3 {
-    margin-bottom: 0px;
-}
-li.toclevel-3 {
+    color: #FFF;
     font-size: 12px;
 }
-li.toclevel-4 {
-    font-size: 11.5px;
+.toclevel-1 {
+    margin-left: 0;
+    padding: 0px;
+}
+ul.ul-toc ul {
+    padding-left: 1.25em;
 }
 .toc ul {
     list-style: none;
     text-align: left;
+    color: #FFF;
+    width: auto;
     padding-left: 0.5em;
+    line-height: 1.5em;
 }
 .toctogglecheckbox {
     display: inline !important;
@@ -2007,9 +2268,6 @@ li.toclevel-4 {
 .mw-content-ltr ul {
     margin: 0.3em 0 0 1.6em;
     padding: 0;
-}
-.tocnumber {
-    color: #FFF;
 }
 a.toclink:active {
     color: #fff;
@@ -2049,11 +2307,6 @@ a.toclink:hover {
     color: black;
     text-align: center;
     border-bottom: 1px solid #AAA;
-    border-style {
-        align: center;
-        margin-left: 0. 5em;
-    };
-    width: 95%; 
 }
 
 p.doc-p {
@@ -2062,4 +2315,138 @@ p.doc-p {
 
 .note {
     font-size: smaller;
+}
+
+dl li {
+    line-height: 1em;
+}
+
+pre {
+    background: #f8f9fa;
+    border: 1px solid #AAA;
+    color: #000;
+    width: fit-content;
+    padding: 0.5em;
+    padding-bottom: 0px;
+    line-height: 1.15em;
+}
+
+.wikitable-header-UCRD {
+    background: #9D2235;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0.25em;
+}
+.wikitable-header-UCRD-alt {
+    background: #FFF;
+    border: 2px solid #9D2235;
+    color: #9D2235;
+    font-weight: bold;
+}
+.wikitable-header-Eastern {
+    background: #fcc;
+    font-weight: bold;
+    color: #000;
+    padding: 0.25em;
+    border: 1px solid #AAA;
+}
+.wikitable-header-Western {
+    background: #D0E7FF;
+    font-weight: bold;
+    color: #000;
+    padding: 0.25em;
+    border: 1px solid #AAA;
+}
+
+div.div-col-rules {
+    padding-bottom: 0.5em;
+    text-align: left;
+    padding-left: 0px;
+    width: 75%;
+    margin: auto;
+}
+.div-col-rules ul {
+    column-rule: 1px solid #aaa;
+    border-right: 1px solid #AAA
+}
+
+.notelist,
+ul.notelist,
+ul.notelist li,
+ul.notelist ol,
+ul.notelist>ol>li
+ul.notelist>ul {
+    font-size: 11.5px;
+    color: #FFF;
+    white-space: normal;
+    width: fit-content;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wikitable-data-NC {
+    background: #FB0;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: 12.5px;
+    padding: 0.25em;
+    text-align: center;
+    font-size: 12.5px;
+}
+.wikitable-data-Conf {
+    background: #ddffdd;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: 12.5px;
+    padding: 0.25em;
+    text-align: center;
+    font-size: 12.5px;
+}
+.wikitable-data-Div {
+    background: #D0E7FF;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: 12.5px;
+    padding: 0.25em;
+    text-align: center;
+    font-size: 12.5px;
+}
+.wikitable-data-WC {
+    background: #96CDCD;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: 12.5px;
+    padding: 0.25em;
+    text-align: center;
+    font-size: 12.5px;
+}
+.wikitable-data-L {
+    background: #fcc;
+    border: 1px solid #a2a9b1;
+    border-radius: 0px;
+    width: fit-content;
+    font-size: 12.5px;
+    padding: 0.25em;
+    text-align: center;
+    font-size: 12.5px;
+}
+
+ol {
+    font-size: 12.5px;
+    color: #FFF;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 0.25em;
+}
+
+ol.references > li {
+    counter-increment: mw-ref-extends-parent;
+    counter-reset: mw-ref-extends-child;
 }
