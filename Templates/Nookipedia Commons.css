@@ -2,11 +2,6 @@
 /* Note that Common.css does not load in Mobile View. Copy any CSS that you want to also work on mobile into Mobile.css.  */
 /* Note that all CSS variables are falsely flagged as syntax errors, as CodeEditor has yet to be updated to recognize them */
 
-#mw-content-container {
-    background: url(https://dodo.ac/np/images/0/07/Nookipedia_-_Leaf_Background_Spring.jpg) #e9f5f2;
-    border-bottom: 4px solid var(--th-color-primary);
-}
-
 /* 	CONTENTS
 	1.  Variables
 	2.  Global

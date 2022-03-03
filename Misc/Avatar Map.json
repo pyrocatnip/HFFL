@@ -1,0 +1,1253 @@
+{
+    "origin": "bottom-left",
+    "mapImage": "File:Avatar_world_map.jpeg",
+    "mapBounds": [
+        [
+            1,
+            1
+        ],
+        [
+            3840,
+            2160
+        ]
+    ],
+    "categories": [
+        {
+            "id": "1",
+            "name": "Book One: Water",
+            "color": "#98a4c0"
+        },
+        {
+            "id": "2",
+            "name": "Book Two: Earth",
+            "color": "#8db75f"
+        },
+        {
+            "id": "3",
+            "name": "Book Three: Fire",
+            "color": "#d09f85"
+        },
+        {
+            "id": "4",
+            "name": "170 AG",
+            "color": "#d18317"
+        },
+        {
+            "id": "5",
+            "name": "171 AG",
+            "color": "#d0ca37"
+        },
+        {
+            "id": "6",
+            "name": "Late 171 AG",
+            "color": "#e669c9"
+        },
+        {
+            "id": "7",
+            "name": "Other",
+            "color": "#fcf6e1"
+        }
+    ],
+    "markers": [
+        {
+            "id": "1",
+            "categoryId": "1",
+            "position": [
+                1723,
+                510
+            ],
+            "popup": {
+                "title": "Southern Water Tribe",
+                "description": "The Southern Water Tribe is an independent state located at the South Pole and the southern division of the Water Tribes.",
+                "link": {
+                    "url": "Southern_Water_Tribe",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "categoryId": "1",
+            "position": [
+                1715,
+                750
+            ],
+            "popup": {
+                "title": "Southern Air Temple",
+                "description": "The Southern Air Temple is one of the four original Air Nomad temples and one of the two that exclusively housed male airbenders.",
+                "link": {
+                    "url": "Southern_Air_Temple",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "categoryId": "1",
+            "position": [
+                1755,
+                702
+            ],
+            "popup": {
+                "title": "Patola Mountains",
+                "description": "The Patola Mountains are a mountain range located on an island in the South Sea, north of the South Pole.",
+                "link": {
+                    "url": "Patola_Mountains",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "categoryId": "1",
+            "position": [
+                1987,
+                800
+            ],
+            "popup": {
+                "title": "Kyoshi Island",
+                "description": "Kyoshi Island is a small island located off the southern coast of the Earth Kingdom, best known as the adopted home of Avatar Kyoshi.",
+                "link": {
+                    "url": "Kyoshi_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "categoryId": "1",
+            "position": [
+                2052,
+                984
+            ],
+            "popup": {
+                "title": "Omashu",
+                "description": "Omashu is the second largest city in the Earth Kingdom, surpassed in size and importance only by the capital city of Ba Sing Se.",
+                "link": {
+                    "url": "Omashu",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "6",
+            "categoryId": "1",
+            "position": [
+                1922,
+                1057
+            ],
+            "popup": {
+                "title": "Mining village",
+                "description": "The mining village is a settlement in the Earth Kingdom. During the Hundred Year War, its inhabitants were forced to mine coal for the Fire Nation.",
+                "link": {
+                    "url": "Mining_village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "7",
+            "categoryId": "1",
+            "position": [
+                1868,
+                1162
+            ],
+            "popup": {
+                "title": "Senlin Village",
+                "description": "Senlin Village is a small farming settlement located within the scorched forest. The surrounding woodland is protected by a spirit known as Hei Bai.",
+                "link": {
+                    "url": "Senlin_Village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "8",
+            "categoryId": "1",
+            "position": [
+                1829,
+                1212
+            ],
+            "popup": {
+                "title": "Mo Ce Sea",
+                "description": "The Mo Ce Sea is an open body of water located between the western Earth Kingdom, eastern Fire Nation, and the United Republic of Nations.",
+                "link": {
+                    "url": "Mo_Ce_Sea",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "9",
+            "categoryId": "1",
+            "position": [
+                1790,
+                1168
+            ],
+            "popup": {
+                "title": "Crescent Island",
+                "description": "Crescent Island is a volcanic isle in the eastern Fire Nation that once housed a temple for the Fire Sages and a shrine to Avatar Roku.",
+                "link": {
+                    "url": "Crescent_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "10",
+            "categoryId": "1",
+            "position": [
+                1891,
+                1231
+            ],
+            "popup": {
+                "title": "Seedy merchants pier",
+                "description": "Seedy merchants pier is a trading port that serves as a meeting-place for the Earth Kingdom's booming black market economy.",
+                "link": {
+                    "url": "Seedy_merchants_pier",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "11",
+            "categoryId": "1",
+            "position": [
+                1984,
+                1287
+            ],
+            "popup": {
+                "title": "Gaipan",
+                "description": "Gaipan was a small village in the Earth Kingdom. During a period of Fire Nation occupation, it was destroyed by a catastrophic man-made flood.",
+                "link": {
+                    "url": "Gaipan",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "12",
+            "categoryId": "1",
+            "position": [
+                2061,
+                1250
+            ],
+            "popup": {
+                "title": "Great Divide",
+                "description": "The Great Divide is a large canyon located in the rocky regions of the central Earth Kingdom and the largest canyon in the world.",
+                "link": {
+                    "url": "Great_Divide",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "13",
+            "categoryId": "1",
+            "position": [
+                1915,
+                1286
+            ],
+            "popup": {
+                "title": "Harbor town",
+                "description": "The harbor town is a coastal settlement in the United Republic of Nations. It remained free from Fire Nation control during the Hundred Year War.",
+                "link": {
+                    "url": "Harbor_town",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "14",
+            "categoryId": "1",
+            "position": [
+                1938,
+                1345
+            ],
+            "popup": {
+                "title": "Taku",
+                "description": "Taku is an abandoned city on the shores of the United Republic of Nations. The city was destroyed during the first years of the Hundred Year War.",
+                "link": {
+                    "url": "Taku",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "15",
+            "categoryId": "1",
+            "position": [
+                1864,
+                1316
+            ],
+            "popup": {
+                "title": "Pohuai Stronghold",
+                "description": "Pohuai Stronghold was a Fire Nation fortress located in the western Earth Kingdom and housed the legendary Yuyan Archers.",
+                "link": {
+                    "url": "Pohuai_Stronghold",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "16",
+            "categoryId": "1",
+            "position": [
+                1804,
+                1334
+            ],
+            "popup": {
+                "title": "Makapu Village",
+                "description": "Makapu Village is a small farming village located on the slopes of Mt. Makapu, and the residence of the fortuneteller Aunt Wu around 100 AG.",
+                "link": {
+                    "url": "Makapu_Village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "17",
+            "categoryId": "1",
+            "position": [
+                1759,
+                1397
+            ],
+            "popup": {
+                "title": "Abbey",
+                "description": "This abbey is located near the shores of the Mo Ce Sea in the northern United Republic of Nations, formerly the northwestern Earth Kingdom.",
+                "link": {
+                    "url": "Abbey",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "18",
+            "categoryId": "1",
+            "position": [
+                1888,
+                1397
+            ],
+            "popup": {
+                "title": "Fire Nation colonial village",
+                "description": "This Fire Nation colonial village was located in the northwestern Earth Kingdom. The village was a renowned cultural center during the colonial era.",
+                "link": {
+                    "url": "Fire_Nation_colonial_village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "19",
+            "categoryId": "1",
+            "position": [
+                2115,
+                1603
+            ],
+            "popup": {
+                "title": "Northern Air Temple",
+                "description": "The Northern Air Temple was one of the four original Air Nomad temples and one of the two temples that exclusively housed male airbenders.",
+                "link": {
+                    "url": "Northern_Air_Temple",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "20",
+            "categoryId": "1",
+            "position": [
+                1878,
+                1692
+            ],
+            "popup": {
+                "title": "Northern Water Tribe",
+                "description": "The Northern Water Tribe is an independent state located within the realms of the North Pole, and the oldest division of the three Water Tribes.",
+                "link": {
+                    "url": "Northern_Water_Tribe",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "21",
+            "categoryId": "2",
+            "position": [
+                1881,
+                1103
+            ],
+            "popup": {
+                "title": "General Fong's fortress",
+                "description": "General Fong's fortress was a secluded Earth Kingdom military facility situated in a mountain range on the west coast.",
+                "link": {
+                    "url": "General_Fong's_fortress",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "22",
+            "categoryId": "2",
+            "position": [
+                1993,
+                1011
+            ],
+            "popup": {
+                "title": "Cave of Two Lovers",
+                "description": "The Cave of Two Lovers, also know as the Secret Tunnel, is a series of caverns near the city of Omashu which pass underneath the Kolau Mountain Range.",
+                "link": {
+                    "url": "Cave_of_Two_Lovers",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "23",
+            "categoryId": "2",
+            "position": [
+                2047,
+                1046
+            ],
+            "popup": {
+                "title": "Kolau Mountains",
+                "description": "The Kolau Mountains are a large chain of mountains in the Earth Kingdom, famous for encompassing both the Cave of Two Lovers and the city of Omashu.",
+                "link": {
+                    "url": "Kolau_Mountains",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "24",
+            "categoryId": "2",
+            "position": [
+                2163,
+                996
+            ],
+            "popup": {
+                "title": "Foggy Swamp",
+                "description": "The Foggy Swamp is a vast wetland covering a large portion of the southwestern Earth Kingdom. At the center stands an enormous banyan-grove tree.",
+                "link": {
+                    "url": "Foggy_Swamp",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "25",
+            "categoryId": "2",
+            "position": [
+                2011,
+                866
+            ],
+            "popup": {
+                "title": "Chin Village",
+                "description": "Chin Village is a town located on the cliffs of the Earth Kingdom's southwestern coast. It was named after Chin the Conqueror.",
+                "link": {
+                    "url": "Chin_Village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "26",
+            "categoryId": "2",
+            "position": [
+                2174,
+                886
+            ],
+            "popup": {
+                "title": "Gaoling",
+                "description": "Gaoling is a large town located within a mountain range in the southern Earth Kingdom, and home to the wealthy Beifong family.",
+                "link": {
+                    "url": "Gaoling",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "27",
+            "categoryId": "2",
+            "position": [
+                2219,
+                935
+            ],
+            "popup": {
+                "title": "Plains village",
+                "description": "The plains village is a small, poor town located in arid plains of the southern Earth Kingdom.",
+                "link": {
+                    "url": "Plains_village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "28",
+            "categoryId": "2",
+            "position": [
+                2310,
+                915
+            ],
+            "popup": {
+                "title": "Tu Zin",
+                "description": "Tu Zin is a small, abandoned village located near a mountainous region of the southern Earth Kingdom, some distance from the expansive Si Wong Desert.",
+                "link": {
+                    "url": "Tu_Zin",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "29",
+            "categoryId": "2",
+            "position": [
+                2387,
+                896
+            ],
+            "popup": {
+                "title": "Quarry campsite",
+                "description": "The quarry campsite is located in a quarry in the southeastern Earth Kingdom.",
+                "link": {
+                    "url": "Quarry_campsite",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "30",
+            "categoryId": "2",
+            "position": [
+                2345,
+                1144
+            ],
+            "popup": {
+                "title": "Wan Shi Tong's Library",
+                "description": "Wan Shi Tong's Library is an enormous library located in the Spirit World. Until 100 AG, it was a popular destination for many adventurers.",
+                "link": {
+                    "url": "Wan_Shi_Tong's_Library",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "31",
+            "categoryId": "2",
+            "position": [
+                2247,
+                1045
+            ],
+            "popup": {
+                "title": "Si Wong Desert",
+                "description": "The Si Wong Desert is an arid region located in the central Earth Kingdom. It is the largest, driest, and hottest desert on Earth.",
+                "link": {
+                    "url": "Si_Wong_Desert",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "32",
+            "categoryId": "2",
+            "position": [
+                2224,
+                1207
+            ],
+            "popup": {
+                "title": "Full Moon Bay",
+                "description": "Full Moon Bay is a secluded cove in the East Lake and the location of a hidden ferry station for refugees travelling to the capital of Ba Sing Se.",
+                "link": {
+                    "url": "Full_Moon_Bay",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "33",
+            "categoryId": "2",
+            "position": [
+                2211,
+                1281
+            ],
+            "popup": {
+                "title": "Serpent's Pass",
+                "description": "The Serpent's Pass is a narrow strip of land located between the East and West Lakes, named for the fearsome serpent which guards it.",
+                "link": {
+                    "url": "Serpent's_Pass",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "34",
+            "categoryId": "2",
+            "position": [
+                2384,
+                1300
+            ],
+            "popup": {
+                "title": "Outer wall of Ba Sing Se",
+                "description": "At one hundred meters tall, Ba Sing Se's Outer Wall is the city's first line of defense, and the largest man-made structure in the world.",
+                "link": {
+                    "url": "Ba_Sing_Se#Outer_Wall",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "35",
+            "categoryId": "2",
+            "position": [
+                2403,
+                1372
+            ],
+            "popup": {
+                "title": "Ba Sing Se",
+                "description": "Ba Sing Se is the capital of the Earth Kingdom. The largest city in the World of Avatar, it is renowned for its supposedly impenetrable outer walls.",
+                "link": {
+                    "url": "Ba_Sing_Se",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "36",
+            "categoryId": "2",
+            "position": [
+                2313,
+                1404
+            ],
+            "popup": {
+                "title": "Agrarian Zone",
+                "description": "The Agrarian Zone is a large, underdeveloped area between the Outer and Inner Walls of Ba Sing Se, used mainly for agricultural purposes.",
+                "link": {
+                    "url": "Ba_Sing_Se#Agrarian_Zone",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "37",
+            "categoryId": "2",
+            "position": [
+                2465,
+                1350
+            ],
+            "popup": {
+                "title": "Lake Laogai",
+                "description": "Lake Laogai is a large body of water located within the Agrarian Zone of Ba Sing Se. Hidden beneath was the Dai Li's secret base of operations.",
+                "link": {
+                    "url": "Lake_Laogai",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "38",
+            "categoryId": "2",
+            "position": [
+                2467,
+                1151
+            ],
+            "popup": {
+                "title": "Chameleon Bay",
+                "description": "Chameleon Bay is a small inlet located near the northern waters of the Eastern Sea in the northeastern Earth Kingdom.",
+                "link": {
+                    "url": "Chameleon_Bay",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "39",
+            "categoryId": "2",
+            "position": [
+                2656,
+                958
+            ],
+            "popup": {
+                "title": "Eastern Air Temple",
+                "description": "The Eastern Air Temple is one of the four original temples of the Air Nomads, and one of two that exclusively housed female airbenders.",
+                "link": {
+                    "url": "Eastern_Air_Temple",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "40",
+            "categoryId": "2",
+            "position": [
+                2390,
+                1430
+            ],
+            "popup": {
+                "title": "Earth Kingdom Royal Palace",
+                "description": "The Earth Kingdom Royal Palace is at the very center of Ba Sing Se and the home of the earth monarch and the seat of the Earth Kingdom's government.",
+                "link": {
+                    "url": "Earth_Kingdom_Royal_Palace",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "41",
+            "categoryId": "3",
+            "position": [
+                1760,
+                1217
+            ],
+            "popup": {
+                "title": "Fire Nation bazaar",
+                "description": "The Fire Nation bazaar is a large, open-air market, suitable for selling or purchasing a variety of top-quality Fire Nation trinkets.",
+                "link": {
+                    "url": "Fire_Nation_bazaar",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "42",
+            "categoryId": "3",
+            "position": [
+                1702,
+                1213
+            ],
+            "popup": {
+                "title": "Jang Hui",
+                "description": "Jang Hui is a small fishing village in one of the islands of the Fire Nation, made up of houseboats and buildings on stilts, connected by bridges.",
+                "link": {
+                    "url": "Jang_Hui",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "43",
+            "categoryId": "3",
+            "position": [
+                1673,
+                1160
+            ],
+            "popup": {
+                "title": "Shu Jing",
+                "description": "Shu Jing is a town located on one of the eastern islands of the Fire Nation and the home of renowned swordmaster Piandao.",
+                "link": {
+                    "url": "Shu_Jing",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "44",
+            "categoryId": "3",
+            "position": [
+                1441,
+                1146
+            ],
+            "popup": {
+                "title": "Ember Island",
+                "description": "Ember Island is a resort area located in the outer islands of the northern Fire Nation, and home to many vacation homes for the wealthy and powerful.",
+                "link": {
+                    "url": "Ember_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "45",
+            "categoryId": "3",
+            "position": [
+                1591,
+                1106
+            ],
+            "popup": {
+                "title": "Roku's island",
+                "description": "Roku's island is a small Fire Nation isle and Avatar Roku's home in his later years. It was destroyed following a catastrophic volcanic eruption.",
+                "link": {
+                    "url": "Roku's island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "46",
+            "categoryId": "3",
+            "position": [
+                1529,
+                1047
+            ],
+            "popup": {
+                "title": "Fire Fountain City",
+                "description": "Fire Fountain City is a large industrialized city located on Shuhon Island. It is named for the large statue of Fire Lord Ozai at its center.",
+                "link": {
+                    "url": "Fire_Fountain_City",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "47",
+            "categoryId": "3",
+            "position": [
+                1387,
+                1117
+            ],
+            "popup": {
+                "title": "Hama's village",
+                "description": "This village is a small town located in one of the central islands of the Fire Nation, and the adopted home of waterbender Hama.",
+                "link": {
+                    "url": "Hama's_village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "48",
+            "categoryId": "3",
+            "position": [
+                1387,
+                1048
+            ],
+            "popup": {
+                "title": "Black Cliffs",
+                "description": "The Black Cliffs are a series of coastal cliff-faces located near an uninhabited inner island in the Fire Nation, forming a natural secluded bay.",
+                "link": {
+                    "url": "Black_Cliffs",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "49",
+            "categoryId": "3",
+            "position": [
+                1327,
+                1080
+            ],
+            "popup": {
+                "title": "Great Gates of Azulon",
+                "description": "The Great Gates of Azulon are a massive set of fiery nets that guard the sea entrance to the Fire Nation Capital.",
+                "link": {
+                    "url": "Great_Gates_of_Azulon",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "50",
+            "categoryId": "3",
+            "position": [
+                1239,
+                1076
+            ],
+            "popup": {
+                "title": "Fire Nation Capital",
+                "description": "The Fire Nation Capital is located on Capital Island and home to the Fire Lord, the Fire Nation Royal Family, and Fire Nation nobility.",
+                "link": {
+                    "url": "Fire_Nation_Capital",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "51",
+            "categoryId": "3",
+            "position": [
+                1197,
+                1032
+            ],
+            "popup": {
+                "title": "Fire Nation Royal Palace",
+                "description": "The Fire Nation Royal Palace is the home of the Fire Nation Royal Family, and located at the center of the Caldera City crater in the Capital.",
+                "link": {
+                    "url": "Fire_Nation_Royal_Palace",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "52",
+            "categoryId": "3",
+            "position": [
+                1352,
+                1466
+            ],
+            "popup": {
+                "title": "Western Air Temple",
+                "description": "The Western Air Temple is one of the four original temples of the Air Nomads and one of two that exclusively housed female airbenders.",
+                "link": {
+                    "url": "Western_Air_Temple",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "53",
+            "categoryId": "3",
+            "position": [
+                1224,
+                1253
+            ],
+            "popup": {
+                "title": "Sun Warriors' ancient city",
+                "description": "The Sun Warriors' ancient city is a large settlement on an island north of the Fire Nation mainland, inhabited by the lost Sun Warrior civilization.",
+                "link": {
+                    "url": "Sun_Warriors'_ancient_city",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "54",
+            "categoryId": "3",
+            "position": [
+                1291,
+                1219
+            ],
+            "popup": {
+                "title": "Boiling Rock",
+                "description": "The Boiling Rock is a secure Fire Nation prison for the most dangerous criminals. It is situated on a volcanic island in the middle of a boiling lake.",
+                "link": {
+                    "url": "Boiling_Rock",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "55",
+            "categoryId": "3",
+            "position": [
+                1404,
+                929
+            ],
+            "popup": {
+                "title": "Yon Rha's village",
+                "description": "Yon Rha's village is a minor settlement located in the southern Fire Nation, and the home of former Southern Raiders commander Yon Rha.",
+                "link": {
+                    "url": "Yon_Rha's_village",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "56",
+            "categoryId": "3",
+            "position": [
+                1582,
+                1268
+            ],
+            "popup": {
+                "title": "Wulong Forest",
+                "description": "Wulong Forest is a geographical feature on the coast of the United Republic of Nations, with hundreds of rock columns towering over the landscape.",
+                "link": {
+                    "url": "Wulong_Forest",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "57",
+            "categoryId": "7",
+            "position": [
+                2562,
+                934
+            ],
+            "popup": {
+                "title": "Eastern Sea",
+                "description": "The Eastern Sea is an extensive body of water that extends from the eastern coast of the Earth Kingdom to the northeastern shores of the South Pole.",
+                "link": {
+                    "url": "Eastern_Sea",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "58",
+            "categoryId": "7",
+            "position": [
+                1875,
+                833
+            ],
+            "popup": {
+                "title": "Whaletail Island",
+                "description": "Whaletail Island is an island territory situated on the South Sea. It gets its name from its distinctive shape, which resembles a whale's tail.",
+                "link": {
+                    "url": "Whaletail_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "59",
+            "categoryId": "7",
+            "position": [
+                1666,
+                707
+            ],
+            "popup": {
+                "title": "Elephant koi",
+                "description": "Aang's favourite spot to ride elephant koi.",
+                "link": {
+                    "url": "Elephant_koi",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "60",
+            "categoryId": "7",
+            "position": [
+                2648,
+                1146
+            ],
+            "popup": {
+                "title": "Hopping llamas",
+                "description": "Aang's favourite spot to ride hopping llamas.",
+                "link": {
+                    "url": "Fauna_in_the_World_of_Avatar#Terrestrial_2",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "61",
+            "categoryId": "7",
+            "position": [
+                2023,
+                1193
+            ],
+            "popup": {
+                "title": "Hog monkeys",
+                "description": "Aang's favourite spot to ride hog monkeys.",
+                "link": {
+                    "url": "Hog_monkey",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "62",
+            "categoryId": "4",
+            "position": [
+                1354,
+                1674
+            ],
+            "popup": {
+                "title": "Air Temple Island",
+                "description": "Air Temple Island is a small isle built by Avatar Aang located off the coast of Republic City in Yue Bay.",
+                "link": {
+                    "url": "Air_Temple_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "63",
+            "categoryId": "4",
+            "position": [
+                1379,
+                1729
+            ],
+            "popup": {
+                "title": "Aang Memorial Island",
+                "description": "Aang Memorial Island is a small island located in Yue Bay. It features a massive statue of Avatar Aang that was commissioned by the Fire Nation.",
+                "link": {
+                    "url": "Aang_Memorial_Island",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "64",
+            "categoryId": "4",
+            "position": [
+                1433,
+                1657
+            ],
+            "popup": {
+                "title": "Pro-bending Arena",
+                "description": "The Pro-bending Arena is a large golden building that hosts official pro-bending matches in Republic City, and a prominent city landmark.",
+                "link": {
+                    "url": "Pro-bending_Arena",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "65",
+            "categoryId": "4",
+            "position": [
+                1436,
+                1719
+            ],
+            "popup": {
+                "title": "Police headquarters",
+                "description": "The police headquarters is one of the oldest buildings in Republic City, and served as the base of operations for the Republic City Police.",
+                "link": {
+                    "url": "Police_headquarters",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "66",
+            "categoryId": "4",
+            "position": [
+                1493,
+                1694
+            ],
+            "popup": {
+                "title": "City Hall",
+                "description": "The former City Hall was originally the offices of the United Republic Council, and later transformed to house the official seat of the president.",
+                "link": {
+                    "url": "City_Hall",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "67",
+            "categoryId": "4",
+            "position": [
+                1547,
+                1724
+            ],
+            "popup": {
+                "title": "Avatar Korra Park",
+                "description": "Avatar Korra Park is a recreational area in Republic City's central peninsula, and due to high levels of poverty home to a large number of vagabonds.",
+                "link": {
+                    "url": "Avatar_Korra_Park",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "68",
+            "categoryId": "4",
+            "position": [
+                1605,
+                1729
+            ],
+            "popup": {
+                "title": "Central City Station",
+                "description": "Central City Station is the central train station in Republic City. A monument of Fire Lord Zuko is located in the center of the plaza.",
+                "link": {
+                    "url": "Central_City_Station",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "69",
+            "categoryId": "4",
+            "position": [
+                1567,
+                1630
+            ],
+            "popup": {
+                "title": "Future Industries",
+                "description": "Future Industries is a large business conglomerate run by the Sato family. The factory produces over one hundred luxury Satomobiles on a daily basis.",
+                "link": {
+                    "url": "Future_Industries",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "70",
+            "categoryId": "7",
+            "position": [
+                1875,
+                1583
+            ],
+            "popup": {
+                "title": "Northern Sea",
+                "description": "The Northern Sea is a large, open body of water located between the northern Earth Kingdom and the Northern Water Tribe.",
+                "link": {
+                    "url": "Northern_Sea",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "71",
+            "categoryId": "5",
+            "position": [
+                1883,
+                400
+            ],
+            "popup": {
+                "title": "Southern spirit portal",
+                "description": "The Southern spirit portal is one of the two original spirit portals, situated at the center of an ancient forest at the heart of the South Pole.",
+                "link": {
+                    "url": "Spirit_portal#South_Pole",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "72",
+            "categoryId": "7",
+            "position": [
+                1904,
+                1764
+            ],
+            "popup": {
+                "title": "Northern spirit portal",
+                "description": "The Northern spirit portal is one of the two original spirit portals, situated at the center of an ancient forest at the heart of the North Pole.",
+                "link": {
+                    "url": "Spirit_portal#North_Pole",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "73",
+            "categoryId": "5",
+            "position": [
+                1500,
+                968
+            ],
+            "popup": {
+                "title": "Bhanti Island",
+                "description": "The Bhanti consists of a group of sages who live in a village located on Bhanti Island in the southern Fire Nation, and predate the first Avatar.",
+                "link": {
+                    "url": "Bhanti",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "74",
+            "categoryId": "6",
+            "position": [
+                2113,
+                943
+            ],
+            "popup": {
+                "title": "Zaofu",
+                "description": "Zaofu is an autonomous city-state located in the southwestern Earth Kingdom. Founded by Suyin Beifong, it is constructed entirely out of metal.",
+                "link": {
+                    "url": "Zaofu",
+                    "label": "See more"
+                }
+            }
+        },
+        {
+            "id": "75",
+            "categoryId": "6",
+            "position": [
+                2140,
+                1545
+            ],
+            "popup": {
+                "title": "Laghima's Peak",
+                "description": "Laghima's Peak is a large mountain formation ten miles from the Northern Air Temple. It is named after renowned Air Nomad poet, Guru Laghima.",
+                "link": {
+                    "url": "Laghima's_Peak",
+                    "label": "See more"
+                }
+            }
+        }
+    ]
+}
