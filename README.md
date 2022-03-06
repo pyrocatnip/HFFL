@@ -18,7 +18,7 @@ All content used from MediaWiki or Wikipedia are attributed as necessary.
 Included is a dev plan as well as a log for what changes have been/need to be made in this project.
 
 # Working on
-Currently working on an error which has caused conflict between the GitHub directory, and the Azure cloud server. This error has possibly caused an addition error with the styles.css file as well as an error regarding calling directories.
+Working on an error in deployment of Azure Static Web app.
 
 <h1>Project Wiki</h1>
 
