@@ -2439,7 +2439,7 @@ div {
     border: 2px solid #9A6611;
     color: #fff;
 }
-.SRS {
+
 .SRS {
     background: palegreen;
     border: 2px solid #FD8001;
@@ -2460,4 +2460,39 @@ div {
 .RET {
     background: #DCDCDC;
     color: #000;
+}
+
+::selection {
+    background: #B19CD9;
+    border-radius: 20px;
+    color: #FFF
+}
+span.highlight {
+    background: #ADD6FF;
+}
+
+span.begin {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+span.end {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+pre.merge-end > span:last-child {
+    border-bottom-right-radius: 0;
+}
+
+pre.merge-end + pre > span:last-child {
+    border-top-right-radius: 0;
+}
+
+pre.merge-begin > span:first-child {
+    border-bottom-left-radius: 0;
+}
+
+pre.merge-begin + pre > span:first-child {
+    border-top-left-radius: 0;
 }
