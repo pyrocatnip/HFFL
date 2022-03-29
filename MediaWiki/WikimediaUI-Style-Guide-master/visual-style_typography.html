@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="js--off">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Visual Style: Typography - Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide/visual-style_typography.html">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/visual-style/typography-specimen.png">
+	<link rel="stylesheet" href="css/build/wmui-style-guide.min.css">
+	<title>Visual Style: Typography – Wikimedia Design Style Guide</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs--off\b/,'js--on');
+	</script>
+	<link rel="dns-prefetch" href="https://piwik.wikimedia.org/">
+	<link rel="preload" href="fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="js/matomo-tracking.min.js"></script>
+	<script src="js/wikimedia-design-style-guide.min.js" async></script>
+</head>
+<body class="page--visual-style-typography" vocab="http://schema.org/" typeof="WebPage">
+	<header id="header" class="header">
+		<div class="content-box">
+			<a href="#content" class="is-aural is-focusable">Jump to content</a>
+			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
+			<h6 class="site__title"><a href="./"><span class="site__org">Wikimedia </span><span class="site__project">Design Style Guide</span></a></h6>
+			<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
+				<i></i> <span>Menu</span>
+			</label>
+			<a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener" class="lnk--contribute" title="Fork and contribute on GitHub"><span>Contribute on </span>GitHub</a>
+		</div>
+	</header>
+	<div class="page">
+		<div class="content-box">
+			<div class="col col--start">
+				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
+				<nav id="nav--main" class="nav nav--main">
+					<ol>
+						<li class="nav__item"><a href="index.html">Introduction</a></li>
+						<li class="nav__item"><a href="design-principles.html">Design principles</a></li>
+						<li class="nav__item is-on"><a href="visual-style.html">Visual style</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="visual-style.html">Principles</a></li>
+								<li class="nav__sub-item"><a href="visual-style_colors.html">Colors</a></li>
+								<li class="nav__sub-item is-on"><a href="visual-style_typography.html">Typography</a></li>
+								<li class="nav__sub-item"><a href="visual-style_icons.html">Icons</a></li>
+								<li class="nav__sub-item"><a href="visual-style_images.html">Images</a></li>
+								<li class="nav__sub-item"><a href="visual-style_illustrations.html">Illustrations</a></li>
+							</ul>
+						</li>
+						<li><a href="components/links.html">Components</a></li>
+						<li class="nav__item"><a href="apps/apps.html">Apps</a></li>
+						<!-- <li><a href="patterns.html">Patterns</a></li> -->
+						<li><a href="resources.html">Resources</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col col--end">
+				<main id="content" class="content">
+					<div class="page__parent-title">Visual Style</div>
+					<h1 class="page__title">Typography</h1>
+
+					<p>Wikimedia projects rely on writing and reading. Typography is a key component of their design. Consider the typeface, size, style, and spacing of your text to achieve good <a href="https://en.wikipedia.org/wiki/Readability">readability</a>. Our typographic choices make our content accessible, present it in a neutral way, and convey its reliability.</p>
+					<img src="img/visual-style/typography-readability@2x.png" alt="Content typesetting following the guidelines">
+
+					<section id="readability">
+						<h2>Readability</h2>
+						<p>Content should be readable by everyone, regardless of their circumstances. Color blindness or the sun on a device's screen should not be barriers to access.</p>
+
+						<h3>Contrast</h3>
+						<p>When using text, make sure that it provides enough color contrast to be read comfortably. Check the contrast between the colors used for the text and its background. <span class="note note--inline note--a11y">Accessibility note:</span> Provide at least level AA sufficient contrast (4.5:1). The <a href="visual-style_colors.html">color palette</a> provides the contrast levels for pure white and black surfaces, but you need to ensure the contrast on other combinations.</p>
+						<div class="figures-do-dont figures-do-dont--contrast">
+							<figure class="figure figure--do">
+								<div class="figure__contents">Bento (弁当 bentō) is a single-portion take-out or home-packed meal common in Japanese cuisine.</div>
+								<figcaption class="figure__caption"><span class="do">Do: </span>Contrast against the background</figcaption>
+							</figure>
+							<figure class="figure figure--dont" aria-disabled="true">
+								<div class="figure__contents">Bento (弁当 bentō) is a single-portion take-out or home-packed meal common in Japanese cuisine.</div>
+								<figcaption class="figure__caption"><span class="dont">Don't: </span>Low contrast below 4.5:1, especially at smaller sizes, makes text harder to read.</figcaption>
+							</figure>
+						</div>
+
+						<h3>Tracking and leading</h3>
+						<p><strong>Text spacing.</strong> How text is placed in space can affect its readability. Follow these considerations for text paragraphs:</p>
+						<ul>
+							<li>Line length for reading in English is ideally no longer than <a href="https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style">75 characters</a>.</li>
+							<li>Line height should be 1.6 times the size of the font used. <span class="note note--inline note--i18n">Internationalization note:</span> Use a bigger line height in a relative size unit like <code>rem</code> or <code>em</code>, not in an absolute like <code>px</code>, to prevent clipping of some Indic scripts, for example Burmese.</li>
+						</ul>
+						<h3>Dynamic text</h3>
+						<p>Content will be available in multiple languages, and text length will vary for pieces of content across languages. Avoid designing interfaces that depend on certain expectations about text length.</p>
+						<figure class="figure figure--full">
+							<img src="img/visual-style/typography-dynamic-text@2x.png" alt="Text shown at different font sizes depending on their length" role="img">
+							<figcaption class="figure__caption">Text shown at different font sizes depending on their length.</figcaption>
+						</figure>
+						<p>Here are few ways to tackle dynamic text:</p>
+						<ul>
+							<li><b>Uncrowded user interface.</b> Design with an eye for simplicity. Consider reducing the number of elements to ensure the remaining ones have enough room. </li>
+							<li><b>Dynamic layout.</b> Make containers expandable, so that they can fit the content.</li>
+							<li><b>Dynamic text.</b> Adjust the size depending on the content. Use a smaller font-size for long content.</li>
+							<li><b>Clipping.</b> Clip the text with ellipsis, only if there is no risk of missing important information or the complete information is reachable through a clear alternative means.</li>
+						</ul>
+					</section>
+
+					<section id="typefaces">
+						<h2>Typefaces</h2>
+						<p>Text can be read in multiple languages on different devices. We recommend using the fonts already available on each device and operating system. This keeps the experience simple and consistent with the platform conventions and ensures widest language script support as provided by the operating systems themselves. The following sections provides a selection criteria for choosing appropriate typefaces, and how to apply it on different platforms.</p>
+
+						<h3>Font selection criteria</h3>
+						<p>To select an appropriate font family for a given language script or device, follow these criteria:</p>
+						<ol>
+							<li><b>Readability.</b> Fonts with a bigger x-height and open shapes are preferred.</li>
+							<li><b>Neutral aspect.</b> The font should work with many different kinds of content without adding a particular voice to it.</li>
+							<li><b>Simple shapes.</b> Fonts with less complex shapes work better at smaller sizes and on low-resolution devices.</li>
+							<li><b>Open.</b> Open source fonts are preferred to align with the open knowledge they deliver.</li>
+						</ol>
+
+						<h3>Platform-specific fonts</h3>
+						<p>We recommend relying on the operating system's default sans-serif typeface.<sup><a href="#references">[1]</a></sup><sup><a href="#references">[2]</a></sup></p>
+						<p>Most platforms have plenty of options for supporting latin-based languages, where the serif concept makes sense. Among the different serif system fonts we recommend <a href="https://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a></b> (present in many operating systems).</p>
+
+						<p>Below you can see an example CSS code to support the default system fonts:</p>
+ <pre><span style="color:#72777d;">/**
+ * System font stack for sans-serif fonts
+ *
+ * `-apple-system` ('San Francisco' font) – Support Safari 9+ macOS and iOS, Firefox macOS
+ * `BlinkMacSystemFont` ('San Francisco' font) – Chrome 48+ macOS and iOS
+ * `Segoe UI` – Windows Vista & newer
+ * `Roboto` – Android 4.0+
+ * `Lato` – Wikimedia Design choice, OFL licensed
+ * `Helvetica, Arial, sans-serif` – (Generic) Web fallback
+ * Note that standard `system-ui` value has resulted in unresolved side-effects in certain OS/language combinations as of now and is therefore not included.
+ */</span>
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;</pre>
+						<p>Fonts are not always available for all scripts or all operating systems. For example, Helvetica does not support the Korean script. Using the default font on the user device for Korean text seems the safest choice, unless there is a better candidate based on the selection criteria described above, and selected by someone familiar with the script.</p>
+
+						<h3>Platform-neutral fonts</h3>
+						In some cases you may be designing in a neutral-platform context. For example, creating mockups to convey a general interface concept targeting multiple platforms, or contributing to this style guide. In those cases, it is convenient to select free fonts that follow above criteria. We recommend Charter (supported by the Charis SIL font implementation), and Lato, when available in your language. As well as the Noto font family for extended language support.</p>
+						<ul>
+							<li><b>Charter</b> is a serif typeface designed by Matthew Carter in 1987. Charter has a simplified and clean structure that works well, even on low resolution displays. Although <a href="https://en.wikipedia.org/wiki/Bitstream_Charter">Bitstream Charter</a> is the original implementation for Charter, we recommend using <a href="https://en.wikipedia.org/wiki/Charis_SIL">Charis SIL</a> since it provides a wider Unicode support.</li>
+							<li><b><a href="https://www.latofonts.com/lato-free-fonts/">Lato</a></b> is a sans-serif typeface designed by Łukasz Dziedzic in 2010. Lato provides good readability even at small sizes.</li>
+							<li>The <b><a href="https://en.wikipedia.org/wiki/Noto_fonts">Noto family</a></b> provides a great coverage of languages, providing good alternatives for both serif and sans-serif typefaces.</li>
+						</ul>
+						<img src="img/visual-style/typography-specimen@2x.png" alt="Lato and Charter typeface specimen" role="img">
+						<p>These fonts are provided as a reference, but you may select other free fonts using similar criteria when the recommended ones are not available in your context.</p>
+					</section>
+
+					<section id="use-of-styles">
+						<h2>Use of styles</h2>
+						<p>The recommended styles are intended to optimize readability of Wikipedia’s dense encyclopedic content.</p>
+						<p>In our guidelines we use scale-independent pixels (sp). They can result in a different number of actual pixels in the user screen due to screen density or user preferences. A 16&#160;sp text is rendered as 16&#160;px in a 1x device at standard zoom level, but it becomes 21&#160;px in a 2x device (or when zoomed 200% on a 1x device).</p>
+						<p>Common text styles are based on the defined scale to clearly communicate the content hierarchy. <br>
+							Color hints are guidance for general use case in a light mode theme.</p>
+						<dl class="typography-styles">
+							<dt>Heading 1</dt>
+							<dd>
+								<h1>Charter Regular 32&#160;sp</h1>
+							</dd>
+							<dt>Heading 2</dt>
+							<dd>
+								<h2>System sans-serif 600 / Lato Bold 24&#160;sp</h2>
+							</dd>
+							<dt>Heading 3</dt>
+							<dd>
+								<h3>System sans-serif 600 / Lato Bold 20&#160;sp</h3>
+							</dd>
+							<dt>Heading 4</dt>
+							<dd>
+								<h4>System sans-serif 600 / Lato Bold 18&#160;sp</h4>
+							</dd>
+							<dt>Heading 5</dt>
+							<dd>
+								<h5>System sans-serif 600 / Lato Bold 16&#160;sp</h5>
+							</dd>
+							<dt>Heading 6</dt>
+							<dd>
+								<h6>Lato Regular / system sans-serif 16&#160;sp,<br>
+								All headings are in <span class="color-hint" style="--color-hint: #000;" title="#000">Base0</span></h6>
+							</dd>
+						</dl>
+						<hr>
+						<dl class="typography-styles">
+							<dt>Body, <br>Paragraph</dt>
+							<dd>
+								<p>Lato Regular / system sans-serif 16&#160;sp in <span class="color-hint" style="--color-hint: #202122;" title="#202122">Base10</span><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit minima voluptates doloribus nemo, enim eius. Itaque laudantium, praesentium maiores distinctio! Voluptate ipsam consequatur corrupti inventore cum illo quae modi.</p>
+							</dd>
+							<dt>Complementary</dt>
+							<dd>
+								<p class="is-complementary">Lato Regular / system sans-serif 14&#160;sp in <span class="color-hint" style="--color-hint: #72777d;" title="#72777d">Base30</span> <span  style="color:#202122;">or in <span class="color-hint" style="--color-hint: #202122;" title="#202122"></span>Base10</span></span></p>
+							</dd>
+							<dt class="typography-styles__blockquote">Block quotation<br>citation</dt>
+							<dd>
+								<blockquote>Charter Italic 20&#160;sp, 4px border before in <span class="color-hint" style="--color-hint: #eaecf0;" title="#eaecf0">Base80</span><br><cite>Lato regular / system sans-serif 14&#160;sp</cite></blockquote>
+							</dd>
+							<dt>Figure caption</dt>
+							<dd>
+								<figcaption class="figure__caption">Lato Italic / system sans-serif, italic 13&#160;sp in <span class="color-hint" style="--color-hint: #72777d;" title="#72777d">Base30</span></figcaption>
+							</dd>
+							<dt>Small text</dt>
+							<dd>
+								<small>Lato Regular/ system sans-serif 13&#160;sp</small>
+							</dd>
+							<dt>Placeholder</dt>
+							<dd>
+								<span class="is-placeholder">Lato Regular/ system sans-serif 16&#160;sp in <span class="color-hint" style="--color-hint: #72777d;" title="#72777d">Base30</span> </span>
+							</dd>
+							<dt>Unordered List</dt>
+							<dd>
+								<ul>
+									<li>Lato Regular/</li>
+									<li>system sans-serif</li>
+									<li>16&#160;sp</li>
+									<li>CSS default values</li>
+									<li>List item first order <code>list-style-type: disc; list-style-position: outside;</code><br>
+										<ul>
+											<li>Nested list item order <code>list-style-type: circle;</code>
+												<ul>
+													<li>Nested list item third order <code>list-style-type: square;</code></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>Ordered List</dt>
+							<dd>
+								<ol start="777">
+									<li>Lato Regular/</li>
+									<li>system sans-serif</li>
+									<li>16&#160;sp</li>
+									<li><code>list-style-position: outside;</code><br>
+										<ol>
+											<li>Nested list item</li>
+										</ol>
+									</li>
+								</ol>
+							</dd>
+							<dt class="typography-styles__code">Code</dt>
+							<dd>
+								<pre><span style="color:#72777d;">/**
+ * System font stack for monospace fonts
+ *
+ * `Menlo` – macOS 10.6+
+ * `Consolas` – Windows Vista & newer
+ * `Liberation Mono` – Fedora, Ubuntu, … OFL licensed
+ * `'Courier New', monospace` – (Generic) web font fallback
+ */</span>
+font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+font-size: 14px; <span style="color:#72777d;">/* 14&#160;sp equivalent */</span></pre>
+							</dd>
+						</dl>
+					</section>
+
+					<section id="references">
+						<h2>References</h2>
+						<ol>
+							<li>For a historic reference on the former default platform-specific font families choice in 2014, a predecessor of current selection, see <a href="https://www.mediawiki.org/wiki/Typography_refresh/Font_choice" target="_blank" rel="noopener">Typography_refresh/Font_choice on mediawiki.org</a></li>
+							<li>Find a selection of background information on fonts in our choice at <a href="https://www.mediawiki.org/wiki/Wikimedia_User_Interface/Use_cases/Font_family_stack" target="_blank" rel="noopener">Font family stack article on mediawiki.org</a></li>
+						</ol>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="content-box">
+			<ul class="footer__list footer__list--connect">
+				<li><a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+				<li><a href="https://twitter.com/@WikimediaDesign" title="Follow Wikimedia Product Design team on Twitter">Follow @WikimediaDesign</a></li>
+				<li><a href="https://lists.wikimedia.org/mailman/listinfo/design" title="Join Wikimedia Design mailing list">Join mailing list</a></li>
+			</ul>
+			<p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" property="license">Creative Commons Attribution-ShareAlike 4.0 International</a>, additional terms may apply. <br>Code is available under the MIT license.</p>
+			<ul class="footer__list footer__list--policy">
+				<li><a href="https://wikimediafoundation.org/privacy-policy/">Privacy policy</a></li>
+				<li><a href="https://design.wikimedia.org/accessibility-statement.html">Accessibility statement</a></li>
+			</ul>
+			<p><a href="https://wikimediafoundation.org/" class="lnk--wikimedia-project" property="author" typeof="Organization">A Wikimedia Foundation project</a></p>
+			<noscript><p><img src="https://piwik.wikimedia.org/piwik.php?idsite=16&rec=1" alt=""></p></noscript>
+		</div>
+	</footer>
+</body>
+</html>

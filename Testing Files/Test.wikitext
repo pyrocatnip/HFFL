@@ -1,0 +1,12 @@
+== Test ==
+This is a testing file.
+
+== Heading 1 ==
+This is an example of a first level heading.
+
+{{Infobox
+| title            =    Infobox
+| above            =    above
+| bodystyle        =    width: 22em; background: #0C0C0C
+| headerstyle      =    text-align: center; font-weight: bold
+}}

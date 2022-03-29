@@ -1,0 +1,13 @@
+# Building & testing
+npm-debug.log
+node_modules/
+.eslintcache
+
+# scap log
+/scap/log
+
+# Operating systems
+## Mac OS X
+.DS_Store
+## Windows
+Thumbs.db

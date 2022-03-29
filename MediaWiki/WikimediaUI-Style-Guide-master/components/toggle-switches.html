@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="js--off">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Components: Toggle switches - Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide/components/toggle-switches.html">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/design-style-guide.png">
+	<link rel="stylesheet" href="../css/build/wmui-style-guide.min.css">
+	<title>Components: Toggle switches – Wikimedia Design Style Guide</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs--off\b/,'js--on');
+	</script>
+	<link rel="dns-prefetch" href="https://piwik.wikimedia.org/">
+	<link rel="preload" href="../fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="../js/matomo-tracking.min.js"></script>
+	<script src="../js/wikimedia-design-style-guide.min.js" async></script>
+</head>
+<body class="page--components page--components-toggle-switches" vocab="http://schema.org/" typeof="WebPage">
+	<header id="header" class="header">
+		<div class="content-box">
+			<a href="#content" class="is-aural is-focusable">Jump to content</a>
+			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
+			<h6 class="site__title"><a href="../"><span class="site__org">Wikimedia </span><span class="site__project">Design Style Guide</span></a></h6>
+			<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
+				<i></i> <span>Menu</span>
+			</label>
+			<a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener" class="lnk--contribute" title="Fork and contribute on GitHub"><span>Contribute on </span>GitHub</a>
+		</div>
+	</header>
+	<div class="page">
+		<div class="content-box">
+			<div class="col col--start">
+				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
+				<nav id="nav--main" class="nav nav--main">
+					<ol>
+						<li class="nav__item"><a href="../index.html">Introduction</a></li>
+						<li class="nav__item"><a href="../design-principles.html">Design principles</a></li>
+						<li class="nav__item"><a href="../visual-style.html">Visual style</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="../visual-style.html">Principles</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_colors.html">Colors</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_typography.html">Typography</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_icons.html">Icons</a></li>
+								<li class="nav__sub-item is-on"><a href="../visual-style_images.html">Images</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_illustrations.html">Illustrations</a></li>
+							</ul>
+						</li>
+						<li class="nav__item is-on"><a href="../components.html">Components</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="links.html">Links</a></li>
+								<li class="nav__sub-item"><a href="buttons.html">Buttons</a></li>
+								<li class="nav__sub-item"><a href="button-groups.html">Button groups</a></li>
+								<li class="nav__sub-item"><a href="checkboxes.html">Checkboxes</a></li>
+								<li class="nav__sub-item"><a href="radio-buttons.html">Radio buttons</a></li>
+								<li class="nav__sub-item is-on"><a href="toggle-switches.html">Toggle switches</a></li>
+								<li class="nav__sub-item"><a href="dropdowns.html">Dropdowns</a></li>
+								<li class="nav__sub-item"><a href="comboboxes.html">Comboboxes</a></li>
+								<li class="nav__sub-item"><a href="text-inputs-and-textarea.html">Text inputs and textarea</a></li>
+								<li class="nav__sub-item"><a href="number-inputs.html">Number inputs</a></li>
+								<li class="nav__sub-item"><a href="file-inputs.html">File inputs</a></li>
+								<li class="nav__sub-item"><a href="messages.html">Messages</a></li>
+								<li class="nav__sub-item"><a href="language-selectors.html">Language selectors</a></li>
+								<li class="nav__sub-item"><a href="dialogs.html">Dialogs</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="../apps/apps.html">Apps</a></li>
+						<!-- <li><a href="../patterns.html">Patterns</a></li> -->
+						<li><a href="../resources.html">Resources</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col col--end">
+				<main id="content" class="content">
+					<div class="page__parent-title">Components</div>
+					<h1 class="page__title">Toggle switches</h1>
+					<p class="page__lead">Toggle switches signal an instant choice to the user.</p>
+					<figure class="components__intro" style="float: left; margin-right: 6.4rem;">
+						<img src="../img/components/toggle_switches_intro_off.svg" alt="toggle switches visual example in non-selected state">
+					</figure>
+					<figure class="components__intro">
+						<img src="../img/components/toggle_switches_intro_on.svg" alt="toggle switches visual example in selected state">
+					</figure>
+
+					<section id="using">
+						<h2>Using toggle switches</h2>
+						<p>Toggle switches must feature a descriptive label. Use toggle switches only where instant change in the user-interface based on their assigned action is intended. For non-instant selections and selection groups use <a href="checkboxes.html">checkboxes</a>.</p>
+					</section>
+					<section id="designing">
+						<h2>Designing</h2>
+						<figure class="components__designing">
+							<img src="../img/components/toggle_switches_designing.svg" alt="toggle switches design properties">
+							<figcaption class="figure__caption"></figcaption>
+						</figure>
+						<p><strong>Toggle switch</strong><br>
+							Toggle switches make the selection visually distinct. In selected state, filled <span class="color-hint" style="--color-hint: #36c;" title="#36c">Accent50</span> background with <span class="color-hint color-hint--base100" style="--color-hint: #fff;" title="#fff">Base100</span> foreground together with the toggle handle moved to the opposite side signifies a clear distinction from unselected state.</p>
+						<p><strong>Toggle switch label</strong><br>
+							Its labels should be short, with text that clearly states what action is selected.
+						</p>
+						<p>See <strong><a href="https://www.figma.com/file/2Jb1lVkhEMDFxO20I5xwyA/WikimediaUI-%E2%80%93-Components-library?node-id=217%3A167" target="_blank" rel="noopener">WikimediaUI Figma toggle switches component</a></strong>.</p>
+					</section>
+					<section id="states">
+						<h2>States of toggle switches</h2>
+						<p>The styles for toggle switch states were designed with accessible color variations, additional to the toggle handle to distinguish the toggle switch following visually separated states in selected or unselected mode (e.g. disabled, hover, active).: </p>
+						<figure class="components__states">
+							<img src="../img/components/toggle_switches_states.svg" alt="toggle switches visual design and states">
+						</figure>
+					</section>
+					<section id="coding">
+						<h2>Coding</h2>
+						<p>See <a href="https://doc.wikimedia.org/oojs-ui/master/demos/?page=widgets&theme=wikimediaui&direction=ltr&platform=desktop#ToggleSwitchWidget" target="_blank" rel="noopener">OOUI's demos section of toggle switches</a>.</p>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="content-box">
+			<ul class="footer__list footer__list--connect">
+				<li><a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+				<li><a href="https://twitter.com/@WikimediaDesign" title="Follow Wikimedia Product Design team on Twitter">Follow @WikimediaDesign</a></li>
+				<li><a href="https://lists.wikimedia.org/mailman/listinfo/design" title="Join Wikimedia Design mailing list">Join mailing list</a></li>
+			</ul>
+			<p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" property="license">Creative Commons Attribution-ShareAlike 4.0 International</a>, additional terms may apply. <br>Code is available under the MIT license.</p>
+			<ul class="footer__list footer__list--policy">
+				<li><a href="https://wikimediafoundation.org/privacy-policy/">Privacy policy</a></li>
+				<li><a href="https://design.wikimedia.org/accessibility-statement.html">Accessibility statement</a></li>
+			</ul>
+			<p><a href="https://foundation.wikimedia.org/" class="lnk--wikimedia-project" property="author" typeof="Organization">A Wikimedia Foundation project</a></p>
+			<noscript><p><img src="https://piwik.wikimedia.org/piwik.php?idsite=16&rec=1" alt=""></p></noscript>
+		</div>
+	</footer>
+</body>
+</html>

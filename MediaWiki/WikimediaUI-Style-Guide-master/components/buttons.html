@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="js--off">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Components: Buttons - Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide/components/buttons.html">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/design-style-guide.png">
+	<link rel="stylesheet" href="../css/build/wmui-style-guide.min.css">
+	<title>Components: Buttons – Wikimedia Design Style Guide</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs--off\b/,'js--on');
+	</script>
+	<link rel="dns-prefetch" href="https://piwik.wikimedia.org/">
+	<link rel="preload" href="../fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="../js/matomo-tracking.min.js"></script>
+	<script src="../js/wikimedia-design-style-guide.min.js" async></script>
+</head>
+<body class="page--components page--components-buttons" vocab="http://schema.org/" typeof="WebPage">
+	<header id="header" class="header">
+		<div class="content-box">
+			<a href="#content" class="is-aural is-focusable">Jump to content</a>
+			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
+			<h6 class="site__title"><a href="../"><span class="site__org">Wikimedia </span><span class="site__project">Design Style Guide</span></a></h6>
+			<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
+				<i></i> <span>Menu</span>
+			</label>
+			<a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener" class="lnk--contribute" title="Fork and contribute on GitHub"><span>Contribute on </span>GitHub</a>
+		</div>
+	</header>
+	<div class="page">
+		<div class="content-box">
+			<div class="col col--start">
+				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
+				<nav id="nav--main" class="nav nav--main">
+					<ol>
+						<li class="nav__item"><a href="../index.html">Introduction</a></li>
+						<li class="nav__item"><a href="../design-principles.html">Design principles</a></li>
+						<li class="nav__item"><a href="../visual-style.html">Visual style</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="../visual-style.html">Principles</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_colors.html">Colors</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_typography.html">Typography</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_icons.html">Icons</a></li>
+								<li class="nav__sub-item is-on"><a href="../visual-style_images.html">Images</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_illustrations.html">Illustrations</a></li>
+							</ul>
+						</li>
+						<li class="nav__item is-on"><a href="links.html">Components</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="links.html">Links</a></li>
+								<li class="nav__sub-item is-on"><a href="buttons.html">Buttons</a></li>
+								<li class="nav__sub-item"><a href="button-groups.html">Button groups</a></li>
+								<li class="nav__sub-item"><a href="checkboxes.html">Checkboxes</a></li>
+								<li class="nav__sub-item"><a href="radio-buttons.html">Radio buttons</a></li>
+								<li class="nav__sub-item"><a href="toggle-switches.html">Toggle switches</a></li>
+								<li class="nav__sub-item"><a href="dropdowns.html">Dropdowns</a></li>
+								<li class="nav__sub-item"><a href="comboboxes.html">Comboboxes</a></li>
+								<li class="nav__sub-item"><a href="text-inputs-and-textarea.html">Text inputs and textarea</a></li>
+								<li class="nav__sub-item"><a href="number-inputs.html">Number inputs</a></li>
+								<li class="nav__sub-item"><a href="file-inputs.html">File inputs</a></li>
+								<li class="nav__sub-item"><a href="messages.html">Messages</a></li>
+								<li class="nav__sub-item"><a href="language-selectors.html">Language selectors</a></li>
+								<li class="nav__sub-item"><a href="dialogs.html">Dialogs</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="../apps/apps.html">Apps</a></li>
+						<!-- <li><a href="../patterns.html">Patterns</a></li> -->
+						<li><a href="../resources.html">Resources</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col col--end">
+				<main id="content" class="content">
+					<div class="page__parent-title">Components</div>
+					<h1 class="page__title">Buttons</h1>
+					<p class="page__lead">Buttons signal an action that will occur when the user clicks or taps on them. </p>
+					<figure class="components__intro">
+						<img src="../img/components/buttons_normal_intro.svg" alt="button visual example">
+					</figure>
+					<p>Enabled buttons look clickable and are accessible to all users.</p>
+
+					<section id="using">
+						<h2>Using buttons</h2>
+						<p>A button toggles something in current user's context. If an action is to “navigate the user to a new resource, taking them away from current context”<sup><a href="#references">[1]</a></sup>, consider a <a href="links.html">link</a> instead. </p>
+						<p>Buttons must carry a label. They can include an icon or a 'down' indicator or any mixture of the three. In case of icon-only buttons, the label will be visually hidden while still available to screen reader users.</p>
+						<p><strong>Normal buttons and quiet buttons</strong><br>
+						Normal, framed buttons are the default choice. Quiet, frameless buttons should only be used in views, where normal buttons need to be further visually de-emphasized, see below.
+						</p>
+					</section>
+					<section id="designing">
+						<h2>Designing</h2>
+						<p>The button styles distinguish types of buttons and each button’s state (e.g. hover, active, focussed) in accessible color variations.</p>
+						<figure class="components__designing" style="margin-top: 16px;">
+							<img src="../img/components/buttons_designing.svg" alt="button design properties">
+							<figcaption class="figure__caption"></figcaption>
+						</figure>
+						<p><strong>Minimum target size</strong><br>
+							When using buttons consider the size of their target area. Make sure that the associated active touch area is at least 44 x 44&#160;dp. Otherwise users may fail to hit the active area, for example due to motor disabilities.</p>
+						<p><strong>Label</strong><br>
+							Button labels should be as short as possible, with text that clearly states what action follows clicking the button (eg. download, submit form, search). </p>
+						<p><strong>Icon</strong> <small class="is-subtle">(optional)</small><br>
+							Icons simplify user recognition and provide ability to shorten button label to a minimum.
+						</p>
+						<p><strong>Indicator</strong> <small class="is-subtle">(optional)</small><br>
+							Indicators are special icons for a small number of use cases. The only indicator on buttons is 'down' <img class="icon icon--indicator" src="../resources/WikimediaUI-icons-SVGs/down.svg" alt="down indicator"> when menus are attached. For majority of cases where menus are needed use <a href="dropdowns.html">dropdowns</a> though.
+						</p>
+						<p>See <strong><a href="https://www.figma.com/file/2Jb1lVkhEMDFxO20I5xwyA/WikimediaUI-%E2%80%93-Components-library?node-id=174%3A159" target="_blank" rel="noopener">WikimediaUI Figma buttons component</a></strong>.</p>
+					</section>
+					<section id="states">
+						<h2>States of buttons</h2>
+						<p>Buttons have following visually separate states (normal on the left, primary progressive and destructive buttons on the right): </p>
+						<figure class="components__states">
+							<img src="../img/components/buttons_normal_and_primary_states.svg" alt="buttons states">
+							<figcaption class="figure__caption"></figcaption>
+						</figure>
+						<p><span class="note note--inline note--a11y">Accessibility note:</span> Disabled normal and primary buttons are not following our minimal color contrasts elsewhere. <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 state that “…part[s] of an inactive user interface component […] have no contrast requirement”.<sup><a href="#references">[2]</a></sup><br>
+							Provide sufficient information in disabled elements context to clarify to user what is disabled and how to enable component if useful instead.</p>
+					</section>
+					<section id="types">
+						<h2>Types</h2>
+						<h3 id="type-primary-buttons">Primary buttons</h3>
+						<figure class="components__intro" style="float: left; margin-right: 74px;">
+							<img src="../img/components/buttons_primary_progressive_intro.svg" alt="primary progressive button visual example">
+						</figure>
+						<figure class="components__intro">
+							<img src="../img/components/buttons_primary_destructive_intro.svg" alt="primary destructive button visual example">
+						</figure>
+						<p>Primary buttons signal the single, primary action in a given view – a page or a dialog. As they should guide the user to the most important action (“call to action”), there should not be used twice or more of them per view.</p>
+						<p>They come in two variants (“flags”):</p>
+						<ul>
+							<li><b>Progressive</b>: Use progressive variant for actions which lead to a next step in the process.</li>
+							<li><b>Destructive</b>: Use destructive buttons for actions that remove or limit, such as deleting a page or blocking a user. Don't use it for actions such as cancel buttons.</li>
+						</ul>
+
+						<h3 id="type-toggle-buttons">Toggle buttons</h3>
+						<figure class="components__intro">
+							<img src="../img/components/buttons_toggle_intro.svg" alt="toggle buttons visual example">
+						</figure>
+						<p>Toggle buttons feature a normal and a selected state. Use them for state-persistent user actions, that are longer then a normal button click action.</p>
+
+						<h3 id="type-quiet-buttons">Quiet buttons (“frameless”)</h3>
+						<figure class="components__states">
+							<img src="../img/components/buttons_quiet_states.svg" alt="quiet buttons' states">
+						</figure>
+						<p>Use quiet buttons where a stronger focus on content is preferable, yet remain easily recognizable. For example, the icon-only edit buttons alongside sections in article view on mobile Wikipedia<sup><a href="#references">[3]</a></sup>. They still feature minimal target sizes and states to provide user clear interaction feedback. Normal (framed) buttons are the default choice for simplified recognition.</p>
+					</section>
+					<section id="coding">
+						<h2>Coding</h2>
+						<p>See <a href="https://doc.wikimedia.org/oojs-ui/master/demos/?page=widgets&theme=wikimediaui&direction=ltr&platform=desktop#demo-section-buttons" target="_blank" rel="noopener">OOUI's demos section of buttons</a>, <a href="https://doc.wikimedia.org/oojs-ui/master/demos/?page=widgets&theme=wikimediaui&direction=ltr&platform=desktop#ButtonWidget-primary-progressive" target="_blank" rel="noopener">primary buttons</a> and <a href="https://doc.wikimedia.org/oojs-ui/master/demos/?page=widgets&theme=wikimediaui&direction=ltr&platform=desktop#ToggleButtonWidget" target="_blank" rel="noopener">toggle buttons</a>.</p>
+					</section>
+					<section id="references">
+						<h2>References</h2>
+						<ol>
+							<li><a href="https://marcysutton.com/links-vs-buttons-in-modern-web-applications" target="_blank" rel="noopener">“Links vs. Buttons in Modern Web Applications” by Marcy Sutton</a></li>
+							<li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" target="_blank" rel="noopener">Web Content Accessibility Guidelines (WCAG) 2.1 – Success Criterion 1.4.3 Contrast (Minimum)</a></li>
+							<li><a href="https://en.m.wikipedia.org/wiki/Button_(computing)" target="_blank" rel="noopener">Mobile English Wikipedia: Button (computing) article with exemplified quiet edit buttons</a></li>
+						</ol>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="content-box">
+			<ul class="footer__list footer__list--connect">
+				<li><a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+				<li><a href="https://twitter.com/@WikimediaDesign" title="Follow Wikimedia Product Design team on Twitter">Follow @WikimediaDesign</a></li>
+				<li><a href="https://lists.wikimedia.org/mailman/listinfo/design" title="Join Wikimedia Design mailing list">Join mailing list</a></li>
+			</ul>
+			<p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" property="license">Creative Commons Attribution-ShareAlike 4.0 International</a>, additional terms may apply. <br>Code is available under the MIT license.</p>
+			<ul class="footer__list footer__list--policy">
+				<li><a href="https://wikimediafoundation.org/privacy-policy/">Privacy policy</a></li>
+				<li><a href="https://design.wikimedia.org/accessibility-statement.html">Accessibility statement</a></li>
+			</ul>
+			<p><a href="https://foundation.wikimedia.org/" class="lnk--wikimedia-project" property="author" typeof="Organization">A Wikimedia Foundation project</a></p>
+			<noscript><p><img src="https://piwik.wikimedia.org/piwik.php?idsite=16&rec=1" alt=""></p></noscript>
+		</div>
+	</footer>
+</body>
+</html>

@@ -108,6 +108,12 @@ table {
     line-height: 1.15em;
     display: table;
 }
+table {
+    background: #F8F9FA;
+    color: #000;
+    display: table;
+    overflow: scroll;
+}
 tr {
     margin-top: 0.25em;
     margin-bottom: 0.5em;

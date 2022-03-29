@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="js--off">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Components: Links - Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide/components/links.html">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/design-style-guide.png">
+	<link rel="stylesheet" href="../css/build/wmui-style-guide.min.css">
+	<title>Components: Links – Wikimedia Design Style Guide</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs--off\b/,'js--on');
+	</script>
+	<link rel="dns-prefetch" href="https://piwik.wikimedia.org/">
+	<link rel="preload" href="../fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="../js/matomo-tracking.min.js"></script>
+	<script src="../js/wikimedia-design-style-guide.min.js" async></script>
+</head>
+<body class="page--components page--components-links" vocab="http://schema.org/" typeof="WebPage">
+	<header id="header" class="header">
+		<div class="content-box">
+			<a href="#content" class="is-aural is-focusable">Jump to content</a>
+			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
+			<h6 class="site__title"><a href="../"><span class="site__org">Wikimedia </span><span class="site__project">Design Style Guide</span></a></h6>
+			<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
+				<i></i> <span>Menu</span>
+			</label>
+			<a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener" class="lnk--contribute" title="Fork and contribute on GitHub"><span>Contribute on </span>GitHub</a>
+		</div>
+	</header>
+	<div class="page">
+		<div class="content-box">
+			<div class="col col--start">
+				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
+				<nav id="nav--main" class="nav nav--main">
+					<ol>
+						<li class="nav__item"><a href="../index.html">Introduction</a></li>
+						<li class="nav__item"><a href="../design-principles.html">Design principles</a></li>
+						<li class="nav__item"><a href="../visual-style.html">Visual style</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="../visual-style.html">Principles</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_colors.html">Colors</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_typography.html">Typography</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_icons.html">Icons</a></li>
+								<li class="nav__sub-item is-on"><a href="../visual-style_images.html">Images</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_illustrations.html">Illustrations</a></li>
+							</ul>
+						</li>
+						<li class="nav__item is-on"><a href="links.html">Components</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item is-on"><a href="links.html">Links</a></li>
+								<li class="nav__sub-item"><a href="buttons.html">Buttons</a></li>
+								<li class="nav__sub-item"><a href="button-groups.html">Button groups</a></li>
+								<li class="nav__sub-item"><a href="checkboxes.html">Checkboxes</a></li>
+								<li class="nav__sub-item"><a href="radio-buttons.html">Radio buttons</a></li>
+								<li class="nav__sub-item"><a href="toggle-switches.html">Toggle switches</a></li>
+								<li class="nav__sub-item"><a href="dropdowns.html">Dropdowns</a></li>
+								<li class="nav__sub-item"><a href="comboboxes.html">Comboboxes</a></li>
+								<li class="nav__sub-item"><a href="text-inputs-and-textarea.html">Text inputs and textarea</a></li>
+								<li class="nav__sub-item"><a href="number-inputs.html">Number inputs</a></li>
+								<li class="nav__sub-item"><a href="file-inputs.html">File inputs</a></li>
+								<li class="nav__sub-item"><a href="messages.html">Messages</a></li>
+								<li class="nav__sub-item"><a href="language-selectors.html">Language selectors</a></li>
+								<li class="nav__sub-item"><a href="dialogs.html">Dialogs</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="../apps/apps.html">Apps</a></li>
+						<!-- <li><a href="../patterns.html">Patterns</a></li> -->
+						<li><a href="../resources.html">Resources</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col col--end">
+				<main id="content" class="content">
+					<div class="page__parent-title">Components</div>
+					<h1 class="page__title">Links</h1>
+					<p class="page__lead">Links signal an action that will let the user navigate to another page, view or resource, when they click or tap on them. The following examples are emphasized in bold for presentation only.</p>
+					<figure class="components__intro">
+						<img src="../img/components/links_intro.svg" alt="link visual example">
+					</figure>
+
+					<section id="using">
+						<h2>Using links</h2>
+						<p>Links must include a descriptive link text or a combination of the text and an additional icon.</p>
+					</section>
+					<section id="designing">
+						<h2>Designing</h2>
+						<p><strong>Link text</strong><br>
+							Link text should describe the assigned action as clear and short as possible in active voice (e.g. download, submit form, search). </p>
+						<p><strong>Icon</strong> <small class="is-subtle">(optional)</small><br>
+							Icons simplify user recognition and provide ability to shorten link text to a minimum. Icons should be limited to differentiate from a standard hyperlink (i.e. if it does something other than navigating to a new page). In contrast to buttons, icons are only allowed additionally to link text, not as only link signifier.
+						</p>
+						<p>Examples of non-standard links include:</p>
+						<ul>
+							<li>Links that open a modal instead of a new page (e.g. map links)</li>
+							<li>Links that open a file instead of a web page (e.g. PDF or document links)</li>
+							<li>Links that cause something to happen that the user would otherwise not expect (e.g. play a sound, like pronunciation links)</li>
+							<li>Links that open a new website instead of just a new page (external links)<sup><a href="#references">[1]</a></sup></li>
+							<li>Links that open a non-web protocol URI (e.g. <code>mailto:</code>, <code>tel:</code> links)</li>
+						</ul>
+						<p>Several Wikimedia Movement projects provide extensive “manuals of style” for applying and designing for links, for example English Wikipedia.<sup><a href="#references">[2]</a></sup></p>
+						<p>See <strong><a href="https://www.figma.com/file/2Jb1lVkhEMDFxO20I5xwyA/WikimediaUI-%E2%80%93-Components-library?node-id=217%3A161" target="_blank" rel="noopener">WikimediaUI Figma links component</a></strong>.</p>
+					</section>
+					<section id="states">
+						<h2>States of links</h2>
+						<p>The link styles outlined here were designed with accessible color variations to distinguish the link’s following visually separated interaction states: </p>
+						<figure class="components__states">
+							<img src="../img/components/links_states.svg" alt="links states">
+							<figcaption class="figure__caption"></figcaption>
+						</figure>
+						<p>Links focus outline is the default browser focus, here Blink based browsers only with outline color amendment to <span class="color-hint" style="--color-hint: #36c;" title="#36c">Accent50</span>. This varies in different browsers.<br>Links don't feature a disabled state. Consider using <a href="buttons.html#type-quiet-buttons">quiet buttons</a> for those applications instead.</p>
+					</section>
+					<section id="types">
+						<h2>Types</h2>
+						<p>By default, links are only underlined on interaction (hover, active).</p>
+
+						<h3>Underlined links</h3>
+						<p>To suit user preference and for accessibility reasons MediaWiki also provides a setting to always underline links.</p>
+						<figure class="components__intro">
+							<img src="../img/components/links_underlined_intro.svg" alt="Links of underlined type, visual example">
+						</figure>
+
+						<h3>New links</h3>
+						<p>A speciality of wiki software and MediaWiki are so called “new links”. Links to article and pages that are yet to be written. These apply <span class="color-hint" style="--color-hint: #d33;" title="#d33">Red50</span> in both, normal or underlined type.</p>
+						<figure class="components__intro">
+							<img src="../img/components/links_new_intro.svg" alt="Links of underlined type, visual example">
+						</figure>
+					</section>
+					<section id="references">
+						<h2>References</h2>
+						<ol>
+							<li><a href="https://en.wikipedia.org/wiki/Wikipedia:External_links" target="_blank" rel="noopener">English Wikipedia: External links</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Linking" target="_blank" rel="noopener">English Wikipedia: Manual of Style/Linking</a></li>
+						</ol>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="content-box">
+			<ul class="footer__list footer__list--connect">
+				<li><a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+				<li><a href="https://twitter.com/@WikimediaDesign" title="Follow Wikimedia Product Design team on Twitter">Follow @WikimediaDesign</a></li>
+				<li><a href="https://lists.wikimedia.org/mailman/listinfo/design" title="Join Wikimedia Design mailing list">Join mailing list</a></li>
+			</ul>
+			<p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" property="license">Creative Commons Attribution-ShareAlike 4.0 International</a>, additional terms may apply. <br>Code is available under the MIT license.</p>
+			<ul class="footer__list footer__list--policy">
+				<li><a href="https://wikimediafoundation.org/privacy-policy/">Privacy policy</a></li>
+				<li><a href="https://design.wikimedia.org/accessibility-statement.html">Accessibility statement</a></li>
+			</ul>
+			<p><a href="https://foundation.wikimedia.org/" class="lnk--wikimedia-project" property="author" typeof="Organization">A Wikimedia Foundation project</a></p>
+			<noscript><p><img src="https://piwik.wikimedia.org/piwik.php?idsite=16&rec=1" alt=""></p></noscript>
+		</div>
+	</footer>
+</body>
+</html>

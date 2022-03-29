@@ -1,0 +1,1760 @@
+/* ::: Vendor Imports ::: */
+/* Load files from 'node_modules' folders with postCSS-import plugin.
+ * Modules specified in package.json file. */
+/**
+ * WikimediaUI Base v0.19.0
+ * Wikimedia Foundation user interface base variables
+ * https://gerrit.wikimedia.org/g/wikimedia-ui-base/
+ *
+ * See also https://design.wikimedia.org/style-guide/
+ */
+:root {
+	/* == Breakpoints == */
+	/* The following numbers are prone to change with new information. */
+
+	/**
+	 * Minimum available screen width at which a device can be considered a mobile device
+	 * Many older feature phones have screens smaller than this value.
+	 */
+
+	/**
+	 * Minimum available screen width at which a device can be considered a tablet
+	 * The number is currently based on the device width of a Samsung Galaxy S5 mini and is low
+	 * enough to cover iPad (768px).
+	 */
+
+	/* Minimum available screen width at which a device can be considered a desktop. */
+
+	/* Wider desktop breakpoint, currently used in Flow. */
+
+	/* Extra wide desktop breakpoint */
+
+
+	/* == Colors == */
+	/**
+	 * WikimediaUI (`wmui`) color palette
+	 * See https://design.wikimedia.org/style-guide/visual-style_colors.html
+	 * Don't use those variables directly, instead define your vars
+	 * referring to them as applied further below.
+	 */    /* = HSB 0°, 0%, 0% */ /* = HSB 210°, 6%, 13% */ /* = HSB 207°, 10%, 36%; WCAG 2.0 level AAA 7.09:1 contrast ratio on `#fff` */ /* = HSB 210°, 9%, 49%; WCAG 2.0 level AA at 4.52:1 contrast ratio on `#fff` */ /* = HSB 212°, 8%, 69% */ /* = HSB 213°, 4%, 82% */ /* = HSB 220°, 3%, 94% */ /* = HSB 210°, 1%, 98% */    /* = HSB 0°, 0%, 100% */ /* = HSB 220°, 70%, 55% */    /* = HSB 220°, 75%, 80% */ /* = HSB 214°, 8%, 100% */ /* = HSB 360°, 80%, 70% */    /* = HSB 360°, 77%, 87% */ /* = HSB 3°, 9%, 100% */ /* = HSB 36°, 100%, 67% */    /* = HSB 45°, 80%, 100% */ /* = HSB 39°, 9%, 100% */ /* = HSB 167°, 85%, 53% */ /* = HSB 167°, 100%, 69% */ /* = HSB 166°, 16%, 99% */
+
+	/* Modifier colors, not part of official palette, limited to interaction state usage. */ /* = `filter: brightness( 109% )` */ /* ~= `filter: brightness( 120% )` */
+
+	/* From here on no static color values, only variable references. */
+	/* Background Colors */
+	/* 'Framed' UI elements (Framed Buttons, Dropdowns, ToggleSwitches…) */
+	/* 'Filled' UI elements (Checkboxes, Radios, ProgressBars…) */
+	/* Binary Input elements (Checkboxes, Radios, Toggle Switches) */
+	/* Quiet Buttons */
+	/* Use `rgba()` values here as the quiet buttons need to blend in with background. */ /* = `--wmui-color-base90` on white. */ /* = `--wmui-color-base80` on white. */
+	/* Toolbar and Tools */
+	/* Tabs Navigation Background Color */
+	/* User system messages (errors, warnings, successes, notices) */
+	/* Highlight Colors for text highlighting, think metaphorically text marker */ /* Equals to `#ffe29e` on `#fff` background. */
+
+	/* Foreground Colors */
+	/* Primary 'Progressive' Color, Background Color and states */
+	/* 'Destructive' Color, Background Color and states */
+	/* Secondary Color and states (links only) */
+	/* User system messages (errors, warnings, successes, notices) */
+	/* Toolbar and Tools */ /* Used here in combination with `:hover` background-color turning light grey */
+
+
+	/* Opacity */ /* = `#7d7d7d` on `background-color: #fff`; HSB 0°, 0%, 49% */ /* = `#222` on `background-color: #fff`, closest to `#202122` */ /* = `#424242` on `background-color: #fff`, closest to `#404244` */ /* = `#555`, closest to `#54595d` on background-color `#fff`. */
+
+
+	/* == Positioning == */
+	/* Positioning Model */
+	/* Use `px` unit to prevent pixel rounding error when using `@size-input-binary / 4`. */
+	/* Works with different sizes on mobile and desktop as it negatively offsets from outside. */
+
+	/* Z-Index */
+
+
+	/* == Box Model properties == */
+	/* `--*size` variables are used for `*width` & `*height` properties. */ /* Values used for `min-*` are defined in `px`, see T130691. */
+
+	/* Max Widths */ /* = `460px` at `16px` base, see T95367 */
+
+	/* Border */
+	/* User system messages (errors, warnings, successes, notices) */
+	/* Border Colors */
+	/* Border Colors primary buttons */ /* See T168029 */
+	/* Border Colors user system messages */
+	/* Border Styles */
+	/* Border Widths */
+	/* Border Radius */
+
+	/* Paddings */
+	/* Must be < `8` as it cuts off scripts like Burmese. Directly connected to `line-height` further down. */
+	/* Menu items don't have a border. So add it to padding. */
+
+	/* Box Shadows */
+	/* Base widget `box-shadow` set to `transparent` for transition purpose. */
+
+	/* Outlines */
+	/* Enable Windows high contrast mode on certain widgets, that have default outlines overridden. */
+
+
+	/* == Typography incl. print properties == */
+	/* See https://design.wikimedia.org/style-guide/visual-style_typography.html */
+	/* Font Families */
+	/* To be deprecated, see T247166. */
+	/* Provide better operating system-specific readability, see T175877. */
+	/* `system-ui` is currently not an option due to OS/language combination issues, see T175877#4776576. */
+	/* Provide better operating system-specific monospace stack, see T209915. */ /* See T176636. */
+	/* Font Weights */
+	/* See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping */
+	/* Line Heights */
+	/* Text Shadows */ /* 'coined' effect */
+
+
+	/* == Other Properties == */
+	/* Cursors */
+
+
+	/* == Animation & Transition == */
+	/* Transitions */ /* `ease` is the initial value */
+	/* `ease-out` is preferably used on human initiated transitions, for example dialogs */
+	/* Transitions > Durations */
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -moz-box-sizing: content-box;
+       box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+     -moz-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+/* ::: Local Imports ::: */
+@font-face {
+	font-family: 'Charter';
+	src: url( '../../fonts/Charter_regular.woff2' ) format( 'woff2' ),
+		 url( '../../fonts/Charter_regular.woff' ) format( 'woff' );
+	font-style: normal;
+	font-weight: 400;
+	text-rendering: optimizeLegibility; /* Attention: Android Stock Browser <= 4.3 doesn't show web font with this setting, but it also doesn't support WOFF :) */
+}
+@font-face {
+	font-family: 'Charter';
+	src: url( '../../fonts/Charter_bold.woff2' ) format( 'woff2' ),
+		 url( '../../fonts/Charter_bold.woff' ) format( 'woff' );
+	font-style: normal;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+/*
+@font-face {
+	font-family: 'Charter';
+	src: url( '../fonts/Charter_italic.woff2' ) format( 'woff2' ),
+		 url( '../fonts/Charter_italic.woff' ) format( 'woff' );
+	font-style: italic;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'Charter';
+	src: url( '../fonts/Charter_bold-italic.woff2' ) format( 'woff2' ),
+		 url( '../fonts/Charter_bold-italic.woff' ) format( 'woff' );
+	font-style: italic;
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+}
+*/
+:root {
+	/* HACK; Add Georgia to serif fallback as long as WikimediaUI Base isn't updated. */ /* stylelint-disable-line value-keyword-case */
+	/* Setting bold to `600` as our stack works better with it, only Lato is on the edge.
+	   Helvetica and Arial fallback gracefully to `700`, see T246791. */
+}
+* {
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: #eaecf0; /* FIXME: var; */
+	color: #202122;
+	margin: 0;
+	font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.6;
+}
+/* ::: Normalize Browser Rendering Support ::: */
+/* Support IE 9-: Add the correct display as we're relying on
+ * normalize v8 which only supports IE 10+. */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+/* ::: Text Block-Level Elements ::: */
+/* ... Headings ... */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	margin: 3.2rem 0 0;
+	line-height: 1.25;
+	-webkit-transition: font-size 250ms, font-weight 250ms;
+	transition: font-size 250ms, font-weight 250ms;
+}
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+}
+h1,
+.page__title {
+	font-family: Georgia, serif; /* Fallback */
+	font-size: 3.2rem;
+	font-weight: 400;
+}
+h2 {
+	border-bottom: 3px solid #eaecf0;
+	padding-bottom: 2px;
+	font-size: 2.4rem;
+}
+/* Reduce top margin when introductory headlines are following each other. */
+h2 + h3 {
+	margin-top: 1.6rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.8rem;
+}
+h5 {
+	font-size: 1.6rem;
+}
+h6 {
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+/* ... Other Block-Level Elements ... */
+blockquote {
+	margin: 1.6rem 0 0;
+	border-left: 4px solid #eaecf0;
+	padding: 0.8rem 3.2rem;
+	font-family: Georgia, serif; /* Fallback */
+	font-size: 2rem;
+	font-style: italic;
+}
+blockquote cite {
+	display: block;
+	margin-top: 0.8rem;
+	font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.4rem;
+	font-style: normal;
+}
+blockquote cite:before {
+		content: '— ';
+	}
+code,
+pre,
+.mw-code {
+	font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
+hr {
+	background: #eaecf0;
+	display: block;
+	height: 0.8rem;
+	border: 0;
+	margin: 8rem 0;
+}
+p {
+	margin: 3.2rem 0 0;
+}
+h1 + p,
+	h2 + p,
+	h3 + p,
+	h4 + p,
+	h5 + p,
+	h6 + p,
+	p + p,
+	ul + p,
+	p:first-child {
+		margin: 0.8rem 0 0;
+	}
+blockquote + p {
+		margin-top: 1.6rem;
+	}
+pre,
+.mw-code {
+	background-color: #f8f9fa;
+	color: #000;
+	border: 1px solid #a2a9b1;
+	padding: 1.2rem 2rem;
+	font-size: 1.4rem;
+	white-space: pre-wrap;
+}
+/* ... Lists ... */
+ol,
+ul {
+	margin: 0.8rem 0;
+	padding: 0 0 0 1.8rem; /* Can't remain within our 8px based sizing due to browser defaults */
+}
+.content li {
+	margin-top: 0.4rem;
+}
+.content li:first-child {
+		margin-top: 0;
+	}
+/* ... Images & Figures ... */
+figure {
+	margin: 0.8rem 0 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin: 1.6rem 0 0;
+}
+.page--components figure {
+	margin-left: 6.4rem;
+	padding-top: 0.8rem;
+}
+.page--components figure img {
+	margin-top: 0.8rem;
+}
+.is-comparison img {
+	float: left;
+	margin-left: 1.2rem;
+}
+.is-comparison img:first-child {
+		margin-left: 0;
+	}
+/* ::: Inline Elements ::: */
+a {
+	color: #36c;
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: underline;
+	}
+a:active {
+		color: #2a4b8d;
+	}
+b,
+strong {
+	font-weight: 600;
+}
+code {
+	background-color: #f8f9fa;
+	display: inline-block;
+	padding: 0.2rem 0.4rem;
+	font-size: 1.4rem;
+}
+small {
+	font-size: 1.3rem;
+}
+sub,
+sup {
+	font-size: 1.1rem;
+}
+/* ::: General Classes ::: */
+/* ::: Text for Screen Readers only ::: */
+.is-aural {
+	display: block;
+	position: absolute;
+	clip: rect( 1px, 1px, 1px, 1px );
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.is-aural.is-focusable:active,
+	.is-aural.is-focusable:focus {
+		position: static;
+		clip: auto;
+		width: auto;
+		height: auto;
+		margin: 0;
+		text-decoration: underline;
+		overflow: visible;
+	}
+.clearfix:before,
+.clearfix:after,
+.page:before,
+.page:after,
+.content-box:before,
+.content-box:after,
+.color-palette:before,
+.color-palette:after,
+.figures-box:before,
+.figures-box:after,
+.figures-do-dont:before,
+.figures-do-dont:after,
+.is-comparison:before,
+.is-comparison:after,
+.content__illustration-style .figure--full:before,
+.content__illustration-style .figure--full:after {
+	content: ' ';
+	display: table;
+}
+.clearfix:after,
+.page:after,
+.content-box:after,
+.color-palette:after,
+.figures-box:after,
+.figures-do-dont:after,
+.is-comparison:after,
+.content__illustration-style .figure--full:after {
+	clear: both;
+}
+/* ::: Text-formatting ::: */
+/* Support Blink based browsers. */
+/* They use `outline` for focus styles, we're only amending the color here, see T245887. */
+:focus {
+	outline-color: #36c;
+}
+.is-complementary,
+.is-subtle {
+	color: #72777d;
+}
+.is-complementary {
+	font-size: 1.4rem;
+}
+::-webkit-input-placeholder {
+	color: #72777d;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #72777d;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #72777d;
+	opacity: 1;
+}
+::-ms-input-placeholder {
+	color: #72777d;
+	opacity: 1;
+}
+::placeholder,
+.is-placeholder {
+	color: #72777d;
+	opacity: 1;
+}
+.content-box {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 1.6rem; /* FIXME: var( --grid-padding ); */
+	padding-right: 1.6rem;
+}
+/* ::: Structure ::: */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 6.4rem;
+	line-height: 6.4rem;
+}
+.site__title {
+		color: #202122;
+		margin-top: 0;
+		height: 6.4rem;
+		font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+		font-size: 1.6rem;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
+.site__title a {
+			color: inherit;
+			display: inline-block;
+			padding: 1.2rem 3.2rem 0;
+			-webkit-transition: color 250ms;
+			transition: color 250ms;
+		}
+.site__title a:hover {
+			color: #000; /* --color-base-emphasized */
+			text-decoration: none;
+		}
+.site__org {
+			display: block;
+		}
+.site__project {
+			font-weight: 600;
+		}
+/* ... Navigation button ... */
+.btn--nav-main {
+		position: absolute;
+		top: 1.2rem;
+		width: 4.2rem;
+		height: 4.2rem;
+		cursor: pointer;
+	}
+/* Fake hamburger icon */
+.btn--nav-main i {
+		display: block;
+		height: 4.2rem;
+		-webkit-transition: color 250ms, box-shadow 250ms;
+		transition: color 250ms, box-shadow 250ms;
+	}
+.btn--nav-main i:before,
+	.btn--nav-main i:after {
+		content: '';
+		background-color: #54595d;
+		width: 2rem;
+		height: 2px;
+		position: absolute;
+		top: 0.4rem;
+		left: 0;
+	}
+.btn--nav-main i:after {
+		top: 1.1rem;
+		box-shadow: 0 0.7rem 0 #54595d;
+	}
+.btn--nav-main i:hover:before,
+	.btn--nav-main i:hover:after {
+		background-color: #000; /* --color-base-emphasized */
+	}
+.btn--nav-main i:hover:after {
+		box-shadow: 0 0.7rem 0 #000;
+	}
+.btn--nav-main span {
+		display: block;
+		position: absolute;
+		clip: rect( 1px, 1px, 1px, 1px );
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+	}
+/* ... GitHub Contribute Link ... */
+.lnk--contribute {
+		font-size: 1.4rem;
+		line-height: 1.4rem; /* Derive slightly from template for cross-browser compliance */
+	}
+/* ... Content ... */
+.page {
+	background-color: #fff;
+	position: relative;
+	margin-top: 6.4rem;
+	padding: 6.4rem 0;
+	box-shadow: 0 1px 4px 0 rgba( 0, 0, 0, 0.25 );
+	overflow-y: hidden;
+}
+.content {
+	float: left;
+}
+.col {
+	float: left;
+	position: relative;
+	min-height: 1px;
+}
+.col--start {
+		padding: 0;
+	}
+.col--end {
+		padding: 0;
+	}
+/* ... Main Navigation ... */
+.nav--main {
+	background-color: #fff; /* needed for menu appearance on mobile below */
+	/* margin-top: 6.4rem; */
+}
+.nav--main li:not( .is-on ) ul,
+.trigger--nav-main {
+	display: none;
+}
+.nav--main ol,
+.nav--main ul {
+	padding: 0;
+}
+.nav--main ol:first-child {
+	margin: 0;
+}
+.nav--main li {
+	padding: 0;
+	list-style: none none;
+}
+.nav--main > ol > li {
+	margin-bottom: 0.4rem;
+}
+.nav--main a {
+	color: #202122;
+	display: block;
+	padding: 0.8rem 1.2rem;
+	font-size: 1.6rem;
+	text-decoration: none;
+	-webkit-transition: background-color 250ms, color 250ms, padding 250ms;
+	transition: background-color 250ms, color 250ms, padding 250ms;
+}
+.nav--main a:hover,
+.nav--main a:focus {
+	background-color: #f8f9fa;
+	color: #000;
+}
+.nav--main .is-on > a {
+	background-color: #eaf3ff;
+	color: #36c;
+	/* border-left: 2px solid var( --color-primary ); */
+	border-radius: 2px;
+	font-weight: 600;
+	cursor: default;
+}
+.nav__sub-items {
+	margin-top: 1.2rem;
+	margin-bottom: 1em; /* FIXME: replace with rem and mt */
+}
+.nav__sub-items > .nav__sub-item {
+	margin-left: 3.6rem;
+}
+.nav--main .nav__sub-items ul {
+	margin: 0;
+}
+.nav--main .nav__sub-items a { /* stylelint-disable-line no-descending-specificity */
+	color: #54595d;
+	border-left: 1px solid #eaecf0;
+    border-radius: 0 2px 2px 0;
+	padding-left: 1.6rem;
+	font-size: 1.4rem;
+	-webkit-transition: background-color 250ms, color 250ms;
+	transition: background-color 250ms, color 250ms;
+}
+.nav--main .nav__sub-item.is-on > a {
+	background-color: #fff;
+	color: #000;
+	border-left-color: #000;
+	font-weight: 600;
+}
+.nav--main .nav__sub-item .nav__sub-item a {
+	padding-left: 3.6rem;
+}
+/* ::: Content ::: */
+.page__parent-title {
+	color: #72777d;
+	margin-top: -2.8rem;
+}
+.page__title {
+	margin-top: -0.8rem;
+}
+.page__parent-title + .page__title {
+	margin-top: -0.4rem;
+}
+.page__tagline {
+	margin-top: 1.2rem;
+	font-size: 2rem;
+	font-style: italic;
+	font-weight: 100;
+}
+/* Remove, doesn't provide good styling
+.page__lead {
+	font-size: 1.8rem;
+}
+*/
+.figures--full {
+	background-color: #f8f9fa;
+}
+.figure--centered .figure__image {
+	margin-left: auto;
+	margin-right: auto;
+}
+.figure__caption,
+.heading__description {
+	color: #72777d;
+	clear: both;
+	display: block;
+	font-size: 1.3rem;
+}
+.figure__caption {
+	padding-top: 0.8rem; /* `padding-top` due to usage with floated images in figure above */
+	font-style: italic;
+}
+.figure__caption:empty {
+		display: none;
+	}
+.heading__description {
+	float: right;
+	margin-top: -1.9rem;
+}
+.heading__description + * {
+		clear: both;
+	}
+/* ... Comparison Figures ... */
+.figure--comparison {
+	float: left;
+}
+/* ... “Do” & “Don't” figures ... */
+.figures-do-dont {
+	margin-top: 1.6rem;
+}
+.figures-do-dont .figure {
+	background-color: #eaecf0;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+}
+.figures-do-dont .figure--dont {
+	border-left: 1px solid #fff;
+}
+.figures-do-dont .figure__caption {
+	background-color: #fff;
+	display: block;
+	border-top-width: 0.8rem;
+	border-top-style: solid;
+	padding-right: 0.8em;
+}
+.figure--do .figure__caption,
+.do {
+	border-top-color: #00af89;
+}
+.figure--dont .figure__caption,
+.dont {
+	border-top-color: #d33;
+}
+.do,
+.dont {
+	font-style: normal;
+	font-weight: 600;
+}
+.do:before,
+	.dont:before {
+		display: inline-block;
+		margin-right: 0.4rem;
+		padding-top: 0.4rem;
+		font-size: 2.1rem;
+		line-height: 1rem;
+		vertical-align: top;
+	}
+.do {
+	color: #14866d;
+}
+.do:before {
+		content: '✓';
+	}
+.dont {
+	color: #d33;
+}
+.dont:before {
+		content: '×';
+	}
+/* ... Notes ... */
+.note--a11y:before,
+.note--i18n:before {
+	content: '';
+	background-image: url( ../../resources/WikimediaUI-icons-SVGs/eye.svg );
+	background-repeat: no-repeat;
+	opacity: 0.67;
+	display: inline-block;
+	width: 2.4rem;
+	height: 2rem;
+	vertical-align: text-top;
+}
+/* ... Color ... */
+.color-palette {
+	margin: 2.4rem 0 0;
+	padding: 0;
+}
+.color-palette + .color-palette {
+	margin-top: 0;
+}
+.color-palette + p {
+	margin-top: 1.6rem;
+}
+.color {
+	color: #000;
+	list-style: none none;
+	display: block;
+	float: left;
+	position: relative;
+	width: 61.8%;
+	height: 16rem;
+	margin-bottom: 3.2rem;
+	padding: 1.2rem;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	font-size: 1.4rem;
+}
+.color--dark,
+	.color__wcag-level span {
+		color: #fff;
+	}
+.color--dark .color__wcag-level span {
+		color: #000;
+	}
+.color-palette .color:first-child {
+		margin-top: 0.4rem;
+	}
+.color-palette--overview .color {
+		width: 6.4rem;
+		height: 6.2rem;
+		margin-top: 0.8rem;
+		margin-right: 1.2rem;
+		margin-bottom: 2.4rem;
+		border-radius: 3.2rem;
+		cursor: default;
+	}
+.color-palette--overview .color:first-child {
+		margin-top: 0.8rem;
+	}
+.color-palette--overview .color--emphasized {
+		width: 7.2rem;
+		height: 7rem;
+		margin-top: 0;
+		border-radius: 7.2rem;
+		padding-top: 2rem;
+	}
+.color-palette--base .color {
+		margin-right: 1.35rem;
+	}
+.color-section .color .color-code--hsb {
+		-webkit-transition: opacity 250ms;
+		transition: opacity 250ms;
+	}
+.color-section .color:hover .color-code--hsb {
+			opacity: 1;
+		}
+.color__name {
+		display: block;
+		position: absolute;
+		bottom: 1.2rem;
+		left: 1.2rem;
+		font-size: 3.2rem;
+		font-weight: 100;
+	}
+.color-palette--overview .color__name {
+			position: relative;
+			bottom: auto;
+			left: auto;
+			padding-top: 1.2rem;
+			font-size: 2.4rem;
+			line-height: 1;
+		}
+.color__type,
+		.color-code.color-code--rgb,
+		.color-palette--overview .color__name,
+		.color-palette--overview .color-code {
+			display: none;
+		}
+.color-code {
+		background-color: inherit;
+		display: block;
+		padding: 0;
+		font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+	}
+.color-code--hsb {
+			opacity: 0;
+		}
+@supports ( --css: variables ) {
+	.color-hint {
+		white-space: nowrap;
+	}
+
+	.color-hint:before {
+		content: '';
+		background-color: var( --color-hint );
+		display: inline-block;
+		width: 1.2rem;
+		height: 1.2rem;
+		margin: 0 0.4rem 0.3rem 0.2rem;
+		border-radius: 50%;
+		vertical-align: text-bottom;
+		cursor: help;
+	}
+
+	.color-hint--base100:before {
+		border: 1px solid #a2a9b1;
+	}
+}
+/* ... Icon ... */
+.icon {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin: 0 0.2rem;
+	vertical-align: text-bottom;
+}
+.icon--indicator {
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-bottom: 0.2rem;
+	}
+.icon--intermediate {
+		width: 1.6rem;
+		height: 1.6rem;
+		margin-bottom: 0.2rem;
+	}
+/* ... Components ... */
+/*
+.page--components h2 {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+*/
+.components__designing {
+	position: relative;
+}
+.components__designing:after {
+	content: '';
+	background: url( ../../img/components/legend_16-8.svg ) no-repeat;
+	position: absolute;
+	bottom: 0;
+	right: 6.4rem;
+	width: 13.2rem;
+	height: 6.4rem;
+}
+/*
+.components__states,
+.components__imagery
+*/
+/* Messages */
+.page--components-messages .components__intro {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Override general img border radius for correct Message representation */
+.page--components-messages img {
+	border-radius: 0;
+}
+/* ... Resources ... */
+.resources-table {
+	display: table;
+	width: 100%;
+	margin-top: 2.4rem;
+	border-collapse: collapse;
+}
+.resources-table__head,
+.resources-table__body {
+	display: table-row;
+	border-bottom: 1px solid #a2a9b1;
+}
+.resources-table__head {
+	background-color: #eaecf0;
+}
+.resources-table__head h2 {
+		margin-top: 0;
+		border-bottom: 0;
+		padding-bottom: 0;
+		font-size: 2.1rem;
+		font-weight: 400;
+	}
+.resources-table__cell {
+	display: table-cell;
+	padding: 1.6rem 1.6rem 1.6rem 0;
+}
+.resources-table__head .resources-table__cell:first-child {
+		padding-left: 1.6rem;
+	}
+.lnk-resource {
+	white-space: nowrap;
+}
+/* ::: Footer ::: */
+.footer {
+	color: #202122;
+	padding: 2.4rem 0;
+	font-size: 1.3rem;
+}
+.footer__list {
+	padding: 0;
+}
+.footer__list:first-child {
+		margin: 0;
+	}
+.footer__list:after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+.footer__list li {
+		list-style: none none;
+		display: block;
+		padding: 0.8rem 0 0;
+	}
+.footer__list li:first-child {
+		padding-top: 0;
+	}
+.footer__list + p {
+		margin-top: 1.2rem;
+	}
+.footer__list--connect a {
+		font-weight: 600;
+	}
+.lnk--wikimedia-project {
+	display: inline-block;
+	padding: 0.4rem 0;
+	text-transform: uppercase;
+}
+/* ::: Page-specific Styles ::: */
+/* ... Homepage ... */
+.page--home .page__title {
+	border: 0;
+	padding: 0;
+}
+/* ... “Design principles – Accessibility” ... */
+.page--design-principles-accessibility .nav--main .is-on > a {
+	cursor: pointer;
+}
+.page--design-principles-accessibility h3 {
+	padding-right: 15%;
+}
+/* ... “Typography” ... */
+.page--visual-style-typography .figures-do-dont .figure__contents {
+	padding: 4.2rem 3.6rem;
+}
+.figures-do-dont--contrast .figure--dont {
+	color: #a2a9b1;
+}
+/* ... Typography Styles ... */
+.typography-styles dt {
+	display: inline-block;
+	color: #72777d;
+	min-width: 10rem;
+	margin: 0 0 3.2rem 1.6rem; /* Need to rely on `margin-bottom` here for vertical alignment */
+	font-size: 1.3rem;
+	font-weight: 600;
+	vertical-align: top;
+}
+.typography-styles .typography-styles__blockquote {
+	margin-bottom: 4.8rem;
+}
+.typography-styles .typography-styles__code {
+	margin-bottom: 0;
+}
+.typography-styles dd {
+	display: inline;
+}
+.typography-styles dd > * {
+	display: inline-block;
+	margin-top: 0; /* Remove `margin` from elements like paragraphs and list elements */
+}
+.typography-styles .figure__caption {
+	padding-top: 0; /* Remove `padding` from elements like figure caption */
+}
+.typography-styles dd:after {
+     content: '\A';
+     white-space: pre;
+}
+.typography-styles + hr {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+/* ... “Icons” ... */
+.page--visual-style-icons img { /* FIXME: generalize image styles */
+	background-color: #eaecf0; /* FIXME: var; */
+	padding: 2.4rem;
+}
+/* ::: Dynamic content ::: */
+.fonts-loaded cite,
+.fonts-loaded .site__title,
+.fonts-loaded .color-code {
+	font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+/* ::: Text Block-Level Elements ::: */
+.fonts-loaded .page__title,
+.fonts-loaded blockquote,
+.fonts-loaded .typography-styles h1 {
+	font-family: 'Charter', Georgia, serif; /* stylelint-disable-line font-family-name-quotes */
+}
+/* ::: Media Queries ::: */
+/* ... Smartphone only ... */
+@media ( max-width: 767px ) {
+	.nav--main {
+		position: absolute;
+		top: -3.2rem;
+		left: -1.6rem;
+		right: -1.6rem;
+		padding-bottom: 1.6rem;
+		box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, 0.25 ); /* FIXME: Update wmui-base */
+		z-index: 1;
+		-webkit-transform: translateY( -200% );
+		    -ms-transform: translateY( -200% );
+		        transform: translateY( -200% );
+		-webkit-transition: left 250ms, right 250ms, -webkit-transform 250ms;
+		transition: left 250ms, right 250ms, -webkit-transform 250ms;
+		transition: left 250ms, right 250ms, transform 250ms;
+		transition: left 250ms, right 250ms, transform 250ms, -webkit-transform 250ms;
+	}
+
+	.trigger--nav-main:checked + .nav--main {
+		-webkit-transform: translateY( 0 );
+		    -ms-transform: translateY( 0 );
+		        transform: translateY( 0 );
+	}
+
+	.page__title {
+		margin-top: -0.4rem;
+		font-size: 2.8rem;
+	}
+
+	.typography-styles dt {
+		display: block;
+		margin-left: 0;
+	}
+
+	.figure--comparison {
+		width: 100%;
+	}
+
+	/* ... Components ... */
+	.page--components .components__states {
+		margin-left: 0;
+	}
+
+	/* ... Resources ... */
+	.resources-table,
+	.resources-table__head,
+	.resources-table__body,
+	.resources-table__cell {
+		display: block;
+	}
+
+	.resources-table__head {
+		margin-left: -1.6rem;
+		margin-right: -1.6rem;
+	}
+
+	.resources-table__head .resources-table__cell:empty {
+		display: none;
+	}
+
+	.resources-table__body {
+		padding-left: 0;
+	}
+
+	.resources-table__cell {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+	}
+}
+/* ... Smartphone portrait ... */
+@media ( min-width: 240px ) {
+	.content-box,
+	.site__title a,
+	.nav--main a {
+		-webkit-transition-property: background-color, padding;
+		transition-property: background-color, padding;
+		-webkit-transition-duration: 250ms;
+		        transition-duration: 250ms;
+	}
+
+	.site__title {
+		margin-left: 4.2rem;
+	}
+
+		.site__title a {
+			padding-left: 0;
+		}
+
+	.lnk--contribute span {
+		display: none;
+	}
+
+	.nav--main a {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
+	}
+
+	.col--start,
+	.col--end {
+		width: 100%;
+	}
+
+	.figure--full,
+	.resources-table__head {
+		margin-left: -1.6rem;
+		margin-right: -1.6rem;
+	}
+
+	.figure--full .figure__caption {
+		margin-left: 1.6rem;
+		margin-right: 1.6rem;
+	}
+
+	.figure--this-is-for-everyone img,
+	.figure--trustworthy-yet-joyful img {
+		width: 100%;
+		max-width: 568px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.figure--illustrations-header img {
+		width: 100%;
+	}
+
+	.figure--illustrations-header + .figure--illustrations-header,
+	.figure--illustrations-header + .figure--illustrations-header img {
+		margin-top: 0;
+	}
+
+	.color {
+		width: 61.8%;
+	}
+
+	.color-palette--base .color:nth-child( 3n+4 ) {
+		clear: both;
+	}
+
+	.color-palette--base .color {
+		margin-right: 1.6rem;
+	}
+
+	.color-palette--overview.color-palette--base .color--emphasized {
+		margin-right: 1.1rem;
+		margin-left: -0.2rem;
+	}
+
+	.page--components figure {
+		margin-left: 4.2rem;
+	}
+}
+/* ... Smartphone+ portrait ... */
+@media ( min-width: 414px ) {
+	.content-box {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
+
+	.nav--main {
+		left: -3.2rem;
+		right: -3.2rem;
+	}
+
+		.nav--main a {
+			padding-left: 3.2rem;
+			padding-right: 3.2rem;
+		}
+
+	.figure--full,
+	.resources-table__head {
+		margin-left: -3.2rem;
+		margin-right: -3.2rem;
+	}
+
+	.figure--full .figure__caption {
+		margin-left: 3.2rem;
+		margin-right: 3.2rem;
+	}
+
+	.resources-table__head .resources-table__cell:first-child {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
+
+	.footer__list li {
+		display: list-item;
+		float: left;
+		padding: 0 0.8rem 0 0;
+	}
+
+	.footer__list li:after {
+		content: '\2022'; /* bullet dot: '•' */
+		color: #72777d;
+		padding: 0 0 0 0.8rem;
+		font-weight: 100;
+	}
+
+	.footer__list li:last-child:after {
+		content: '';
+		padding: 0;
+	}
+
+	.color {
+		width: 16rem;
+		margin-right: 2.4rem;
+	}
+}
+/* ... Smartphone landscape ... */
+@media ( min-width: 568px ) {
+	.lnk--contribute {
+		display: block;
+		position: absolute;
+		bottom: 1.5rem; /* Not on 8px base due to `line-height` setting */
+		right: 3.2rem;
+		text-align: right;
+	}
+
+	.lnk--contribute span {
+		display: inline;
+		opacity: 0;
+		-webkit-transition: opacity 250ms;
+		transition: opacity 250ms;
+	}
+
+	.figures-do-dont .figure {
+		max-width: 61.8%;
+	}
+
+	.figure--this-is-for-everyone img,
+	.figure--trustworthy-yet-joyful img {
+		max-width: none;
+	}
+
+	.figure--illustrations-header {
+		float: left;
+		width: 44.4%;
+	}
+
+	.figure--illustrations-header + .figure--illustrations-header {
+		width: 55.55%;
+		margin-top: 0.8rem;
+	}
+
+	.figure--illustrations-header + .figure--illustrations-header img {
+		margin-top: 1.6rem;
+	}
+}
+/* ... Tablet ... */
+@media ( min-width: 768px ) {
+	img {
+		border-radius: 2px;
+	}
+
+	.content-box {
+		width: 100%;
+		max-width: 960px;
+	}
+
+	.btn--nav-main {
+		display: none;
+	}
+
+	.site__title {
+		float: left;
+		margin-left: 0;
+	}
+
+		.site__title a,
+		.nav--main a {
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
+		}
+
+	.lnk--contribute span {
+		display: inline;
+		opacity: 1;
+	}
+
+	.col--start {
+		width: 20.8rem;
+		z-index: 1;
+		-webkit-transition: width 250ms;
+		transition: width 250ms;
+	}
+
+	.col--end {
+		margin-left: -20.8rem;
+		padding-left: 24rem; /* = 22.4 + (2 * 1.6 padding) */
+	}
+
+	.nav--main {
+		left: auto;
+		right: auto;
+	}
+
+	.figure--full,
+	.figure--full .figure__caption {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/* Comparison figures, for example in Apps section. */
+	.figure--comparison {
+		margin-right: 4%;
+	}
+
+	.figure--comparison:last-child {
+		margin-right: 0;
+	}
+
+	/* Two figures */
+	.figure--comparison:first-child:nth-last-child( 2 ),
+	.figure--comparison:first-child:nth-last-child( 2 ) ~ .figure--comparison {
+		width: 48%;
+	}
+
+	/* Three figures */
+	.figure--comparison:first-child:nth-last-child( 3 ),
+	.figure--comparison:first-child:nth-last-child( 3 ) ~ .figure--comparison {
+		width: 30%;
+	}
+
+	.figures-do-dont .figure {
+		float: left;
+		width: 50%;
+	}
+
+	.color-palette--base .color:nth-child( 3n+4 ) {
+		clear: unset;
+	}
+
+	/* ... “Illustrations” ... */
+	.illustrations-case-study img {
+		float: left;
+		width: 33.33%;
+	}
+
+	.page--components figure {
+		margin-left: 6.4rem;
+	}
+}
+/* ... Tablet+ / Netbook ... */
+@media ( min-width: 992px ) {
+	.content-box {
+		width: 100%;
+		max-width: 1140px;
+	}
+
+	.site__title a,
+	.nav--main a {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
+
+	.col--start {
+		width: 24rem;
+	}
+
+	.col--end {
+		margin-left: -24rem;
+		padding-left: 27.2rem; /* = 24 + (2 * 1.6 padding) */
+	}
+
+	.color-palette--overview:first-child {
+		margin-top: 2.4rem;
+	}
+
+	.color {
+		margin-right: 2.4rem;
+	}
+
+		.color-palette--base .color {
+			margin-right: 1.35rem;
+		}
+
+		.color-palette--overview.color-palette--base .color--emphasized {
+			margin-right: 1.35rem;
+			margin-left: 0;
+		}
+
+	.color-palette--overview.color-palette--red:before,
+	.color-palette--overview.color-palette--red:after,
+	.color-palette--overview.color-palette--green:before,
+	.color-palette--overview.color-palette--green:after {
+		content: '';
+		display: none;
+	}
+
+	.color-palette--overview.color-palette--red:after,
+	.color-palette--overview.color-palette--green:after,
+	.color-section .color:nth-child( 3n+4 ) {
+		clear: both;
+	}
+
+	/* ... Resources ... */
+	.resources-table__body .resources-table__cell {
+		-webkit-transition: background-color 250ms;
+		transition: background-color 250ms;
+	}
+
+		.resources-table__body:hover .resources-table__cell {
+			background-color: #f8f9fa;
+		}
+
+		.resources-table__head .resources-table__cell:first-child,
+		.resources-table__body .resources-table__cell:first-child {
+			padding-left: 1.6rem;
+		}
+}
+@media ( min-width: 1200px ) {
+	.content-box {
+		width: 1140px;
+	}
+
+	.col--start {
+		width: 25.6rem;
+	}
+
+	.col--end {
+		margin-left: -25.6rem;
+		padding-left: 28.8rem; /* = 25.6 + (2 * 1.6 padding) */
+	}
+}

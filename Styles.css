@@ -594,7 +594,7 @@ vl {
     background: #FFF;
 }
 .navbox-data:nth-child(odd) {
-    background: #F7F7F7;
+    /* background: #F7F7F7; */
 }
 .navbox-header-top {
     border-radius: 9px;

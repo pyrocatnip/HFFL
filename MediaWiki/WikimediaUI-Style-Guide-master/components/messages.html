@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="js--off">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:title" content="Components: Messages - Wikimedia Design Style Guide (WikimediaUI)">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://design.wikimedia.org/style-guide/components/messages.html">
+	<meta property="og:image" content="https://design.wikimedia.org/style-guide/img/design-style-guide.png">
+	<link rel="stylesheet" href="../css/build/wmui-style-guide.min.css">
+	<title>Components: Messages – Wikimedia Design Style Guide</title>
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bjs--off\b/,'js--on');
+	</script>
+	<link rel="dns-prefetch" href="https://piwik.wikimedia.org/">
+	<link rel="preload" href="../fonts/Charter_regular.woff2" as="font" type="font/woff2" crossorigin>
+	<script src="../js/matomo-tracking.min.js"></script>
+	<script src="../js/wikimedia-design-style-guide.min.js" async></script>
+</head>
+<body class="page--components page--components-messages" vocab="http://schema.org/" typeof="WebPage">
+	<header id="header" class="header">
+		<div class="content-box">
+			<a href="#content" class="is-aural is-focusable">Jump to content</a>
+			<a href="#nav--main" class="is-aural is-focusable">Jump to navigation</a>
+			<h6 class="site__title"><a href="../"><span class="site__org">Wikimedia </span><span class="site__project">Design Style Guide</span></a></h6>
+			<label class="btn--nav-main" for="trigger--nav-main" aria-hidden="true" title="Show main menu">
+				<i></i> <span>Menu</span>
+			</label>
+			<a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener" class="lnk--contribute" title="Fork and contribute on GitHub"><span>Contribute on </span>GitHub</a>
+		</div>
+	</header>
+	<div class="page">
+		<div class="content-box">
+			<div class="col col--start">
+				<input type="checkbox" id="trigger--nav-main" class="trigger--nav-main">
+				<nav id="nav--main" class="nav nav--main">
+					<ol>
+						<li class="nav__item"><a href="../index.html">Introduction</a></li>
+						<li class="nav__item"><a href="../design-principles.html">Design principles</a></li>
+						<li class="nav__item"><a href="../visual-style.html">Visual style</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="../visual-style.html">Principles</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_colors.html">Colors</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_typography.html">Typography</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_icons.html">Icons</a></li>
+								<li class="nav__sub-item is-on"><a href="../visual-style_images.html">Images</a></li>
+								<li class="nav__sub-item"><a href="../visual-style_illustrations.html">Illustrations</a></li>
+							</ul>
+						</li>
+						<li class="nav__item is-on"><a href="links.html">Components</a>
+							<ul class="nav__sub-items">
+								<li class="nav__sub-item"><a href="links.html">Links</a></li>
+								<li class="nav__sub-item"><a href="buttons.html">Buttons</a></li>
+								<li class="nav__sub-item"><a href="button-groups.html">Button groups</a></li>
+								<li class="nav__sub-item"><a href="checkboxes.html">Checkboxes</a></li>
+								<li class="nav__sub-item"><a href="radio-buttons.html">Radio buttons</a></li>
+								<li class="nav__sub-item"><a href="toggle-switches.html">Toggle switches</a></li>
+								<li class="nav__sub-item"><a href="dropdowns.html">Dropdowns</a></li>
+								<li class="nav__sub-item"><a href="comboboxes.html">Comboboxes</a></li>
+								<li class="nav__sub-item"><a href="text-inputs-and-textarea.html">Text inputs and textarea</a></li>
+								<li class="nav__sub-item"><a href="number-inputs.html">Number inputs</a></li>
+								<li class="nav__sub-item"><a href="file-inputs.html">File inputs</a></li>
+								<li class="nav__sub-item is-on"><a href="messages.html">Messages</a></li>
+								<li class="nav__sub-item"><a href="language-selectors.html">Language selectors</a></li>
+								<li class="nav__sub-item"><a href="dialogs.html">Dialogs</a></li>
+							</ul>
+						</li>
+						<li class="nav__item"><a href="../apps/apps.html">Apps</a></li>
+						<!-- <li><a href="../patterns.html">Patterns</a></li> -->
+						<li><a href="../resources.html">Resources</a></li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col col--end">
+				<main id="content" class="content">
+					<div class="page__parent-title">Components</div>
+					<h1 class="page__title">Messages</h1>
+					<p class="page__lead">Messages to the user as system feedback can be delivered as block message with a longer explanation. The block messages, predominantly used in top or banner positions in the view are defined on this page. Or as inline message directly to an input component. For inline validation messages, see <a href="text-inputs-and-textarea.html#designing">designing text inputs</a>.</p>
+					<figure class="components__intro">
+						<img src="../img/components/messages_notice.svg" alt="Block message of neutral type visual example">
+					</figure>
+
+					<section id="using">
+						<h2>Using messages</h2>
+						<p>Messages must include a descriptive text or a combination of text and an icon. <span class="note note--inline note--a11y">Accessibility note:</span> An additional icon adds a point of recognition for color blind users.</p>
+					</section>
+					<section id="designing">
+						<h2>Designing</h2>
+						<p><strong>Message text</strong><br>
+							Message text should provide clear and short as possible feedback to the users and possibly provide next steps if available. </p>
+						<p><strong>Icon</strong><br>
+							Icons simplify user recognition and provide ability to shorten message text. Icons are limited to default pre-collection of each message type to ensure recognition.
+						</p>
+						<p>See <strong><a href="https://www.figma.com/file/2Jb1lVkhEMDFxO20I5xwyA/WikimediaUI-%E2%80%93-Components-library?node-id=217%3A172" target="_blank" rel="noopener">WikimediaUI Figma Messages component</a></strong>.</p>
+					</section>
+					<section id="types">
+						<h2>Types</h2>
+						<h3>Neutral or notice message</h3>
+						<figure class="components__intro">
+							<img src="../img/components/messages_notice.svg" alt="Block message of neutral type, visual example">
+						</figure>
+						<p>Neutral or notice block messages provide general user feedback. Accompany the message by the 'infoFilled' icon.</p>
+
+						<h3>Error message</h3>
+						<figure class="components__intro">
+							<img src="../img/components/messages_error.svg" alt="Block message of error type, visual example">
+						</figure>
+						<p>Error type feature the strongest visual priority of all system messages. Use to alert the user for immediate attention only needs. Accompany the message by the 'error' icon.</p>
+
+						<h3>Warning message</h3>
+						<figure class="components__intro">
+							<img src="../img/components/messages_warning.svg" alt="Block message of error type, visual example">
+						</figure>
+						<p>Warning type provide important messages the user should be cautious about. Accompany the message by the 'warning' icon.</p>
+
+						<h3>Success message</h3>
+						<figure class="components__intro">
+							<img src="../img/components/messages_success.svg" alt="Block message of error type, visual example">
+						</figure>
+						<p>Success type deliver feedback of a successful user interaction like publishing an article. Accompany the message by the 'success' icon.</p>
+					</section>
+					<section id="coding">
+						<h2>Coding</h2>
+						<p>See <a href="https://doc.wikimedia.org/oojs-ui/master/demos/?page=widgets&theme=wikimediaui&direction=ltr&platform=desktop#MessageWidget-type-notice" target="_blank" rel="noopener">OOUI's demos section of messages</a>.</p>
+					</section>
+				</main>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer">
+		<div class="content-box">
+			<ul class="footer__list footer__list--connect">
+				<li><a href="https://github.com/wikimedia/WikimediaUI-Style-Guide" target="_blank" rel="noopener">Contribute on GitHub</a></li>
+				<li><a href="https://twitter.com/@WikimediaDesign" title="Follow Wikimedia Product Design team on Twitter">Follow @WikimediaDesign</a></li>
+				<li><a href="https://lists.wikimedia.org/mailman/listinfo/design" title="Join Wikimedia Design mailing list">Join mailing list</a></li>
+			</ul>
+			<p>Text is available under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" property="license">Creative Commons Attribution-ShareAlike 4.0 International</a>, additional terms may apply. <br>Code is available under the MIT license.</p>
+			<ul class="footer__list footer__list--policy">
+				<li><a href="https://wikimediafoundation.org/privacy-policy/">Privacy policy</a></li>
+				<li><a href="https://design.wikimedia.org/accessibility-statement.html">Accessibility statement</a></li>
+			</ul>
+			<p><a href="https://foundation.wikimedia.org/" class="lnk--wikimedia-project" property="author" typeof="Organization">A Wikimedia Foundation project</a></p>
+			<noscript><p><img src="https://piwik.wikimedia.org/piwik.php?idsite=16&rec=1" alt=""></p></noscript>
+		</div>
+	</footer>
+</body>
+</html>
