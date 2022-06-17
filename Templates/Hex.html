@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-require="jquery@*" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <span>Credit to: Tiago Dias aka <a href="https://gist.github.com/krypton/2400088" target="_blank">krypton</a></span>
+    <form>
+      <div class="row"><span class="color-block color1-block"></span><input id="color1-input" name="color1-input" placeholder="#6D161C" value="#6D161C" onKeyup="parseTextColor()" onBlur="parseTextColor()" onFocus="parseTextColor()"/></div>
+      <div class="row"><span class="color-block color2-block"></span><input id="color2-input" name="color2-input" placeholder="#E45E69" value="#E45E69" onKeyup="parseTextColor()" onBlur="parseTextColor()" onFocus="parseTextColor()"/></div>
+      <button type="submit">Compare</button>
+      <h1>Percentage difference is: <span class="result"></span></h1>
+    </form>
+  </body>
+</html>

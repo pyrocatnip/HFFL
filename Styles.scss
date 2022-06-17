@@ -1,0 +1,47 @@
+/* Colors */
+$black: #000;
+$white: #FFF;
+$ucr: #9D2235;
+$bgr: #F8F9FA;
+$header: #eaecf0;
+$body: #F8F9FA;
+$infobox: #0C0C0C;
+
+/* Components */
+body {
+    background: $black;
+}
+
+th {
+    font-weight: bold;
+}
+
+table.infobox {
+    background: $body;
+    text-align: center;
+    border: 2px solid #AAA;
+    border-radius: 20px;
+    float: right;
+    min-width: 22em;
+    max-width: 24em;
+    padding: 0.25em;
+    th.infobox-header {
+        background: $tblhd;
+        border: 2px solid #AAA;
+        border-radius: 20px;
+        font-weight: bold;
+        width: 100%;
+    }
+    th.infobox-data {
+        background: $tbldt;
+    }
+}
+
+table.navbox {
+    background: $bgr;
+}
+
+/* Team color */
+$BAL-1: #24135F;
+$BAL-2: #9A7611;
+$BAL-3: #000; 
